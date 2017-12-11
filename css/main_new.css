@@ -134,7 +134,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: -webkit-calc(10rem - 56px);
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/parallax-img.png");
   background-position: center center;
   background-size: cover; }
   header.masthead .main_title {

@@ -1,0 +1,7 @@
+section#infographics {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background-image: url('../images/ninja-bg-gray.png');
+  background-position: top center;
+  @include background-cover;
+}

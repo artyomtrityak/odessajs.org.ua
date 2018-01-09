@@ -53,17 +53,18 @@ $(document).ready(function() {
     $img.attr('src', $img.attr('data-grey-src'));
   });*/
 
-  $('.subscribe-button').click(function() {
+  $('.subscribe_form').submit(function(e) {
+    e.preventDefault();
     var that = $(this);
     that.find('i').css('display', 'block');
     that.find('span').css('display', 'none');
-    var email = $('.subscribe-email-input').val();
-    var name = $('.subscribe-name-input').val();
+    var email = that.find('.subscribe-email-input').val();
+    var name = that.find('.subscribe-name-input').val();
     if (validateEmail(email)) {
       subscribeEmail(email, name).then(function() {
         that.find('i').css('display', 'none');
         that.find('span').css('display', 'block');
-        $('.subscribe-input').val('');
+        that.find('.subscribe-input').val('');
         alert('Благодарим за подписку.');
       });
     } else {

@@ -238,11 +238,14 @@ section .socials {
     text-align: center; }
 
 section#infographics {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-image: url("../images/ninja-bg-gray.png");
   background-position: top center;
   background-size: cover; }
+  section#infographics .container {
+    max-width: none;
+    padding: 0; }
 
 section#speakers {
   background-image: url(../images/section_top_bg.png);

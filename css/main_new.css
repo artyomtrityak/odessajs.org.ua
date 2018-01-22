@@ -215,7 +215,9 @@ section .socials {
     display: inline-block;
     text-decoration: none;
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center; }
     @media screen and (max-width: 720px) {
       section .socials .socials__link {
         margin: 0 8px; } }
@@ -224,15 +226,17 @@ section .socials {
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
   section .socials__tw {
-    background: url("../images/twitter.png"); }
+    background: url("../images/twitter-red.png"); }
+  section .socials__tg {
+    background: url("../images/telegram-red.png"); }
   section .socials__ml {
     background: url("../images/e-mail.png"); }
   section .socials__fb {
-    background: url("../images/fb.png"); }
+    background: url("../images/fb-red.png"); }
   section .socials__vk {
     background: url("../images/vk.png"); }
   section .socials__yt {
-    background: url("../images/youtube.png"); }
+    background: url("../images/youtube-red.png"); }
   section .socials__icons {
     margin-top: 2rem;
     text-align: center; }
@@ -240,12 +244,9 @@ section .socials {
 section#infographics {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  background-image: url("../images/ninja-bg-gray.png");
-  background-position: top center;
   background-size: cover; }
   section#infographics .container {
-    max-width: none;
-    padding: 0; }
+    max-width: none; }
 
 section#speakers {
   background-image: url(../images/section_top_bg.png);
@@ -293,8 +294,10 @@ section#sponsorship {
     margin: 15px;
     min-height: 60px; }
     section#sponsorship .thank-box .img-responsive {
+      width: auto;
+      max-height: 60px;
       max-width: 100%;
-      max-height: 60px; }
+      margin: 0 auto; }
   section#sponsorship .buttons_row .btn:first-child {
     float: left; }
   section#sponsorship .buttons_row .btn:last-child {
@@ -369,7 +372,9 @@ footer#footer {
       display: inline-block;
       text-decoration: none;
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: center center; }
       @media screen and (max-width: 720px) {
         footer#footer .socials .socials__link {
           margin: 0 8px; } }
@@ -378,15 +383,17 @@ footer#footer {
         -ms-transform: scale(1.2);
         transform: scale(1.2); }
     footer#footer .socials__tw {
-      background: url("../images/twitter.png"); }
+      background: url("../images/twitter-red.png"); }
+    footer#footer .socials__tg {
+      background: url("../images/telegram-red.png"); }
     footer#footer .socials__ml {
       background: url("../images/e-mail.png"); }
     footer#footer .socials__fb {
-      background: url("../images/fb.png"); }
+      background: url("../images/fb-red.png"); }
     footer#footer .socials__vk {
       background: url("../images/vk.png"); }
     footer#footer .socials__yt {
-      background: url("../images/youtube.png"); }
+      background: url("../images/youtube-red.png"); }
     footer#footer .socials__icons {
       margin-top: 2rem;
       text-align: center; }

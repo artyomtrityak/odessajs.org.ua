@@ -96,6 +96,8 @@ section {
       text-decoration: none;
       width: 30px;
       height: 30px;
+      background-repeat: no-repeat;
+      background-position: center center;
       @media screen and (max-width: 720px) {
         margin: 0 8px;
       }
@@ -104,19 +106,22 @@ section {
       }
     }
     &__tw {
-      background: url('../images/twitter.png');
+      background: url('../images/twitter-red.png');
+    }
+    &__tg {
+      background: url('../images/telegram-red.png');
     }
     &__ml {
       background: url('../images/e-mail.png');
     }
     &__fb {
-      background: url('../images/fb.png');
+      background: url('../images/fb-red.png');
     }
     &__vk {
       background: url('../images/vk.png');
     }
     &__yt {
-      background: url('../images/youtube.png');
+      background: url('../images/youtube-red.png');
     }
     &__icons {
       margin-top: 2rem;

@@ -1,0 +1,115 @@
+section.program-committee {
+  padding-top: 0!important;
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{
+    transform: translateX(0);
+
+  }
+  
+  .main-title {
+    font-family: 'Jura', sans-serif;
+    font-size: 45px;
+    color: $primary;
+    margin-top: 15px;
+  }
+
+  .main_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .img-wrapper {
+    
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .insides-wrapper {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+
+  .chairman__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .chairman__position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    min-height: 60px;
+
+  }
+
+  .chairman__link-list {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+
+    .chairman__link {
+      margin-right: 20px;
+      text-decoration: none;
+
+      i {
+        display: block;
+        font-size: 20px;
+        color: #8d8d8d;
+        @include transition-all();
+      }
+
+      &:hover i{
+        color: #e32d42;
+      }
+
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+
+  .ask-a-question {
+    border:1px solid transparent;
+    border-radius: 5px;
+    background-color: #e32d42;
+    @include transition-all();
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+      border:1px solid #e32d42;
+      color: #e32d42;
+      background-color: #fff;
+    }
+  }
+}

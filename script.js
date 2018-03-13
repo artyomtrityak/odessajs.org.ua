@@ -242,7 +242,7 @@ function init(){
 
 // bondar changes tsarts here
 function initMap() {
-  var center = new google.maps.LatLng(46.4331634, 30.7607475)
+  var center = new google.maps.LatLng(46.432882, 30.761098);
   var mapOptions = {
     center: center,
     zoom: 16,
@@ -432,12 +432,6 @@ function initMap() {
 
 $(document).ready(function(){
 
-  $('.location-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    infinite: false
-  });
 
   $('.speakers-slider').slick({
     slidesToShow: 1,

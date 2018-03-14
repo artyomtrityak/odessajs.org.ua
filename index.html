@@ -217,10 +217,10 @@
       <div class="carousel-inner w-100" role="listbox">
         <div class="carousel-item active">
           <div class="chairman-info insides-wrapper col-3">
-            <div class="img-wrapper w-100">
+            <div class="img-wrapper w-100" data-toggle="modal" data-target="#modal-1">
               <img class="d-block img-fluid" src="images/program-committee/gerard-sans.jpg">
             </div>
-            <h2 class="chairman__name">Gerard Sans</h2>
+            <h2 class="chairman__name" data-toggle="modal" data-target="#modal-1">Gerard Sans</h2>
             <p class="chairman__position">Google Developer Expert</p>
             <div class="chairman__link-list w-100">
               <a class="chairman__link" target="_blank" href="https://twitter.com/gerardsans">
@@ -233,7 +233,7 @@
                 <i class="fa fa-medium" aria-hidden="true"></i>
               </a>
             </div>
-            <button class="ask-a-question" data-toggle="modal" >Ask a Question</button>
+            <button class="ask-a-question" data-toggle="modal" data-target="#ask-form">Ask a Question</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -346,9 +346,158 @@
       </a>
     </div>
   </div>
-  <div class="chairman-info-popup">
+  <div class="chairman-info-popup modal fade" id="modal-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="img-wrapper w-25">
+            <img class="d-block img-fluid" src="images/program-committee/gerard-sans.jpg">
+          </div>
+          <div class="info-wrapper">
+            <h2 class="chairman__name">Gerard Sans</h2>
+            <p class="chairman__position">Google Developer Expert</p>
+            <div class="chairman__link-list">
+              <a class="chairman__link" target="_blank" href="https://twitter.com/gerardsans">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a class="chairman__link" target="_blank" href="https://github.com/gsans">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a class="chairman__link" target="_blank" href="https://medium.com/@gerard.sans">
+                <i class="fa fa-medium" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices porta viverra.
+            Integer facilisis sapien at neque viverra cursus. Aliquam sed lectus eu nisl hendrerit consequat
+            eget eget magna. Nam tincidunt volutpat nulla vitae pellentesque. Mauris tincidunt iaculis dolor,
+            in molestie odio finibus et. In laoreet rutrum dapibus. Curabitur purus orci, maximus nec faucibus
+            ut, ultrices vehicula felis. Morbi massa tellus, auctor eget consectetur consectetur, convallis et
+            tortor. Morbi quis scelerisque est. Phasellus tellus lacus, condimentum quis tortor quis, dapibus
+            vestibulum dolor. Nullam justo elit, lacinia eu rhoncus vel, hendrerit vel arcu. Curabitur aliquam
+            aliquam commodo. Mauris non lectus et lorem ornare rhoncus vel quis mauris. Phasellus laoreet egestas
+            turpis ut tempor. Mauris pharetra maximus arcu, eu aliquam purus vehicula vitae.
 
+            Suspendisse id urna eget massa ultricies sodales at a lectus. Donec nunc velit, aliquet eu
+            ornare et, dapibus eu metus. Suspendisse eu velit dictum odio condimentum iaculis. Mauris
+            consectetur lacus odio, eleifend bibendum massa consectetur et. Aenean pharetra ut lacus et
+            varius. Etiam ut metus nec nunc maximus posuere a tristique felis. Quisque egestas nibh tellus,
+            eget tristique mi condimentum in. Morbi ac eros luctus, pellentesque metus ac, dapibus turpis.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Vestibulum molestie tristique condimentum.
+
+            Fusce vel ultrices enim, eu efficitur nisl. Aliquam ut mi sed sem dignissim tristique. Aenean
+            non fringilla lorem, non pretium ex. Donec in mauris lectus. Vestibulum posuere luctus suscipit.
+            Etiam sit amet arcu convallis, tristique libero vitae, imperdiet metus. Phasellus at tristique est,
+            a pulvinar leo. Aliquam erat volutpat. Cras pharetra faucibus augue nec posuere.
+
+            Phasellus sollicitudin lorem tellus, quis scelerisque nibh tristique vitae. In fermentum efficitur
+            ex et tempus. Nam eleifend egestas tellus. Morbi vitae varius nulla. Nunc massa quam, vehicula sit
+            amet arcu eget, tempus suscipit ligula. Nunc iaculis bibendum commodo. Maecenas accumsan nisl sed
+            tristique volutpat. Nam id nisl sit amet neque auctor vestibulum eu rhoncus neque. Donec congue,
+            libero a laoreet mollis, erat nunc porttitor tellus, vitae auctor turpis purus eu quam. Vestibulum
+            eget elit nunc. Nulla bibendum nibh a odio suscipit, sit amet aliquam libero bibendum.
+
+            Maecenas velit nunc, consequat non risus non, blandit mattis justo. Pellentesque libero orci, laoreet
+            id enim et, facilisis dapibus erat. Maecenas cursus bibendum neque, ut dictum tortor iaculis eu.
+            Nulla facilisi. Suspendisse potenti. Aenean in mi semper, scelerisque tortor et, lacinia ipsum. Nunc
+            fermentum arcu nunc, a tristique turpis finibus et.
+
+            In fringilla, dolor sed euismod sagittis, ligula nisl maximus tortor, a faucibus mi tortor sit amet
+            diam. Nulla pulvinar dignissim diam. Aenean at quam nunc. Maecenas a venenatis massa, vel vehicula risus.
+            Maecenas vel finibus enim. Vivamus sagittis metus pellentesque eros placerat, ac posuere erat ornare.
+            Vestibulum ante erat, volutpat nec porta fermentum, accumsan non nulla. Nulla eget varius lectus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas
+            vel euismod augue, id iaculis felis. Vivamus fermentum tristique augue a congue. Duis consectetur
+            faucibus nisl eget laoreet. Pellentesque ex turpis, viverra a lobortis in, maximus.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div id="ask-form" class="form-modal modal fade">
+    <div class="modal-dialog">
+      <form action="" class="modal-content container">
+        <div class="form-title">
+          <h3>Ask me!</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="form-group row">
+          <label for="ask-name" class="col-3 control-label">Name</label>
+          <div class="col-9">
+            <input id="ask-name" name="ask-name" type="text" placeholder="Your name *" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="ask-mail" class="col-3 control-label">Name</label>
+          <div class="col-9">
+            <input id="ask-mail" name="ask-mail" type="text" placeholder="Your email *" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-3 control-label" for="ask-message">Your message</label>
+          <div class="col-9">
+            <textarea class="form-control" id="ask-message" name="ask-message" placeholder="Please enter your message here..." rows="5"></textarea>
+          </div>
+        </div>
+        <div class="form-group text-right">
+          <button type="submit" class="ask-submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--<div class="form-container modal fade" id="ask-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-offset-3">
+          <div class="well well-sm">
+            <form class="form-horizontal" action="" method="post">
+              <fieldset>
+                <legend class="text-center">Contact us</legend>
+
+                <div class="form-group">
+                  <label class="col-3 control-label" for="name">Name</label>
+                  <div class="col-9">
+                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <label class="col-3 control-label" for="email">Your E-mail</label>
+                  <div class="col-9">
+                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <label class="col-3 control-label" for="message">Your message</label>
+                  <div class="col-9">
+                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <div class="col-12 text-right">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
 </section>
 
 <!--

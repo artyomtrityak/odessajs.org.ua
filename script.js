@@ -22,10 +22,10 @@ function validateEmail(email) {
 $(document).ready(function() {
 
   $('#programCommitteeCarousel').carousel({
-    interval: 10000
+    interval: 5000
   });
 
-  $('.carousel .carousel-item').each(function(){
+  $('.program-committee .carousel .carousel-item').each(function(){
     var next = $(this).next();
     if (!next.length) {
       next = $(this).siblings(':first');
@@ -41,6 +41,18 @@ $(document).ready(function() {
       next.children(':first-child').clone().appendTo($(this));
     }
   });
+
+    $('#speakers-carousel').carousel({
+        interval: 5000
+    });
+
+    $('.speakers .carousel .carousel-item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+    });
 
 
   /*

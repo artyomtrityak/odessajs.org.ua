@@ -6,10 +6,21 @@ $(document).ready(function(){
       name: "Henning Muszynski",
       position: "Software Engineer" ,
       company: "Doist",
-      location: "Hamburg, Germany",
+      location: "The ABC of Coded Style Guides",
       socialsRendered: '',
       socials: [
-
+        {
+          link: 'https://github.com/henningmu',
+          fatype: 'github'
+        },
+       {
+          link: 'https://twitter.com/henningmus',
+          fatype: 'twitter'
+        },
+        {
+          link: 'http://henningmu.com/',
+          fatype: 'link'
+        }
       ]
     },
     {
@@ -17,15 +28,30 @@ $(document).ready(function(){
       name: "Rowdy Rabouw",
       position: "web development" ,
       company: "double-R",
-      location: "Gouda, The Netherlands",
+      location: "Unleash your web skills on native!",
       socialsRendered: '',
+      socials: [
+        {
+          link: 'https://github.com/rowdyrabouw',
+          fatype: 'github'
+        },
+        {
+          link: 'https://twitter.com/rowdyrabouw',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/rowdyrabouw/',
+          fatype: 'linkedin-square'
+        }
+      ]
+
     },
     {
       image: "images/reporters/asimhussain.png",
       name: "Asim Hussain",
       position: "Cloud Developer Advocate" ,
       company: "Microsoft",
-      location: "London, United Kingdom",
+      location: "Serverless & SPAs, a match made in Spevan",
       socialsRendered: '',
       socials: [
         {
@@ -47,29 +73,43 @@ $(document).ready(function(){
       name: "Ivan Jovanovic",
       position: "Senior Software Engineer" ,
       company: "nearForm",
-      location: "Belgrade, Serbia",
+      location: "Serverless - the way microservices should be",
       socialsRendered: '',
+      socials: [
+        {
+          link: 'https://github.com/ivanjov',
+          fatype: 'github'
+        },
+        {
+          link: 'https://twitter.com/ivanjov96',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://ivanjov.com/',
+          fatype: 'link'
+        }
+      ]
     },
     {
       image: "images/reporters/roman_sachenko.jpg",
       name: "Roman Sachenko",
       position: "Software Engineer" ,
       company: "DA-14",
-      location: "Kharkiv, Ukraine",
+      location: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this?",
       socialsRendered: '',
       socials: [
         {
           link: 'https://github.com/roman-sachenko',
           fatype: 'github'
         },
-        {
+        /*{
           link: 'https://www.linkedin.com/in/rsachenko/',
           fatype: 'linkedin-square'
         },
         {
           link: 'https://www.facebook.com/rsachenko',
           fatype: 'facebook'
-        },
+        },*/
         {
           link: 'https://twitter.com/RSachenko',
           fatype: 'twitter'
@@ -77,11 +117,11 @@ $(document).ready(function(){
         {
           link: 'https://stackoverflow.com/users/5132363/roman-sachenko',
           fatype: 'stack-overflow'
-        },
+        }/*,
         {
           link: 'https://www.instagram.com/rsachenko/',
           fatype: 'instagram'
-        },
+        },*/
       ]
     },
     {
@@ -89,24 +129,54 @@ $(document).ready(function(){
       name: "Oleksandr Skachkov",
       position: "Lead FrontEnd Developer" ,
       company: "Itera",
-      location: "Kiev, Ukraine",
+      location: "WebAssembly vs JavaScript: What is faster?",
       socialsRendered: '',
+      socials: [
+        {
+          link: 'https://github.com/ivanjov',
+          fatype: 'github'
+        },
+        {
+          link: 'https://www.linkedin.com/in/alexskachkov/',
+          fatype: 'linkedin-square'
+        }
+      ]
     },
     {
       image: "https://scontent.fdnk1-1.fna.fbcdn.net/v/t1.0-9/27867981_1761648527232195_4674196445569727871_n.jpg?_nc_cat=0&oh=c46e67848f25c4467264711ee09a1dae&oe=5B4167D6",
       name: "Oleg Chorny",
       position: "Site Reliability Engineering Manager" ,
       company: "Ciklum",
-      location: "Odessa, Ukraine",
+      location: "Observability of Cloud Native Applications",
       socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.linkedin.com/in/oleg-chorny-57124352',
+          fatype: 'linkedin-square'
+        }
+      ]
     },
     {
       image: "https://scontent.fkbp1-1.fna.fbcdn.net/v/t1.0-9/14102522_1816871395214147_1099645124302123929_n.jpg?_nc_cat=0&oh=0b04d445ce4c3b3f58bb9a2128909f50&oe=5B71B421",
       name: "Leonid Baida",
       position: "Lead Front-End Developer" ,
       company: "SPD-Ukraine",
-      location: "Cherkasy, Ukraine",
+      location: "If you don't like how your static typing smells, maybe you do it wrong",
       socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.linkedin.com/in/leonid-bayda-46587438/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.facebook.com/leonid.baida',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://www.instagram.com/leonidbaida/',
+          fatype: 'instagram'
+        }
+      ]
     },
 
 
@@ -148,7 +218,7 @@ $(document).ready(function(){
     "</div> <div class='speakers-slide__info-wrapper'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span>${name}</span></h3>"+
   "<p class='speakers-slider__info-position'>${position} @ ${company}</p>"+
-  "<p class='speakers-slider__info-company'>${location}</p>"+
+  "<p class='speakers-slider__info-company font-weight-bold'>${location}</p>"+
   "<div class='speakers-slide__info-links'>{{html socialsRendered}}</div> </div> </div> </div>";
   $.template( "speakerTemplate", speakerItem );
 

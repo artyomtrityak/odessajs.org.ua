@@ -183,11 +183,6 @@ $(document).ready(function(){
   ];
 
 
-
-
-
-
-
   /* <a href="https://github.com/roman-sachenko">
       <i class="fa fa-github" aria-hidden="true"></i>
     </a>

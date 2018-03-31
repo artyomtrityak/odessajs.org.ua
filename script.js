@@ -22,17 +22,16 @@ function validateEmail(email) {
 $(document).ready(function() {
 
   $('#programCommitteeCarousel').carousel({
-    interval: 5000
+    interval: 0
   });
 
-  $('.program-committee .carousel .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
+  var slidesPerView = $(document).width() < 768 ? 0 : $(document).width() < 1024 ? 1 : 3;
 
-    for (var i=0;i<2;i++) {
+  $('.program-committee .carousel .carousel-item').each(function(){
+    var next = $(this);
+
+
+    for (var i=0;i<slidesPerView;i++) {
       next=next.next();
       if (!next.length) {
         next = $(this).siblings(':first');

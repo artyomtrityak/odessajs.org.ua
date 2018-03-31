@@ -212,9 +212,9 @@ $(document).ready(function(){
   $.template( "socialsTemplate", socialsItem );
 
 
-  var speakerItem = " <div class='speakers-slide__item'> <div class='speakers-slide__img-wrapper'>" +
+  var speakerItem = " <div class='speakers-slide__item row'> <div class='speakers-slide__img-wrapper  col-sm-12 col-lg-4'>" +
    "<img src='${image}' alt=''>" +
-    "</div> <div class='speakers-slide__info-wrapper'> <div class='speakers-slide__info'>"+
+    "</div> <div class='speakers-slide__info-wrapper  col-sm-12 col-lg-8'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span>${name}</span></h3>"+
   "<p class='speakers-slider__info-position'>${position} @ ${company}</p>"+
   "<p class='speakers-slider__info-company font-weight-bold'>${location}</p>"+

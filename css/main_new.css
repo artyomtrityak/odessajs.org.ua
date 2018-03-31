@@ -816,9 +816,14 @@ section#rocked {
       width: 160px;
       height: 160px;
       object-fit: cover; }
+      @media (max-width: 1024px) {
+        .speakers-slide__img-wrapper img {
+          width: 100%;
+          height: auto;
+          display: block; } }
   .speakers-slide__info-wrapper {
-    margin-left: 25px;
-    min-height: 100%; }
+    /*margin-left: 25px;
+      min-height: 100%;*/ }
   .speakers-slide__info {
     height: 100%;
     display: -webkit-box;
@@ -853,7 +858,7 @@ section#rocked {
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
       line-height: 1;
-      margin-bottom: 5px; }
+      margin-bottom: 15px; }
   .speakers-slide__info-links {
     width: 100%;
     display: -webkit-box;

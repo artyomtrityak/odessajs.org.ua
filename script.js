@@ -42,7 +42,7 @@ $(document).ready(function() {
   });
 
     $('#speakers-carousel').carousel({
-        interval: 5000
+        interval: 0
     });
 
     $('.speakers .carousel .carousel-item').each(function(){

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  var filters = [
+    'React', 'NativeScript', 'Angular', 'Node.js', 'ExpressJS', 'MongoDB', 'PgSQL', 'JavaScript',
+    'WebAssembly', 'Kubernetes', 'Azure', 'Go', 'Redux/Flow', 'Docker'
+  ];
+
   var speakers = [
     {
       image: "http://henningmu.com/assets/img/avatar.jpg",
@@ -179,7 +184,6 @@ $(document).ready(function(){
       ]
     },
 
-
   ];
 
 
@@ -219,6 +223,9 @@ $(document).ready(function(){
 
 
 
+
+function renderSpeakersCarousel() {
+
   // start render all
   $.each(speakers, function(i, sp) {
     $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
@@ -229,11 +236,26 @@ $(document).ready(function(){
 
   var finalSliderHtml = '';
 
-  for (var i=0; i< renderedSpeakers.length; i++) {
-    var activeClass = '';
-    if (i===0) {
-      activeClass = 'active';
+  if($(document).width() < 1024) {
+
+    for (var i=0; i< renderedSpeakers.length; i++) {
+      var activeClass = '';
+      if (i===0) {
+        activeClass = 'active';
+      }
+      finalSliderHtml+= '<div class="carousel-item '+activeClass+'"><div class="speakers-slide col-12">';
+      finalSliderHtml+=renderedSpeakers[i];
+
+      finalSliderHtml+='</div></div>'
     }
+
+  } else {
+
+    for (var i=0; i< renderedSpeakers.length; i++) {
+      var activeClass = '';
+      if (i===0) {
+        activeClass = 'active';
+      }
       finalSliderHtml+= '<div class="carousel-item '+activeClass+'"><div class="speakers-slide col-6">';
       finalSliderHtml+=renderedSpeakers[i];
 
@@ -241,10 +263,14 @@ $(document).ready(function(){
         finalSliderHtml+=renderedSpeakers[i+1];
         i++;
       }
-        finalSliderHtml+='</div></div>'
+      finalSliderHtml+='</div></div>'
+    }
+
   }
 
   $('#speakersSlider').html(finalSliderHtml);
+}
 
+  renderSpeakersCarousel();
 
 });

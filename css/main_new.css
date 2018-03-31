@@ -687,6 +687,9 @@ section#rocked {
     position: absolute;
     top: 0;
     left: 0; }
+    @media (max-width: 1024px) {
+      .speakers-img-1 {
+        display: none; } }
   .speakers-title {
     text-align: center;
     margin-bottom: 65px;
@@ -695,6 +698,9 @@ section#rocked {
       position: absolute;
       top: -100px;
       right: -100px; }
+      @media (max-width: 1024px) {
+        .speakers-title-img-1 {
+          display: none; } }
     .speakers-title h1 {
       color: #e32d42;
       font-family: 'Jura', sans-serif;
@@ -756,6 +762,9 @@ section#rocked {
     left: -100px;
     height: 45px;
     width: 50px; }
+    @media (max-width: 1024px) {
+      .speakers-carousel .carousel-control-prev {
+        left: 0; } }
     .speakers-carousel .carousel-control-prev .carousel-control-prev-icon {
       background-image: url(../images/location/location-prev.png);
       left: -100px;
@@ -772,6 +781,9 @@ section#rocked {
     right: -100px;
     height: 90px;
     width: 50px; }
+    @media (max-width: 1024px) {
+      .speakers-carousel .carousel-control-next {
+        right: 0; } }
     .speakers-carousel .carousel-control-next .carousel-control-next-icon {
       background-image: url(../images/location/location-next.png);
       right: -100px;

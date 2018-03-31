@@ -46,11 +46,16 @@ $(document).ready(function() {
     });
 
     $('.speakers .carousel .carousel-item').each(function(){
-        var next = $(this).next();
+      var slidesPerView =$(document).width() < 1024 ? 0 : 1;
+
+      var next = $(this);
+      for (var i=0;i<slidesPerView;i++) {
+        next = next.next();
         if (!next.length) {
-            next = $(this).siblings(':first');
+          next = $(this).siblings(':first');
         }
         next.children(':first-child').clone().appendTo($(this));
+      }
     });
 
 

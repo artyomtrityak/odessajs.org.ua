@@ -91,6 +91,14 @@ $(document).ready(function() {
     $('#ask-form').modal('show');
 ;  });
 
+
+    $('[data-modal-trigger="#speakers-modal"]').click(function() {
+        var $speakerModal = $(this);
+        loadSpeakerModal($speakerModal);
+
+        $('#speakers-modal').modal('show');
+        ;  });
+
 });
 
 function loadAskQuestionModal($speakerBlock) {
@@ -100,6 +108,16 @@ function loadAskQuestionModal($speakerBlock) {
   var speakerName = $speakerBlock.closest('.chairman-info').find('.chairman__name').text();
   $modalHiddenInput.val(speakerName);
   $modalNameElement.text(speakerName);
+
+}
+
+function loadSpeakerModal($speakerModal) {
+    var $modalBody = $('#speaker-modal');
+    var $modalHiddenInput = $modalBody.find('#ask-to');
+    var $modalNameElement = $modalBody.find('.speaker_ask_name');
+    var speakerName = $speakerBlock.closest('.chairman-info').find('.chairman__name').text();
+    $modalHiddenInput.val(speakerName);
+    $modalNameElement.text(speakerName);
 
 }
 

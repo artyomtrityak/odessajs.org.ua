@@ -481,4 +481,10 @@
     //  }
     //}
   }
+
+  [data-dismiss="modal"] {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
 }

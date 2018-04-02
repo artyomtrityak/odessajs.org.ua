@@ -208,11 +208,11 @@ $(document).ready(function(){
     <a href="https://medium.com/@rsachenko">
       <i class="fa fa-medium" aria-hidden="true"></i>
     </a>*/
-  var socialsItem = "<a href='${link}'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
+  var socialsItem = "<a class='speaker__link' href='${link}'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
   $.template( "socialsTemplate", socialsItem );
 
 
-  var speakerItem = " <div data-modal-trigger='#speaker-modal' class='speakers-slide__item row'> <div class='speakers-slide__img-wrapper  col-sm-12 col-lg-4'>" +
+  var speakerItem = " <div data-modal-trigger='#speaker-modal' data-item-index='__ReplaceWithIndex' class='speakers-slide__item row'> <div class='speakers-slide__img-wrapper  col-sm-12 col-lg-4'>" +
    "<img src='${image}' alt=''>" +
     "</div> <div class='speakers-slide__info-wrapper  col-sm-12 col-lg-8'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span class='speakers-slide__info-title-name'>${name}</span></h3>"+
@@ -220,7 +220,6 @@ $(document).ready(function(){
   "<p class='speakers-slider__info-rept font-weight-bold'>${rept}</p>"+
   "<div class='speakers-slide__info-links'>{{html socialsRendered}}</div> </div> </div> </div>";
   $.template( "speakerTemplate", speakerItem );
-
 
 
 
@@ -232,45 +231,101 @@ function renderSpeakersCarousel() {
   });
 
   var renderedSpeakers = [];
-  $.each($.tmpl("speakerTemplate", speakers ), function(a, i){ renderedSpeakers.push(i.outerHTML); });
+  $.each($.tmpl("speakerTemplate", speakers ), function(a, i){
+    renderedSpeakers.push(i.outerHTML.replace('__ReplaceWithIndex', a));
+  });
 
   var finalSliderHtml = '';
-
-  if($(document).width() < 1024) {
-
-    for (var i=0; i< renderedSpeakers.length; i++) {
-      var activeClass = '';
-      if (i===0) {
-        activeClass = 'active';
-      }
-      finalSliderHtml+= '<div class="carousel-item '+activeClass+'"><div class="speakers-slide col-12">';
-      finalSliderHtml+=renderedSpeakers[i];
-
-      finalSliderHtml+='</div></div>'
-    }
-
-  } else {
+  var ifmobile = $(document).width() < 1024;
 
     for (var i=0; i< renderedSpeakers.length; i++) {
       var activeClass = '';
+      var colClass = ifmobile ? 'col-12' : 'col-6';
       if (i===0) {
         activeClass = 'active';
       }
-      finalSliderHtml+= '<div class="carousel-item '+activeClass+'"><div class="speakers-slide col-6">';
+      finalSliderHtml+= '<div class="carousel-item '+activeClass+'"><div class="speakers-slide '+colClass+'">';
       finalSliderHtml+=renderedSpeakers[i];
 
-      if (renderedSpeakers[i+1]) {
+      if(!ifmobile && renderedSpeakers[i+1]) {
         finalSliderHtml+=renderedSpeakers[i+1];
         i++;
       }
+
       finalSliderHtml+='</div></div>'
     }
 
-  }
+
 
   $('#speakersSlider').html(finalSliderHtml);
 }
 
   renderSpeakersCarousel();
+
+
+  $(document).on('click', '[data-modal-trigger="#speaker-modal"]', function() {
+    var $speakerInfoBlock = $(this);
+    loadSpeakerModal($speakerInfoBlock);
+  });
+
+
+  function loadSpeakerModal($speakerInfoBlock) {
+    var $modalBody = $('#speaker-modal'),
+      $modalSpeakerAvatar = $modalBody.find('.img-fluid'),
+      $modalNameElement = $modalBody.find('.speaker__name'),
+      $modalSpeakerPosition = $modalBody.find('.speaker__position'),
+      $modalSpeakerCompany = $modalBody.find('.speaker__company'),
+      $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
+      $modalSpeakerTitle = $modalBody.find('.modal-body__title');
+
+    var speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index'));
+
+    var $prevButton = $modalBody.find('button.prev');
+    var $nextButton = $modalBody.find('button.next');
+
+    $prevButton.unbind('click').click(function(){
+      var prevIndex = speakerIndex == 0 ? (speakers.length-1) : speakerIndex - 1;
+      console.log(prevIndex);
+      $('#speaker-modal').modal('hide');
+      setTimeout(function(){
+        loadSpeakerModal($('[data-item-index="'+prevIndex+'"]'));
+      },600);
+
+    });
+
+    $nextButton.unbind('click').click(function(){
+      var nextIndex = speakerIndex == speakers.length-1 ? 0 : speakerIndex + 1;
+      console.log(nextIndex);
+      $('#speaker-modal').modal('hide');
+      setTimeout(function(){
+        loadSpeakerModal($('[data-item-index="'+nextIndex+'"]'));
+      },600);
+
+    });
+
+    var speakerData = speakers[speakerIndex];
+
+    if (speakerData) {
+      var speakerAvatar = speakerData.image,
+        speakerName = speakerData.name,
+        speakerPosition = speakerData.position,
+        speakerCompany = speakerData.company,
+        speakerTitle = speakerData.rept;
+
+      speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
+      speakerName && $modalNameElement.text(speakerName);
+      speakerPosition && $modalSpeakerPosition.text(speakerPosition);
+      speakerCompany && $modalSpeakerCompany.text(speakerCompany);
+      speakerTitle && $modalSpeakerTitle.text(speakerTitle);
+      $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
+
+
+      $('#speaker-modal').modal('show');
+    }
+
+
+
+  }
+
 
 });

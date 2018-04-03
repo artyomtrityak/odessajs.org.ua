@@ -11,7 +11,7 @@ $(document).ready(function(){
       name: "Henning Muszynski",
       position: "Software Engineer" ,
       company: "Doist",
-      location: "The ABC of Coded Style Guides",
+      rept: "The ABC of Coded Style Guides",
       socialsRendered: '',
       socials: [
         {
@@ -33,7 +33,7 @@ $(document).ready(function(){
       name: "Rowdy Rabouw",
       position: "web development" ,
       company: "double-R",
-      location: "Unleash your web skills on native!",
+      rept: "Unleash your web skills on native!",
       socialsRendered: '',
       socials: [
         {
@@ -56,7 +56,7 @@ $(document).ready(function(){
       name: "Asim Hussain",
       position: "Cloud Developer Advocate" ,
       company: "Microsoft",
-      location: "Serverless & SPAs, a match made in Spevan",
+      rept: "Serverless & SPAs, a match made in Spevan",
       socialsRendered: '',
       socials: [
         {
@@ -78,7 +78,7 @@ $(document).ready(function(){
       name: "Ivan Jovanovic",
       position: "Senior Software Engineer" ,
       company: "nearForm",
-      location: "Serverless - the way microservices should be",
+      rept: "Serverless - the way microservices should be",
       socialsRendered: '',
       socials: [
         {
@@ -100,7 +100,7 @@ $(document).ready(function(){
       name: "Roman Sachenko",
       position: "Software Engineer" ,
       company: "DA-14",
-      location: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this?",
+      rept: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this?",
       socialsRendered: '',
       socials: [
         {
@@ -134,7 +134,7 @@ $(document).ready(function(){
       name: "Oleksandr Skachkov",
       position: "Lead FrontEnd Developer" ,
       company: "Itera",
-      location: "WebAssembly vs JavaScript: What is faster?",
+      rept: "WebAssembly vs JavaScript: What is faster?",
       socialsRendered: '',
       socials: [
         {
@@ -152,7 +152,7 @@ $(document).ready(function(){
       name: "Oleg Chorny",
       position: "Site Reliability Engineering Manager" ,
       company: "Ciklum",
-      location: "Observability of Cloud Native Applications",
+      rept: "Observability of Cloud Native Applications",
       socialsRendered: '',
       socials: [
         {
@@ -166,7 +166,7 @@ $(document).ready(function(){
       name: "Leonid Baida",
       position: "Lead Front-End Developer" ,
       company: "SPD-Ukraine",
-      location: "If you don't like how your static typing smells, maybe you do it wrong",
+      rept: "If you don't like how your static typing smells, maybe you do it wrong",
       socialsRendered: '',
       socials: [
         {
@@ -212,12 +212,12 @@ $(document).ready(function(){
   $.template( "socialsTemplate", socialsItem );
 
 
-  var speakerItem = " <div class='speakers-slide__item row'> <div class='speakers-slide__img-wrapper  col-sm-12 col-lg-4'>" +
+  var speakerItem = " <div data-modal-trigger='#speaker-modal' class='speakers-slide__item row'> <div class='speakers-slide__img-wrapper  col-sm-12 col-lg-4'>" +
    "<img src='${image}' alt=''>" +
     "</div> <div class='speakers-slide__info-wrapper  col-sm-12 col-lg-8'> <div class='speakers-slide__info'>"+
-    "<h3 class='speakers-slide__info-title'><span>${name}</span></h3>"+
-  "<p class='speakers-slider__info-position'>${position} @ ${company}</p>"+
-  "<p class='speakers-slider__info-company font-weight-bold'>${location}</p>"+
+    "<h3 class='speakers-slide__info-title'><span class='speakers-slide__info-title-name'>${name}</span></h3>"+
+  "<p class='speakers-slider__info__place-of-work'><span class='speakers-slider__info-position'>${position} @</span> <span class='speakers-slider__info-company'>${company}</span></p>"+
+  "<p class='speakers-slider__info-rept font-weight-bold'>${rept}</p>"+
   "<div class='speakers-slide__info-links'>{{html socialsRendered}}</div> </div> </div> </div>";
   $.template( "speakerTemplate", speakerItem );
 

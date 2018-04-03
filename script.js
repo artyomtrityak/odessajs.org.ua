@@ -91,14 +91,12 @@ $(document).ready(function() {
     $('#ask-form').modal('show');
 ;  });
 
+  $('[data-modal-trigger="#speaker-modal"]').click(function() {
+    var $speakerInfoBlock = $(this);
+    loadSpeakerModal($speakerInfoBlock);
 
-    $('[data-modal-trigger="#speakers-modal"]').click(function() {
-        var $speakerModal = $(this);
-        loadSpeakerModal($speakerModal);
-
-        $('#speakers-modal').modal('show');
-        ;  });
-
+    $('#speaker-modal').modal('show');
+    ;  });
 });
 
 function loadAskQuestionModal($speakerBlock) {
@@ -111,14 +109,22 @@ function loadAskQuestionModal($speakerBlock) {
 
 }
 
-function loadSpeakerModal($speakerModal) {
-    var $modalBody = $('#speaker-modal');
-    var $modalHiddenInput = $modalBody.find('#ask-to');
-    var $modalNameElement = $modalBody.find('.speaker_ask_name');
-    var speakerName = $speakerBlock.closest('.chairman-info').find('.chairman__name').text();
-    $modalHiddenInput.val(speakerName);
-    $modalNameElement.text(speakerName);
+function loadSpeakerModal($speakerInfoBlock) {
+  var $modalBody = $('#speaker-modal'),
+      $modalSpeakerAvatar = $modalBody.find('.img-fluid'),
+      $modalNameElement = $modalBody.find('.speaker__name'),
+      $modalSpeakerPosition = $modalBody.find('.speaker__position'),
+      $modalSpeakerCompany = $modalBody.find('.speaker__company');
 
+  var speakerAvatar = $speakerInfoBlock.find('.speakers-slide__img-wrapper img').attr('src'),
+      speakerName = $speakerInfoBlock.find('.speakers-slide__info-title-name').text(),
+      speakerPosition = $speakerInfoBlock.find('.speakers-slider__info-position').text(),
+      speakerCompany = $speakerInfoBlock.find('.speakers-slider__info-company').text();
+
+  $modalSpeakerAvatar.attr('src', speakerAvatar);
+  $modalNameElement.text(speakerName);
+  $modalSpeakerPosition.text(speakerPosition);
+  $modalSpeakerCompany.text(speakerCompany);
 }
 
 (function($) {

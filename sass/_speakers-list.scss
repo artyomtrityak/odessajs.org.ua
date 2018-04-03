@@ -329,7 +329,7 @@
       @include align-items(stretch);
       margin-bottom: 90px;
       width: 100%;
-
+      cursor: pointer;
     }
 
     &__img-wrapper {
@@ -378,7 +378,7 @@
     &__info-links {
       width: 100%;
       @include flexbox;
-      @include justify-content(space-between);
+      @include justify-content(flex-start);
       @include align-items(center);
 
       a {
@@ -386,6 +386,7 @@
         height: 20px;
         width: 20px;
         text-decoration: none;
+        margin-right: 20px;
 
         &:hover i{
           color: #e32d42;

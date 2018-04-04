@@ -12,6 +12,7 @@ $(document).ready(function(){
       position: "Software Engineer" ,
       company: "Doist",
       rept: "The ABC of Coded Style Guides",
+      reptDescription: "Teams today are facing similar problems: How do we encourage the reuse of existing components? How do we raise awareness for them? How do we keep them stable while keeping maintenance efforts low? How do we ensure a coherent branding without exploiting our designers? If you are worried by these questions fear no longer. I aim to show you a way out of this self-made jungle into a brighter world of coded style guides. We will explore together how we can tear down walls between design and development and how everyone can benefit from introducing living component directories into their project.",
       socialsRendered: '',
       socials: [
         {
@@ -34,6 +35,7 @@ $(document).ready(function(){
       position: "web development" ,
       company: "double-R",
       rept: "Unleash your web skills on native!",
+      reptDescription: "Did you know you can use your knowledge of HTML, CSS and JavaScript to build truly native apps for iOS and Android with NativeScript? I’ll explain what NativeScript is, how it compares to other frameworks and demo how easy and fun it is to get started and how to make use of native capabilities. Do you want to build your own personal assistant like Siri? I'll show you how!",
       socialsRendered: '',
       socials: [
         {
@@ -57,6 +59,7 @@ $(document).ready(function(){
       position: "Cloud Developer Advocate" ,
       company: "Microsoft",
       rept: "Serverless & SPAs, a match made in Spevan",
+      reptDescription: "There is a wrong way and a right way to deploy, scale and architect an SPA. If you do it the wrong way you DON'T get the advantages of an SPA, you might as well have built a server-side Express app. If you do it the right way, you can take advantage of optimisations that give you epic scalability, with super low latencies at a fraction of the cost. In this talk, I'll teach you the right way to host your SPA (hint: don't use node). I'll unlock the doors to the hidden free caching layer on the internet. I'll prove why serverless & SPAs complement each other so perfectly and I'll show you how easy it is to build the rest of your application using a serverless stack.",
       socialsRendered: '',
       socials: [
         {
@@ -79,6 +82,7 @@ $(document).ready(function(){
       position: "Senior Software Engineer" ,
       company: "nearForm",
       rept: "Serverless - the way microservices should be",
+      reptDescription: "Serverless, the buzzword that we’re hearing probably every day. What’s that exactly? Serverless is the way microservices should be. It will save you money, time, and you will be able to easily build, test and deploy your applications. Serverless is here to stay, let’s learn how to use it!",
       socialsRendered: '',
       socials: [
         {
@@ -101,6 +105,7 @@ $(document).ready(function(){
       position: "Software Engineer" ,
       company: "DA-14",
       rept: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this?",
+      reptDescription: "Why do I do this? I kept asking myself this question while working on the next project and building microservices-based architecture with CQRS and Event Sourcing. What does this system do and why is it so complicated? I'll tell you about mistakes, which I’ve made, issues, which I've faced with, and solutions, which shouldn’t be applied. I’ll share my own experience and tell about those things, I wish I’d known before I started working on the project.",
       socialsRendered: '',
       socials: [
         {
@@ -135,6 +140,7 @@ $(document).ready(function(){
       position: "Lead FrontEnd Developer" ,
       company: "Itera",
       rept: "WebAssembly vs JavaScript: What is faster?",
+      reptDescription: "As WebAssmebly is increasing its popularity and more, and more languages start to support WebAssmebly as the build target, development team start asking question when do we need to use WebAssmebly and where it is better to rely on javascript.As open source contributor to WebKit JavaScript Engine, I would like overview differences between WebAssmebly and JavaScript, that engineers should to known when choose between WebAssembly and JavaScript, and overview in which cases is WebAssembly is faster and vice verse ",
       socialsRendered: '',
       socials: [
         {
@@ -153,6 +159,7 @@ $(document).ready(function(){
       position: "Site Reliability Engineering Manager" ,
       company: "Ciklum",
       rept: "Observability of Cloud Native Applications",
+      reptDescription: "Let's discuss how Observability enables you to write software that can be managed by software.",
       socialsRendered: '',
       socials: [
         {
@@ -167,6 +174,7 @@ $(document).ready(function(){
       position: "Lead Front-End Developer" ,
       company: "SPD-Ukraine",
       rept: "If you don't like how your static typing smells, maybe you do it wrong",
+      reptDescription: "Статична типізація і досі лишається широкою темою для дискусій та полем для баталій. Світ JS розробки розділився на її прибічників та противників. Слід пам'ятати, що написанням типізованого коду керують інші принципи і підходи, ніж того вимагає vanilla JS. Інша філософія, якщо хочете. Дизайн типізованого JS часто суттєво різниться від нетипізованого, що і стає поширеною проблемою в освоєнні статичної типізації та її ефективного використання. Крок за кроком, черпаючи натхнення із мов програмування зі строгою типізацією, давайте розберемося, яким має бути типізований код на JS. Щоб його написання принесло користь, а не біль та розчарування. (За основу буде взято типізацію Flow, проте більшість з наведених принципів будуть актуальними також і для TypeScript)",
       socialsRendered: '',
       socials: [
         {
@@ -276,7 +284,8 @@ function renderSpeakersCarousel() {
       $modalSpeakerPosition = $modalBody.find('.speaker__position'),
       $modalSpeakerCompany = $modalBody.find('.speaker__company'),
       $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
-      $modalSpeakerTitle = $modalBody.find('.modal-body__title');
+      $modalSpeakerTitle = $modalBody.find('.modal-body__title'),
+      $modalSpeakerText = $modalBody.find('.modal-body__text');
 
     var speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index'));
 
@@ -310,13 +319,15 @@ function renderSpeakersCarousel() {
         speakerName = speakerData.name,
         speakerPosition = speakerData.position,
         speakerCompany = speakerData.company,
-        speakerTitle = speakerData.rept;
+        speakerTitle = speakerData.rept,
+        speakerText = speakerData.reptDescription;
 
       speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
       speakerName && $modalNameElement.text(speakerName);
       speakerPosition && $modalSpeakerPosition.text(speakerPosition);
       speakerCompany && $modalSpeakerCompany.text(speakerCompany);
       speakerTitle && $modalSpeakerTitle.text(speakerTitle);
+      speakerText && $modalSpeakerText.text(speakerText);
       $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
 
 

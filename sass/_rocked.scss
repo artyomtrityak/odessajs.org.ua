@@ -19,6 +19,9 @@ section#rocked {
   .portfolio-box {
     display: inline-block;
   }
+  .rocked-container {
+    overflow: hidden;
+  }
   .popup-gallery {
     padding-top: 60px;
     > div {

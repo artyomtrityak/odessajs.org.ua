@@ -223,7 +223,7 @@
 <section id="infographics">
   <div class="container my-auto">
     <div class="row">
-      <div class="col-lg-8 col-sm-12 mx-auto animatedParent">
+      <div class="col-lg-8 col-sm-12 mx-auto animatedParent infographics-container">
         <img src="images/OdessaJS-Infographics.jpg" alt="" class="img-responsive animated bounce">
         <hr>
       </div>
@@ -358,7 +358,7 @@
         </div>
       </div>
 
-      <div id="speakers-carousel" class="speakers-carousel carousel slide w-100" data-ride="carousel">
+      <div id="speakers-carousel" class="speakers-carousel carousel custom-carousel slide w-100 col-sm-11 col-lg-12" data-ride="carousel">
         <div class="carousel-inner w-100" role="listbox" id="speakersSlider">
           <div class="carousel-item active">
             <div class="speakers-slide col-6">
@@ -925,7 +925,7 @@
       </p>
     </div>-->
     <div class="row">
-      <div id="programCommitteeCarousel" class="program-committee-carousel carousel slide col-sm-11"
+      <div id="programCommitteeCarousel" class="program-committee-carousel carousel custom-carousel slide col-sm-11"
            data-ride="carousel">
         <div class="carousel-inner w-100" role="listbox">
           <div class="carousel-item active">
@@ -1007,7 +1007,7 @@
                 <img class="d-block img-fluid" src="images/program-committee/sergiy-seletsky.jpg">
               </div>
               <h2 class="chairman__name">Sergiy Seletsky</h2>
-              <p class="chairman__position">Tech Lead at Lohika / Altran</p>
+              <p class="chairman__position">Team Lead at Lohika / Altran</p>
               <div class="chairman__link-list w-100">
                 <a class="chairman__link" target="_blank" href="https://www.facebook.com/sseletskyy">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -1082,10 +1082,6 @@
                 </a>
                 <a class="chairman__link" target="_blank" href="https://github.com/Seigiard">
                   <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a class="chairman__link" target="_blank"
-                   href="https://stackoverflow.com/users/8857437/timofey-lavrenyuk">
-                  <i class="fa fa-stack-overflow" aria-hidden="true"></i>
                 </a>
                 <a class="chairman__link" target="_blank" href="https://www.instagram.com/seigiard/">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -1516,8 +1512,10 @@
             </a>
           </div>
           <div class="col-lg-12 col-sm-12">
-            <iframe width="100%" height="480" src="https://www.youtube.com/embed/RLN0FQxn_Qo" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="adaptive-frame-container">
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/RLN0FQxn_Qo" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
           <div class="col-lg-8 col-sm-12">
             <a class="portfolio-box"
@@ -1649,19 +1647,19 @@
         <div class="socials">
           <form class="subscribe_form">
             <div class="form-group row">
-              <div class="col-sm-4 mx-auto">
+              <div class="col-12 col-sm-9 col-md-7 col-lg-4 mx-auto">
                 <input type="text" name="ojs_name" id="ojs_name2" placeholder="your name"
                        class="form-control subscribe-name-input"/>
               </div>
             </div>
             <div class="form-group row">
-              <div class="col-sm-4 mx-auto">
+              <div class="col-12 col-sm-9 col-md-7 col-lg-4 mx-auto">
                 <input type="email" name="ojs_email" id="ojs_email2" placeholder="email address"
                        class="form-control subscribe-email-input"/>
               </div>
             </div>
             <div class="form-group row">
-              <div class="col-sm-4 mx-auto">
+              <div class="col-12 col-sm-9 col-md-7 col-lg-4 mx-auto">
                 <button type="submit" class="btn btn-primary subscribe-button">
                   <span>SUBSCRIBE</span>
                   <i class="fa fa-refresh fa-spin" style=" display: none; "></i>

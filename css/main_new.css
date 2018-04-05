@@ -590,10 +590,33 @@ section#sponsorship {
       max-height: 60px;
       max-width: 100%;
       margin: 0 auto; }
-  section#sponsorship .buttons_row .btn:first-child {
-    float: left; }
-  section#sponsorship .buttons_row .btn:last-child {
-    float: right; }
+  section#sponsorship .buttons_row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media (max-width: 767px) {
+      section#sponsorship .buttons_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        section#sponsorship .buttons_row .btn {
+          width: 100%;
+          max-width: 400px;
+          font-size: 0.8rem;
+          white-space: normal; }
+          section#sponsorship .buttons_row .btn:last-child {
+            margin-top: 15px; } }
   section#sponsorship .sponsor_stats_container {
     padding-bottom: 4rem;
     font-family: 'Roboto', sans-serif;

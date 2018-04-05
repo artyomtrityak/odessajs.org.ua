@@ -348,15 +348,17 @@
 
       &-title {
         font-family: 'Roboto', sans-serif;
-        height: 25px;
+        height: auto;
         font-weight: 600;
         margin-bottom: 20px;
         text-transform: uppercase;
 
         @media (min-width: 1024px) and (max-width: 1200px){
           font-size: 21px;
-          height: auto;
           margin-bottom: 5px;
+        }
+        @media (min-width: 1201px){
+          height: 25px;
         }
 
         &-name {

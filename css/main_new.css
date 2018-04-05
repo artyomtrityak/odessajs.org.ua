@@ -1068,15 +1068,17 @@ section#rocked {
     align-items: flex-start; }
     .speakers-slide__info-title {
       font-family: 'Roboto', sans-serif;
-      height: 25px;
+      height: auto;
       font-weight: 600;
       margin-bottom: 20px;
       text-transform: uppercase; }
       @media (min-width: 1024px) and (max-width: 1200px) {
         .speakers-slide__info-title {
           font-size: 21px;
-          height: auto;
           margin-bottom: 5px; } }
+      @media (min-width: 1201px) {
+        .speakers-slide__info-title {
+          height: 25px; } }
       .speakers-slide__info-title-name {
         font-size: 28px; }
         @media (min-width: 1024px) and (max-width: 1200px) {

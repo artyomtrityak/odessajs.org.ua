@@ -31,6 +31,13 @@ section.about {
 
     &__item {
 
+      @media (max-width: 768px) {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       .img-wrapper {
         height: 40px;
@@ -52,6 +59,7 @@ section.about {
       }
 
       ul {
+        margin-bottom: 0;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         color: #000;

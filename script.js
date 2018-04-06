@@ -25,6 +25,10 @@ $(document).ready(function() {
     interval: 0
   });
 
+  /*
+  * Bootstrap carousel swipe feature
+  * */
+
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
       if (direction == 'left') $(this).carousel('next');
@@ -32,6 +36,10 @@ $(document).ready(function() {
     },
     allowPageScroll:"vertical"
   });
+
+  /*
+  * Bootstrap carousel swipe feature
+  * */
 
   var slidesPerView = $(document).width() < 768 ? 0 : $(document).width() < 1024 ? 1 : 3;
 
@@ -121,7 +129,7 @@ function loadAskQuestionModal($speakerBlock) {
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top - 55)
         }, 1000, "easeInOutExpo");
         return false;
       }

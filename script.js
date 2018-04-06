@@ -25,6 +25,14 @@ $(document).ready(function() {
     interval: 0
   });
 
+  $(".carousel").swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      if (direction == 'left') $(this).carousel('next');
+      if (direction == 'right') $(this).carousel('prev');
+    },
+    allowPageScroll:"vertical"
+  });
+
   var slidesPerView = $(document).width() < 768 ? 0 : $(document).width() < 1024 ? 1 : 3;
 
   $('.program-committee .carousel .carousel-item').each(function(){

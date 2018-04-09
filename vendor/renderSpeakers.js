@@ -191,7 +191,267 @@ $(document).ready(function(){
         }
       ]
     },
-
+    {
+      image: "images/reporters/mihail_zachepilo.png",
+      name: "Mihail Zachepilo",
+      position: "Front End Developer" ,
+      company: "Pentatonica",
+      rept: "WebAssembly powered Machine Learning",
+      reptDescription: "Stop talking about WebAssembly specification, let's solve a problems using it! How to WebAssembly work and how we can use it to enhance Machine Learning in browser experience.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://t.me/worldthirteen',
+          fatype: 'paper-plane'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/trishul_goel.png",
+      name: "Trishul Goel",
+      position: "Tech Speaker" ,
+      company: "Mozilla",
+      rept: "Cross browser extensions - lets make one",
+      reptDescription: "Browsers are built on very simple principle - “one fit that suits all”. We use number of browser extensions to make most of our browser. How about being on other side of table; lets create one. From Javascript developer to a cross browser extension developer in 30 mins.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/tsl143',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/trishulgoel',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/trishul/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'http://github.com/tsl143/',
+          fatype: 'github'
+        },
+        {
+          link: 'http://trishulgoel.com/',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/andrey_grachev.png",
+      name: "Андрей Грачёв",
+      position: "CTO" ,
+      company: "Crello",
+      rept: "Nuxtjs - Universal apps made easy",
+      reptDescription: "Универсальные приложения с nuxtjs, или когда нужно просто и быстро ",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/drontxl',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://www.linkedin.com/in/andrew-grachov/',
+          fatype: 'linkedin-square'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/roman_rodomansky.png",
+      name: "Roman Rodomansky",
+      position: "CTO & Co-Founder" ,
+      company: "Ralabs",
+      rept: "(TBD) Building media resource",
+      reptDescription: "(TBD) What will you do if biggest media will ask you about new website? Seems like trivial, right? Ugh, why WordPress is not a right fit here? We'll tell you a story with problems and solutions that we raised during all phases from project first steps.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://fb.com/roman.rodomansky',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://www.linkedin.com/in/rodomansky/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.instagram.com/pomapomapomapoma/',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/itspoma',
+          fatype: 'github'
+        },
+        {
+          link: 'https://ralabs.org/news/',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/andrew_yasinishyn.png",
+      name: "Andrew Yasinishyn",
+      position: "CEO & Co-Founder" ,
+      company: "Ralabs",
+      rept: "(TBD) Building media resource.",
+      reptDescription: "",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://fb.com/andrey.yasinishyn',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://www.linkedin.com/in/andrew-yasynyshyn-0a205b69/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.instagram.com/yasinishyn/',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/yasinishyn',
+          fatype: 'github'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/denis_radin.png",
+      name: "Denis Radin",
+      position: "JavaScript / WebGL engineer" ,
+      company: "Evolution Gaming",
+      rept: "Pixel shaders based UI components in Web apps + mini workshop \"let`s write your first pixel shader\"",
+      reptDescription: "5 years ago shaders became the technology behind all amazing VFX we see in computer games. Now they are ready to rock the Web. In this talk we ll dive into shaders history and theory then move to a real world usage for Web UI development with a little workshop writing your first ever pixel shader.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/denis.radin.549',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/PixelsCommander',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/denisradin/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://github.com/PixelsCommander',
+          fatype: 'github'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/sergiy_babich.png",
+      name: "Sergiy Babich",
+      position: "Lead Software Developer" ,
+      company: "N-iX",
+      rept: "Mutilation and suffering: How I decided to create a project using only Web Components without any framework",
+      reptDescription: "One pet project. One idea. One specification. That's what lead me to create app using only native web components and no framework or library. I want to share you my practical knowledge how it is even possible to create such app in such circumstances and why it is important to even do this.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/babich.ss',
+          fatype: 'facebook'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/yuriy_sherstyuk.png",
+      name: "Yuriy Sherstyuk",
+      position: "Sr Front End Developer" ,
+      company: "Microsoft, Autodoc",
+      rept: "Algorithms in Front End: from V8 to VDOM",
+      reptDescription: "Significance and importance of algorithms can not be overestimated. Even harder to learn how to apply it in the modern Front End, given how many optimizations are done for us by the engines and frameworks. The purpose of this report is to help you understand how this works at a lower level, for example V8, React and not only. Also, what we can do to make more use of the algorithm work, and spend less time and resources.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'mailto:yurshery@gmail.com',
+          fatype: 'envelope'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/radoslav_stankov.png",
+      name: "Radoslav Stankov",
+      position: "Developer" ,
+      company: "Product Hunt",
+      rept: "React Patterns at Product Hunt",
+      reptDescription: "Couple React patterns I have noticed Product Hunt uses.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/radoslavdstankov',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/rstankov',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/radoslavstankov/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.instagram.com/rstankov/',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/rstankov/',
+          fatype: 'github'
+        },
+        {
+          link: 'http://blog.rstankov.com/',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/david_kopal.png",
+      name: "David Kopal",
+      position: "JavaScript developer" ,
+      company: "Blueberry",
+      rept: "Unleash the power of the higher-order components",
+      reptDescription: "Maintainable component structure is a crucial prerequisite for a stable React application. You can achieve this by writing your code in a functional way using the higher-order components (HoCs). I want to show you how to define smart HoCs and use them to enhance your presentational components. You'll also learn how to compose several HoCs to get more complex logic. Sticking to this pattern, you'll end up with reusable components that are readable and easy to test since each component is responsible only for a single task.",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://twitter.com/coding_lawyer',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/david-kopal-54219199/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://github.com/codinglawyer',
+          fatype: 'github'
+        },
+        {
+          link: 'https://codinglawyer.net/',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/arkadiy_pilguk.png",
+      name: "Arkadiy Pilguk",
+      position: "Software Engineer" ,
+      company: "Pentatonica",
+      rept: "WebGL powered Computer Vision",
+      reptDescription: "How to Computer Vision inside a browser",
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/arkadiypilguk',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://github.com/apilguk',
+          fatype: 'github'
+        }
+      ]
+    },
   ];
 
 

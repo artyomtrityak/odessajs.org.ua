@@ -626,23 +626,21 @@ section.program-committee {
       color: #e32d42;
       background-color: #fff; }
 
-section#speakers {
-  background-image: url(../images/section_top_bg.png);
-  background-position: top center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  section#speakers .main_title {
-    font-family: 'Jura', sans-serif;
-    font-size: 45px;
-    color: #e32d42; }
-  section#speakers .main_subtitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #000; }
-  section#speakers .buttons_row {
-    text-align: center; }
-  section#speakers .announce-container h3 {
-    font-weight: bold; }
+section#speakers .main_title {
+  font-family: 'Jura', sans-serif;
+  font-size: 45px;
+  color: #e32d42; }
+
+section#speakers .main_subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #000; }
+
+section#speakers .buttons_row {
+  text-align: center; }
+
+section#speakers .announce-container h3 {
+  font-weight: bold; }
 
 section#sponsorship {
   background-image: url(../images/section_top_bg.png);

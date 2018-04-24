@@ -681,6 +681,10 @@ $(document).ready(function(){
       socialsRendered: '',
       socials: [
         {
+          link: 'https://www.facebook.com/valentynbarmashyn',
+          fatype: 'facebook'
+        },
+        {
           link: 'https://www.linkedin.com/in/valentyn-barmashyn-1a323aa9/',
           fatype: 'linkedin-square'
         },
@@ -716,6 +720,59 @@ $(document).ready(function(){
           link: 'https://www.youtube.com/channel/UCujRYXmvPilNTgDw-uZQJ0Q?view_as=subscriber',
           fatype: 'link'
         },
+      ]
+    },
+
+    {
+      image: "images/reporters/artem_zakharchenko.jpg",
+      name: "Artem Zakharchenko",
+      position: "TeamLead" ,
+      company: "Namecheap",
+      rept: [
+        {
+          title: "Что 30 летний программист должен сказать себе 20 летнему aka А что делать, когда ты перестал писать код",
+          description: "Это доклад о том как меняется восприятие индустрии с возрастном и приходящим опытом"
+        }
+      ],
+      aboutSpeaker: 'Speaker info',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/Javascriptdeveloper',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/blackrabbit99?lang=en',
+          fatype: 'twitter'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/andrey_kucherenko.png",
+      name: "Andrey Kucherenko",
+      position: "Lead Software Engineer" ,
+      company: "EPAM System",
+      rept: [
+        {
+          title: "Code copy/paste detection on JavaScript",
+          description: "During the talk I will describe how to solve task of copy/paste detection with javascript. I will start with task, areas of apply of the task, tools and algorithms for solving copy.paste detection task."
+        }
+      ],
+      aboutSpeaker: 'Speaker info',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/andrey.kucherenko',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/a_kucherenko',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://github.com/kucherenko/',
+          fatype: 'github'
+        }
       ]
     },
   ];

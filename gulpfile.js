@@ -40,7 +40,7 @@ gulp.task("hash", function() {
 gulp.task('watch', function() {
   gulp.watch('sass/**/*.scss',['styles']);
   gulp.watch(['script.js', 'vendor/renderSpeakers.js'],['script-min']);
-  gulp.watch(['script.js', 'vendor/renderSpeakers.js', 'sass/**/*.scss'],['hash']);
+  gulp.watch(['script.js', 'vendor/renderSpeakers.js', 'sass/**/*.scss', 'html/index.html'],['hash']);
 });
 
 gulp.task('default', ['styles', 'script-min', 'hash', 'watch']);

@@ -66,9 +66,16 @@ section#sponsorship {
     @media (min-width: 992px) {
       text-align: left;
     }
+
     .sponsort_stats_title {
       color: $primary;
       font-size: 70px;
+      font-weight: bold;
+    }
+    .sponsort_stats_title_small{
+      text-align: left;
+      color: $primary;
+      font-size: 28px;
       font-weight: bold;
     }
     .sponsor_stats_caption {}

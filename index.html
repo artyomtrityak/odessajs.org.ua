@@ -38,7 +38,7 @@
 
 
   <!-- Custom styles -->
-  <link href="css/main_new.css?v=654f2" rel="stylesheet">
+  <link href="css/main_new.css?v=9431f" rel="stylesheet">
   <!--Slick-->
   <link rel="stylesheet" href="vendor/slick/slick.css?v=f38b2">
   <link rel="stylesheet" href="vendor/slick/slick-theme.css?v=9f5f2">
@@ -103,6 +103,9 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#trainings">Workshops</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#sponsorship">Sponsors</a>
@@ -252,12 +255,6 @@
       <div class="speakers-title offset-1 col-10">
         <img src="images/speakers-circle.png" alt="" class="speakers-title-img-1">
         <h1>Our Awesome Speakers</h1>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-           non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-         </p>-->
       </div>
      <!--
       <div class="col-sm-11">
@@ -354,7 +351,7 @@
                 <img src="images/speakers-slider-left.png" alt="">
                 Previous Speaker</button>
               <button type="button" class="next">
-                Next speaker
+                Next Speaker
                 <img src="images/speakers-slider-right.png" alt=""></button>
             </div>
           </div>
@@ -768,6 +765,134 @@
 
 </section>
 
+<section id="trainings" class="trainings">
+  <div class="container">
+    <div class="row">
+
+      <div class="trainings-title offset-1 col-10">
+        <h1>Advanced Trainings</h1>
+
+        <p>
+          Extend your conference experience and advance your skill set at OdessaJS trainings.
+          We’ve selected and chosen best experts with practical experience in the topics they will talk you about.
+        </p>
+      </div>
+
+      <div class="speakers-info-popup modal fade" id="training-modal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="img-wrapper w-25">
+                <img class="d-block img-fluid" src="">
+              </div>
+              <div class="info-wrapper">
+                <div class="speaker-info">
+                  <h2><span class="speaker__name"></span></h2>
+                  <p class="speaker__position"></p>
+                  <p class="speaker__company"></p>
+                </div>
+                <div class="speaker__link-list">
+                  <a class="speaker__link" target="_blank" href="javascript:void(0);">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a class="speaker__link" target="_blank" href="javascript:void(0);">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a class="speaker__link" target="_blank" href="javascript:void(0);">
+                    <i class="fa fa-medium" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-img">
+                <img src="images/speakers-waves.png" alt="">
+              </div>
+            </div>
+            <div class="modal-body">
+
+              <!-- About workshop -->
+              <div class="modal-body__description">
+                <h2 class="modal-body__title">About the workshop</h2>
+                <div class="modal-body__text"></div>
+              </div>
+              <!-- About workshop -->
+
+              <!--Duration -->
+              <div class="modal-body__duration">
+                <h2 class="modal-body__title">Total duration</h2>
+                <div class="modal-body__text"></div>
+              </div>
+              <!--Duration -->
+
+              <!-- Topics -->
+              <div class="modal-body__topics">
+                <h2 class="modal-body__title">Topics</h2>
+                <div class="modal-body__text"></div>
+              </div>
+              <!-- Topics -->
+
+              <!-- About trainer -->
+              <h2 class="modal-body__title">About Trainer</h2>
+              <p class="modal-body__text speaker-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices porta viverra.
+                Integer facilisis sapien at neque viverra cursus. Aliquam sed lectus eu nisl hendrerit consequat
+                eget eget magna. Nam tincidunt volutpat nulla vitae pellentesque. Mauris tincidunt iaculis dolor,
+                in molestie odio finibus et. In laoreet rutrum dapibus. Curabitur purus orci, maximus nec faucibus
+                ut, ultrices vehicula felis.
+              </p>
+              <!-- About trainer -->
+
+              <div class="modal-body__text">
+                <a class="btn btn-primary btn-xl main_button" target="_blank"
+                   href="https://odessajs2018.ticketforevent.com/en/">Buy tickets</a>
+              </div>
+
+              <video style="display:none;" src="https://youtu.be/9SPFrQrnlI8" controls poster="images/header.jpg"></video>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="prev">
+                <img src="images/speakers-slider-left.png" alt="">
+                Previous Workshop</button>
+              <button type="button" class="next">
+                Next Workshop
+                <img src="images/speakers-slider-right.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainings-carousel slide w-100 col-12">
+        <div class="row" role="listbox" id="trainingsSlider">
+          <div class="trainings-slide col-10 col-sm-6 col-lg-6">
+            <div class="row h-100">
+              <div data-modal-trigger="#training-modal" data-item-index="0" class="trainings-slide__item">
+
+                <div class="trainings-slide__img-wrapper">
+                  <img src="images/workshops/training-1.jpg" alt="">
+
+                  <div class="trainings-slide__info-wrapper">
+                    <p class="trainings-slide__info-trainer">
+                      Alexey Migutsky
+                    </p>
+                    <h3 class="trainings-slide__info-title">
+                      Growing Your Career as a Software Engineer
+                    </h3>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="sponsorship" class="paddings">
   <div class="container my-auto">
@@ -1680,9 +1805,9 @@
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 
 
-<!--<script src="vendor/renderSpeakers.js?v=b40b7"></script>-->
+<!--<script src="vendor/renderSpeakers.js?v=7c053"></script>-->
 <!--<script src="script.js?v=b7fce" type="text/javascript"></script>-->
-<script src="js/script.min.js?v=1aaae" type="text/javascript"></script>
+<script src="js/script.min.js?v=da372" type="text/javascript"></script>
 
 <script src="./fb.js?v=6d797" type="text/javascript"></script>
 <script async defer

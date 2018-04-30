@@ -799,7 +799,7 @@ $(document).ready(function(){
     <a href="https://medium.com/@rsachenko">
       <i class="fa fa-medium" aria-hidden="true"></i>
     </a>*/
-  var socialsItem = "<a class='speaker__link' href='${link}'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
+  var socialsItem = "<a class='speaker__link' href='${link}' target='_blank'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
   $.template( "socialsTemplate", socialsItem );
 
   var reportTitles = '';
@@ -816,53 +816,51 @@ $(document).ready(function(){
 
 
 
-function renderSpeakersCarousel() {
+  function renderSpeakersCarousel() {
 
-  // start render all
-  $.each(speakers, function(i, sp) {
-    $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
-  });
+    // start render all
+    $.each(speakers, function(i, sp) {
+      $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
+    });
 
-  var renderedSpeakers = [];
-  $.each($.tmpl("speakerTemplate", speakers ), function(a, i){
-    renderedSpeakers.push(i.outerHTML.replace('__ReplaceWithIndex', a));
-  });
+    var renderedSpeakers = [];
+    $.each($.tmpl("speakerTemplate", speakers ), function(a, i){
+      renderedSpeakers.push(i.outerHTML.replace('__ReplaceWithIndex', a));
+    });
 
-  var finalSliderHtml = '';
-  var ifmobile = $(document).width() < 720;
-  // var iftablet = $(document).width() < 960;
+    var finalSliderHtml = '';
+    var ifmobile = $(document).width() < 720;
+    // var iftablet = $(document).width() < 960;
 
-  for (var i=0; i< renderedSpeakers.length; i++) {
-    var activeClass = '';
-    // var colClass = iftablet ? (ifmobile ? 'col-10' : 'col-md-6') : 'col-lg-4';
-    var colClass ='col-10 col-sm-6 col-lg-4';
-    if (i===0) {
-      activeClass = 'active';
+    for (var i=0; i< renderedSpeakers.length; i++) {
+      var activeClass = '';
+      // var colClass = iftablet ? (ifmobile ? 'col-10' : 'col-md-6') : 'col-lg-4';
+      var colClass ='col-10 col-sm-6 col-lg-4';
+      if (i===0) {
+        activeClass = 'active';
+      }
+      finalSliderHtml+= '<div class="speakers-slide '+colClass+'">';
+      finalSliderHtml+=renderedSpeakers[i];
+
+      // if(!ifmobile && renderedSpeakers[i+1]) {
+      //   finalSliderHtml+=renderedSpeakers[i+1];
+      //   i++;
+      // }
+
+      finalSliderHtml+='</div>'
     }
-    finalSliderHtml+= '<div class="speakers-slide '+colClass+'">';
-    finalSliderHtml+=renderedSpeakers[i];
 
-    // if(!ifmobile && renderedSpeakers[i+1]) {
-    //   finalSliderHtml+=renderedSpeakers[i+1];
-    //   i++;
-    // }
 
-    finalSliderHtml+='</div>'
+
+    $('#speakersSlider').html(finalSliderHtml);
   }
 
-
-
-  $('#speakersSlider').html(finalSliderHtml);
-}
-
   renderSpeakersCarousel();
-
 
   $(document).on('click', '[data-modal-trigger="#speaker-modal"]', function() {
     var $speakerInfoBlock = $(this);
     loadSpeakerModal($speakerInfoBlock);
   });
-
 
   function loadSpeakerModal($speakerInfoBlock) {
     var $modalBody = $('#speaker-modal'),
@@ -944,6 +942,5 @@ function renderSpeakersCarousel() {
       $('#speaker-modal').modal('show');
     }
   }
-
 
 });

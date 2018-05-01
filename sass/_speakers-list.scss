@@ -203,6 +203,11 @@
             color: #e32d42;
           }
 
+          h4.modal-body__title {
+            color: $black;
+            font-weight: bold;
+          }
+
           &__text {
             font-family: 'Roboto', sans-serif;
             margin-bottom: 25px;

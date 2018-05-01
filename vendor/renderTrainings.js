@@ -11,6 +11,7 @@ $(document).ready(function(){
                     'He worked in startups, outsource and product companies, cofounded 3 startups of his own and mentored personally more than 30 professional developers. \n' +
                     'In his spare time, he is building a mentoring network for professional software developers (mtdv.io) to help people build lifestyle and career of their dreams.\n',
       duration: '<strong>3 hours</strong>',
+      title: "Growing Your Career as a Software Engineer",
       description: "<p>Get an essential set of skills to control your career! <br>\n" +
         "After the intense training, you will get basic skills to:</p>\n" +
         "<ul>  \n" +
@@ -96,6 +97,7 @@ $(document).ready(function(){
       $modalSpeakerPosition = $modalBody.find('.speaker__position'),
       $modalSpeakerCompany = $modalBody.find('.speaker__company'),
       $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
+      $modalTitleContainer = $modalBody.find('.modal-body__workshop-title'),
       $modalDescriptionContainer = $modalBody.find('.modal-body__description .modal-body__text'),
       $modalDurationContainer = $modalBody.find('.modal-body__duration .modal-body__text'),
       $modalTopicsContainer = $modalBody.find('.modal-body__topics .modal-body__text'),
@@ -132,6 +134,7 @@ $(document).ready(function(){
         trainingCompany = trainingData.company,
         trainingAboutText = trainingData.aboutSpeaker,
         trainingSocials = trainingData.socials,
+        trainingTitle = trainingData.title,
         trainingDescription = trainingData.description,
         trainingDuration = trainingData.duration,
         trainingTopics = trainingData.topics,
@@ -149,6 +152,8 @@ $(document).ready(function(){
       });
 
       $modalSpeakerLinks.html( links );
+
+      $modalTitleContainer.html(trainingTitle);
 
       $modalDescriptionContainer.append(trainingDescription);
 

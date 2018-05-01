@@ -184,6 +184,46 @@ $(document).ready(function(){
 
     },
     {
+      image: "images/reporters/patrick_kettner.jpeg",
+      name: "Patrick Kettner",
+      position: "Program Manager",
+      company: "Microsoft Edge",
+      rept: [
+        {
+          title: "Creating magic with Houdini",
+          description: "Since the dawn of (internet) time, web developers have been at the mercy of browsers when it comes to features. But what if the black magic they use to create new HTML and CSS properties were given to you? Thats exactly what the Houdini working group is working to provide web developers today! In a futuristic, code heavy session I will show how in the not too distant future, you will be able to create your own custom browser features using low lever APIs never before available to developers.",
+        }
+      ],
+      aboutSpeaker: 'Speaker info',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://twitter.com/patrickkettner',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/patrickkettner',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://instagram.com/patrickkettner',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/patrickkettner',
+          fatype: 'github'
+        },
+        {
+          link: 'https://stackoverflow.com/users/960588/patrick',
+          fatype: 'stack-overflow'
+        },
+        {
+          link: 'https://patrickkettner.com',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
       image: "images/reporters/roman_sachenko.jpg",
       name: "Roman Sachenko",
       position: "Software Engineer" ,
@@ -315,7 +355,6 @@ $(document).ready(function(){
         },
       ]
     },
-
     {
       image: "images/program-committee/ksenia-redunova.jpg",
       name: "Ksenia Redunova",
@@ -722,7 +761,6 @@ $(document).ready(function(){
         },
       ]
     },
-
     {
       image: "images/reporters/artem_zakharchenko.jpg",
       name: "Artem Zakharchenko",
@@ -773,6 +811,50 @@ $(document).ready(function(){
           link: 'https://github.com/kucherenko/',
           fatype: 'github'
         }
+      ]
+    },
+    {
+      image: "images/reporters/dovhan_denys.png",
+      name: "Denys Dovhan",
+      position: "Software Consultant" ,
+      company: "Bizico",
+      rept: [
+        {
+          title: "Automating GitHub workflow with probot",
+          description: "Most of developers are passionated in Open Source, some of them have their own OS projects, some of them have commercial projects hosted on GitHub. Automating projects workflow can simplify daily work and make typical tasks automated.",
+        }
+      ],
+      aboutSpeaker: 'Speaker info',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/denysdovhan',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/denysdovhan',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/denysdovhan/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.instagram.com/denysdovhan/',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/denysdovhan',
+          fatype: 'github'
+        },
+        {
+          link: 'https://stackoverflow.com/users/5508862/denysdovhan',
+          fatype: 'stack-overflow'
+        },
+        {
+          link: 'https://denysdovhan.com/',
+          fatype: 'link'
+        },
       ]
     },
   ];

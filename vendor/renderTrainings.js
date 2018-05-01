@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var trainings = [
     {
-      image: "images/workshops/training-1.jpg",
+      image: "images/workshops/migutskiy.jpg",
       name: "Alexey Migutsky",
       position: "Senior Software Development Engineer" ,
       company: "Microsoft Berlin and Founder of Metadevelopment.io",
@@ -161,7 +161,6 @@ $(document).ready(function(){
 
       trainingAboutText && $modalSpeakerAboutText.text(trainingAboutText);
 
-console.log('ds')
       $modalBody.modal('show');
     }
   }

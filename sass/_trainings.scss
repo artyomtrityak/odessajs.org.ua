@@ -259,6 +259,10 @@ section#trainings {
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         border-radius: 9px;
+
+        .trainings-slide__img-wrapper img {
+          filter: blur(4px);
+        }
       }
 
       @media (max-width: 1024px) {
@@ -311,6 +315,7 @@ section#trainings {
 
       img {
         width: 100%;
+        transition: .8s;
       }
     }
 
@@ -329,6 +334,7 @@ section#trainings {
       padding: 15px;
       margin-bottom: 0;
       left: 0;
+      right: 0;
       background-color: rgba(255, 255, 255, .7);
       font-size: 24px;
       color: $black;

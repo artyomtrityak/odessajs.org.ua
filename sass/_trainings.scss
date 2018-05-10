@@ -245,7 +245,6 @@ section#trainings {
       justify-content: stretch;
       margin-bottom: 90px;
       width: 100%;
-      min-height: 250px;
       padding: 10px;
       border: 2px solid transparent;
       cursor: pointer;
@@ -336,17 +335,20 @@ section#trainings {
       left: 0;
       right: 0;
       background-color: rgba(255, 255, 255, .7);
-      font-size: 24px;
+      font-size: 16spx;
       color: $black;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       line-height: 1.1;
 
       @media (min-width: 575px) {
-        font-size: 18px;
+        font-size: 16px;
       }
       @media (min-width: 768px) {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 22px;
       }
     }
     &__info-trainer {

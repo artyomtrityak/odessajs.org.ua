@@ -13,7 +13,7 @@ $(document).ready(function(){
       company: "Microsoft",
       rept: [
         {
-          title: "Serverless & SPAs, a match made in Spevan",
+          title: "Serverless & SPAs, a match made in Spevan [En]",
           description: "There is a wrong way and a right way to deploy, scale and architect an SPA. If you do it the wrong way you DON'T get the advantages of an SPA, you might as well have built a server-side Express app. If you do it the right way, you can take advantage of optimisations that give you epic scalability, with super low latencies at a fraction of the cost. In this talk, I'll teach you the right way to host your SPA (hint: don't use node). I'll unlock the doors to the hidden free caching layer on the internet. I'll prove why serverless & SPAs complement each other so perfectly and I'll show you how easy it is to build the rest of your application using a serverless stack."
         }
       ],
@@ -41,7 +41,7 @@ $(document).ready(function(){
       company: "nearForm",
       rept: [
         {
-          title: "Serverless - the way microservices should be",
+          title: "Serverless - the way microservices should be [En]",
           description: "Serverless, the buzzword that we’re hearing probably every day. What’s that exactly? Serverless is the way microservices should be. It will save you money, time, and you will be able to easily build, test and deploy your applications. Serverless is here to stay, let’s learn how to use it!"
         }
       ],
@@ -69,7 +69,7 @@ $(document).ready(function(){
       company: "LOVATA",
       rept: [
         {
-          title: "Как подготовить выступление. Пошаговое руководство спикеру от организатора",
+          title: "Как подготовить выступление. Пошаговое руководство спикеру от организатора [Ru]",
           description: "",
         }
       ],
@@ -97,7 +97,7 @@ $(document).ready(function(){
       company: "Mozilla",
       rept: [
         {
-          title: "Cross browser extensions - lets make one",
+          title: "Cross browser extensions - lets make one [En]",
           description: "Browsers are built on very simple principle - “one fit that suits all”. We use number of browser extensions to make most of our browser. How about being on other side of table; lets create one. From Javascript developer to a cross browser extension developer in 30 mins.",
         }
       ],
@@ -133,7 +133,7 @@ $(document).ready(function(){
       company: "Freelance",
       rept: [
         {
-          title: "Advanced State Management using ngrx v6",
+          title: "Advanced State Management using ngrx v6 [En]",
           description: "State Management is key to build modern Web Apps",
         }
       ],
@@ -165,7 +165,7 @@ $(document).ready(function(){
       company: "Scalac (Gdansk, Poland)",
       rept: [
         {
-          title: "Workshop: Simple pet fetching web app using VueJS",
+          title: "Workshop: Simple pet fetching web app using VueJS [En]",
           description: "Mini-workshop to teach Vue.js in a cool and fun way to 'foxy people who identify as women'",
         }
       ],
@@ -185,7 +185,7 @@ $(document).ready(function(){
       company: "Doist",
       rept: [
         {
-          title: "The ABC of Coded Style Guides",
+          title: "The ABC of Coded Style Guides [En]",
           description: "Teams today are facing similar problems: How do we encourage the reuse of existing components? How do we raise awareness for them? How do we keep them stable while keeping maintenance efforts low? How do we ensure a coherent branding without exploiting our designers? If you are worried by these questions fear no longer. I aim to show you a way out of this self-made jungle into a brighter world of coded style guides. We will explore together how we can tear down walls between design and development and how everyone can benefit from introducing living component directories into their project."
         }
       ],
@@ -213,7 +213,7 @@ $(document).ready(function(){
       company: "double-R",
       rept: [
         {
-          title: "Unleash your web skills on native!",
+          title: "Unleash your web skills on native! [En]",
           description: "Did you know you can use your knowledge of HTML, CSS and JavaScript to build truly native apps for iOS and Android with NativeScript? I’ll explain what NativeScript is, how it compares to other frameworks and demo how easy and fun it is to get started and how to make use of native capabilities. Do you want to build your own personal assistant like Siri? I'll show you how!"
         }
       ],
@@ -242,7 +242,7 @@ $(document).ready(function(){
       company: "Microsoft Edge",
       rept: [
         {
-          title: "Creating magic with Houdini",
+          title: "Creating magic with Houdini [En]",
           description: "Since the dawn of (internet) time, web developers have been at the mercy of browsers when it comes to features. But what if the black magic they use to create new HTML and CSS properties were given to you? Thats exactly what the Houdini working group is working to provide web developers today! In a futuristic, code heavy session I will show how in the not too distant future, you will be able to create your own custom browser features using low lever APIs never before available to developers.",
         }
       ],
@@ -282,7 +282,7 @@ $(document).ready(function(){
       company: "DA-14",
       rept: [
         {
-          title: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this?",
+          title: "NodeJS Microservices + CQRS + Event Sourcing - Why do I do this? [Ru]",
           description: "Why do I do this? I kept asking myself this question while working on the next project and building microservices-based architecture with CQRS and Event Sourcing. What does this system do and why is it so complicated? I'll tell you about mistakes, which I’ve made, issues, which I've faced with, and solutions, which shouldn’t be applied. I’ll share my own experience and tell about those things, I wish I’d known before I started working on the project."
         }
       ],
@@ -322,7 +322,7 @@ $(document).ready(function(){
       company: "Itera",
       rept: [
         {
-          title: "WebAssembly vs JavaScript: What is faster?",
+          title: "WebAssembly vs JavaScript: What is faster? [Ru]",
           description: "As WebAssmebly is increasing its popularity and more, and more languages start to support WebAssmebly as the build target, development team start asking question when do we need to use WebAssmebly and where it is better to rely on javascript.As open source contributor to WebKit JavaScript Engine, I would like overview differences between WebAssmebly and JavaScript, that engineers should to known when choose between WebAssembly and JavaScript, and overview in which cases is WebAssembly is faster and vice verse"
         }
       ],
@@ -346,7 +346,7 @@ $(document).ready(function(){
       company: "Ciklum",
       rept: [
         {
-          title: "Observability of Cloud Native Applications",
+          title: "Observability of Cloud Native Applications [Ru]",
           description: "Let's discuss how Observability enables you to write software that can be managed by software."
         }
       ],
@@ -366,7 +366,7 @@ $(document).ready(function(){
       company: "SPD-Ukraine",
       rept: [
         {
-          title: "If you don't like how your static typing smells, maybe you do it wrong",
+          title: "If you don't like how your static typing smells, maybe you do it wrong [Ru]",
           description: "Статична типізація і досі лишається широкою темою для дискусій та полем для баталій. Світ JS розробки розділився на її прибічників та противників. Слід пам'ятати, що написанням типізованого коду керують інші принципи і підходи, ніж того вимагає vanilla JS. Інша філософія, якщо хочете. Дизайн типізованого JS часто суттєво різниться від нетипізованого, що і стає поширеною проблемою в освоєнні статичної типізації та її ефективного використання. Крок за кроком, черпаючи натхнення із мов програмування зі строгою типізацією, давайте розберемося, яким має бути типізований код на JS. Щоб його написання принесло користь, а не біль та розчарування. (За основу буде взято типізацію Flow, проте більшість з наведених принципів будуть актуальними також і для TypeScript)"
         }
       ],
@@ -394,7 +394,7 @@ $(document).ready(function(){
       company: "Pentatonica",
       rept: [
         {
-          title: "WebAssembly powered Machine Learning",
+          title: "WebAssembly powered Machine Learning [Ru]",
           description: "Stop talking about WebAssembly specification, let's solve a problems using it! How to WebAssembly work and how we can use it to enhance Machine Learning in browser experience."
         }
       ],
@@ -414,7 +414,7 @@ $(document).ready(function(){
       company: "Lohika",
       rept: [
         {
-          title: "Estimates: is there a silver bullet?",
+          title: "Estimates: is there a silver bullet? [Ru]",
           description: "",
         }
       ],
@@ -438,7 +438,7 @@ $(document).ready(function(){
       company: "Ralabs",
       rept: [
         {
-          title: "(TBD) Building media resource",
+          title: "(TBD) Building media resource [Ru]",
           description: "(TBD) What will you do if biggest media will ask you about new website? Seems like trivial, right? Ugh, why WordPress is not a right fit here? We'll tell you a story with problems and solutions that we raised during all phases from project first steps.",
         }
       ],
@@ -474,7 +474,7 @@ $(document).ready(function(){
       company: "Ralabs",
       rept: [
         {
-          title: "(TBD) Building media resource",
+          title: "(TBD) Building media resource [Ru]",
           description: "",
         }
       ],
@@ -530,7 +530,7 @@ $(document).ready(function(){
       company: "Evolution Gaming",
       rept: [
         {
-          title: "Pixel shaders based UI components in Web apps + mini workshop \"let`s write your first pixel shader\"",
+          title: "Pixel shaders based UI components in Web apps + mini workshop \"let`s write your first pixel shader\" [Ru]",
           description: "5 years ago shaders became the technology behind all amazing VFX we see in computer games. Now they are ready to rock the Web. In this talk we ll dive into shaders history and theory then move to a real world usage for Web UI development with a little workshop writing your first ever pixel shader.",
         }
       ],
@@ -562,7 +562,7 @@ $(document).ready(function(){
       company: "N-iX",
       rept: [
         {
-          title: "Mutilation and suffering: How I decided to create a project using only Web Components without any framework",
+          title: "Mutilation and suffering: How I decided to create a project using only Web Components without any framework [Ua]",
           description: "One pet project. One idea. One specification. That's what lead me to create app using only native web components and no framework or library. I want to share you my practical knowledge how it is even possible to create such app in such circumstances and why it is important to even do this.",
         }
       ],
@@ -582,7 +582,7 @@ $(document).ready(function(){
       company: "Microsoft, Autodoc",
       rept: [
         {
-          title: "Algorithms in Front End: from V8 to VDOM",
+          title: "Algorithms in Front End: from V8 to VDOM [Ru]",
           description: "Significance and importance of algorithms can not be overestimated. Even harder to learn how to apply it in the modern Front End, given how many optimizations are done for us by the engines and frameworks. The purpose of this report is to help you understand how this works at a lower level, for example V8, React and not only. Also, what we can do to make more use of the algorithm work, and spend less time and resources.",
 
         }
@@ -603,7 +603,7 @@ $(document).ready(function(){
       company: "Product Hunt",
       rept: [
         {
-          title: "React Patterns at Product Hunt",
+          title: "React Patterns at Product Hunt [Ru]",
           description: "Couple React patterns I have noticed Product Hunt uses.",
         }
       ],
@@ -644,7 +644,7 @@ $(document).ready(function(){
       company: "Blueberry",
       rept: [
         {
-          title: "Unleash the power of the higher-order components",
+          title: "Unleash the power of the higher-order components [Ru]",
           description: "Maintainable component structure is a crucial prerequisite for a stable React application. You can achieve this by writing your code in a functional way using the higher-order components (HoCs). I want to show you how to define smart HoCs and use them to enhance your presentational components. You'll also learn how to compose several HoCs to get more complex logic. Sticking to this pattern, you'll end up with reusable components that are readable and easy to test since each component is responsible only for a single task.",
         }
       ],
@@ -676,7 +676,7 @@ $(document).ready(function(){
       company: "Pentatonica",
       rept: [
         {
-          title: "WebGL powered Computer Vision",
+          title: "WebGL powered Computer Vision [Ru]",
           description: "How to Computer Vision inside a browser"
         }
       ],
@@ -700,7 +700,7 @@ $(document).ready(function(){
       company: "APIs.guru",
       rept: [
         {
-          title: "W.T.F. is GraphQL?",
+          title: "W.T.F. is GraphQL? [Ru]",
           description: "Recently, there is a lot of hype around GraphQL and you are probably wondering if it is a good fit for your project. In my talk, I want to demystify GraphQL by explaining what problems does it solve and how it works internally. I will show how to write requests and send them to the server and how they are executed under the hood. I will also talk about problems of GraphQL and how ready it is for production"
         }
       ],
@@ -736,7 +736,7 @@ $(document).ready(function(){
       company: "iTechArt",
       rept: [
         {
-          title: "Houdini — CSS, который JavaScript",
+          title: "Houdini — CSS, который JavaScript [Ru]",
           description: "CSS Houdini — набор спецификаций, которые изменят веб-разработку в ближайшие годы. С их приходом простому верстальщику придется выучить JavaScript, но зато вместо ожидания появления реализации условных \"супер-мега-гридов\" в браузерах можно будет подключить полифил для CSS. И начать это делать можно уже сейчас! Или нет?"
         }
       ],
@@ -764,7 +764,7 @@ $(document).ready(function(){
       company: "eTeam",
       rept: [
         {
-          title: "Rx in React, Rx in Angular and why we all should be friends",
+          title: "Rx in React, Rx in Angular and why we all should be friends [Ru]",
           description: "React and Angular stacks became so similar In 2017-18 as they've never been before. Conceptual distinctions between them are blurring out. There only remained difference in their implementation. Let's talk about the modern work with data and events, role of flows (particularly Rx), functional programming and many more from  two points of view: practical and philosophical. We'll also dwell on the work with a code. Thus no-one will have any doubts about the fact that all of us are doing quite the same while a particular stack matters less and less."
         }
       ],
@@ -792,7 +792,7 @@ $(document).ready(function(){
       company: "EPAM",
       rept: [
         {
-          title: "Let's kill lifecycle",
+          title: "Let's kill lifecycle [Ru]",
           description: "Do you hate lifecycle? componentWillReceiveProps make you bored? Let's make make React pure again! I will show, how lifecycle brings complexity (and errors) to your code. And how we can avoid it. Or make it more safety."
         }
       ],
@@ -820,7 +820,7 @@ $(document).ready(function(){
       company: "Namecheap",
       rept: [
         {
-          title: "What happens when you don't write the code. What advises would I like to take 10 years ago",
+          title: "What happens when you don't write the code. What advises would I like to take 10 years ago [Ru]",
           description: "Это доклад о том как меняется восприятие индустрии с возрастном и приходящим опытом"
         }
       ],
@@ -844,7 +844,7 @@ $(document).ready(function(){
       company: "EPAM System",
       rept: [
         {
-          title: "Code copy/paste detection on JavaScript",
+          title: "Code copy/paste detection on JavaScript [Ru]",
           description: "During the talk I will describe how to solve task of copy/paste detection with javascript. I will start with task, areas of apply of the task, tools and algorithms for solving copy.paste detection task."
         }
       ],
@@ -872,7 +872,7 @@ $(document).ready(function(){
       company: "Bizico",
       rept: [
         {
-          title: "Automating GitHub workflow with probot",
+          title: "Automating GitHub workflow with probot [Ru]",
           description: "Most of developers are passionated in Open Source, some of them have their own OS projects, some of them have commercial projects hosted on GitHub. Automating projects workflow can simplify daily work and make typical tasks automated.",
         }
       ],
@@ -916,7 +916,7 @@ $(document).ready(function(){
       company: "Plarium",
       rept: [
         {
-          title: "Parsing Strings using (in)Finite-State-Machine and Prepack",
+          title: "Parsing Strings using (in)Finite-State-Machine and Prepack [Ru]",
           description: "I became interested in parsers when I started to use CSS in JS libraries. I am in love with performance and if something works slow - I always try to find the ways to improve it. One of the  CSS in JS problem - parsing CSS strings in runtime.\n" +
           "\n" +
           "Especially if solution should support syntax validation, interpolation for dynamic CSS rules and be super fast and small.\n" +

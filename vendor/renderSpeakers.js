@@ -742,7 +742,7 @@ $(document).ready(function(){
       company: "Pentatonica",
       rept: [
         {
-          title: "WebGL powered Computer Vision [Ru]",
+          title: "<span>WebGL</span> powered Computer Vision [Ru]",
           description: "How to Computer Vision inside a browser"
         }
       ],
@@ -766,7 +766,7 @@ $(document).ready(function(){
       company: "APIs.guru",
       rept: [
         {
-          title: "W.T.F. is GraphQL? [Ru]",
+          title: "W.T.F. is <span>GraphQL?</span> [Ru]",
           description:
           "Recently, there is a lot of hype around GraphQL " +
           "and you are probably wondering if it is a good fit for your project. " +
@@ -994,18 +994,20 @@ $(document).ready(function(){
       rept: [
         {
           title: "Parsing Strings using (in)Finite-State-Machine and Prepack [Ru]",
-          description: "I became interested in parsers when I started to use CSS in JS libraries. I am in love with performance and if something works slow - I always try to find the ways to improve it. One of the  CSS in JS problem - parsing CSS strings in runtime.\n" +
-          "\n" +
-          "Especially if solution should support syntax validation, interpolation for dynamic CSS rules and be super fast and small.\n" +
-          "\n" +
-          "Of course we can use postCSS or similar lib to parse CSS to AST, validate it, process it and build final CSS but this approach is not the best for runtime environment (browser).\n" +
-          "\n" +
-          "Last year I spent a lot of time for research an development the way to build parser for such cases (and not only for CSS). At OdessaJS I would like to speak about:\n" +
-          "\n" +
-          "- Basic Parser theory\n" +
-          "- How to build parser using Finite-state machine\n" +
-          "- How to develop parser with super readable code (even juniors could easily contribute it and add new syntax rules without additional knowledges)\n" +
-          "- My fist successful experience using Prepack by Facebook - pre-evaluate parser and compress it to 800 bytes.",
+          description:
+            "<p>I became interested in parsers when I started to use CSS in JS libraries. I am in love with performance and if something\n" +
+            "  works slow - I always try to find the ways to improve it. One of the  CSS in JS problem - parsing CSS strings in runtime.\n" +
+            "<p>Especially if solution should support syntax validation, interpolation for dynamic CSS rules and be super fast and small.</p>\n" +
+            "Of course we can use postCSS or similar lib to parse CSS to AST, validate it, process it and build final CSS but this \n" +
+            "approach is not the best for runtime environment (browser).</p>\n" +
+            "<p>Last year I spent a lot of time for research an development the way to build parser for such cases \n" +
+            "(and not only for CSS). At OdessaJS I would like to speak about:</p>\n" +
+            "<ul>\n" +
+            "  <li>Basic Parser theory</li>\n" +
+            "  <li>How to build parser using Finite-state machine</li>\n" +
+            "  <li>How to develop parser with super readable code (even juniors could easily contribute it and add new syntax rules without additional knowledges)</li>\n" +
+            "  <li>My fist successful experience using Prepack by Facebook - pre-evaluate parser and compress it to 800 bytes.</li>\n" +
+            "</ul>",
         }
       ],
       aboutSpeaker: '',
@@ -1063,8 +1065,8 @@ $(document).ready(function(){
     "</div> <div class='speakers-slide__info-wrapper'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span class='speakers-slide__info-title-name'>${name}</span></h3>"+
     "<p class='speakers-slider__info__place-of-work'><span class='speakers-slider__info-position'>${position} @</span>" +
-    " <span class='speakers-slider__info-company'>${company}</span></p>"+
-    "<p class='speakers-slider__info-rept font-weight-bold'>{{each rept}} ${$value.title}</br>{{/each}}</p>"+
+    "<span class='speakers-slider__info-company'>${company}</span></p>"+
+    "<p class='speakers-slider__info-rept font-weight-bold'>{{each rept }} {{html $value.title}} </br>{{/each}}</p>"+
     "<div class='speakers-slide__info-links'>{{html socialsRendered}}</div> </div> </div> </div></div>";
   $.template( "speakerTemplate", speakerItem );
 
@@ -1133,7 +1135,7 @@ $(document).ready(function(){
 
     $prevButton.unbind('click').click(function(){
       var prevIndex = speakerIndex == 0 ? (speakers.length-1) : speakerIndex - 1;
-      console.log(prevIndex);
+
       $('#speaker-modal').modal('hide');
       setTimeout(function(){
         loadSpeakerModal($('[data-item-index="'+prevIndex+'"]'));
@@ -1143,7 +1145,7 @@ $(document).ready(function(){
 
     $nextButton.unbind('click').click(function(){
       var nextIndex = speakerIndex == speakers.length-1 ? 0 : speakerIndex + 1;
-      console.log(nextIndex);
+
       $('#speaker-modal').modal('hide');
       setTimeout(function(){
         loadSpeakerModal($('[data-item-index="'+nextIndex+'"]'));

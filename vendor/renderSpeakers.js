@@ -69,7 +69,7 @@ $(document).ready(function(){
       company: "LOVATA",
       rept: [
         {
-          title: "Как подготовить выступление. Пошаговое руководство спикеру от организатора",
+          title: "Get prepared with your performance. Speaker's guidelines to an organizer",
           description: "",
         }
       ],
@@ -236,6 +236,49 @@ $(document).ready(function(){
 
     },
     {
+      image: "images/reporters/sara_vieira.jpg",
+      name: "Sara Vieira",
+      position: "Developer Relations" ,
+      company: "YLD",
+      rept: [
+        {
+          title: "The Dream of Styleguide Driven Development",
+          description:
+          "You have heard of all types of driven development but react emerged a new type," +
+          " styleguide driven development became a reality with components. This type " +
+          "of development focuses on Developer/Designer collaboration and on assertive" +
+          " components. With the use of React, CSS-in-JS, Flow and Snapshot testing " +
+          "we were able to almost remove style regressions. In this talk you get a " +
+          "glimpse of you can start styleguide " +
+          "driven development and how you can sell this dream to your project managers.",
+        }
+      ],
+      aboutSpeaker: '',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://twitter.com/NikkitaFTW',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://www.linkedin.com/in/saravieira1/',
+          fatype: 'linkedin-square'
+        },
+        {
+          link: 'https://www.instagram.com/niikkitaftw/',
+          fatype: 'instagram'
+        },
+        {
+          link: 'https://github.com/SaraVieira/',
+          fatype: 'github'
+        },
+        {
+          link: 'https://iamsaravieira.com',
+          fatype: 'link'
+        }
+      ]
+    },
+    {
       image: "images/reporters/patrick_kettner.jpeg",
       name: "Patrick Kettner",
       position: "Program Manager",
@@ -367,7 +410,19 @@ $(document).ready(function(){
       rept: [
         {
           title: "If you don't like how your static typing smells, maybe you do it wrong",
-          description: "Статична типізація і досі лишається широкою темою для дискусій та полем для баталій. Світ JS розробки розділився на її прибічників та противників. Слід пам'ятати, що написанням типізованого коду керують інші принципи і підходи, ніж того вимагає vanilla JS. Інша філософія, якщо хочете. Дизайн типізованого JS часто суттєво різниться від нетипізованого, що і стає поширеною проблемою в освоєнні статичної типізації та її ефективного використання. Крок за кроком, черпаючи натхнення із мов програмування зі строгою типізацією, давайте розберемося, яким має бути типізований код на JS. Щоб його написання принесло користь, а не біль та розчарування. (За основу буде взято типізацію Flow, проте більшість з наведених принципів будуть актуальними також і для TypeScript)"
+          description:
+            "Static typing remains a popular topic for discussions somewhat " +
+            "akin to a battle field. JS development world split up into its " +
+            "proponents and opponents. Don't forget that type-code" +
+            " writing is managed by principles and approached different " +
+            "from those required by vanilla JS. It's a different philosophy, so to say." +
+            " Type JS is very different from non-type one. This becomes a common problem " +
+            "in static type learning and its efficient application. Let's clarify which " +
+            "like JS type code should be. And let's do it step-by-step, getting inspired " +
+            "by strick type programming languages. Let's find out how to apply it so that " +
+            "it proved useful but did not turn into our greatest disappointment." +
+            " (Flow type will be taken as a basis here, but the majority of these " +
+            "examples will be actual for TypeScript as well)."
         }
       ],
       aboutSpeaker: '',
@@ -415,7 +470,14 @@ $(document).ready(function(){
       rept: [
         {
           title: "Estimates: is there a silver bullet?",
-          description: "",
+          description:
+            "Our work is not only about writing the perfect code. But also about " +
+            "the delivering the product within the planned timeframe.\n" +
+            "In my tech corner I’ll cover the topics: How to estimate " +
+            "the uncertainty? How to include risks? What to use: hours or story points?\n" +
+            "I’ll tell you about the different ways of estimation. Let’s discuss " +
+            "the good and bad cases from our experience and try to find the silver " +
+            "bullet. If it exists.",
         }
       ],
       aboutSpeaker: '',
@@ -438,8 +500,8 @@ $(document).ready(function(){
       company: "Ralabs",
       rept: [
         {
-          title: "(TBD) Building media resource",
-          description: "(TBD) What will you do if biggest media will ask you about new website? Seems like trivial, right? Ugh, why WordPress is not a right fit here? We'll tell you a story with problems and solutions that we raised during all phases from project first steps.",
+          title: "The New Media. What it takes to create a news website in 2018",
+          description: "What will you do if biggest media will ask you about new website? Seems like trivial, right? Ugh, why WordPress is not a right fit here? We'll tell you a story with problems and solutions that we raised during all phases from project first steps.",
         }
       ],
       aboutSpeaker: '',
@@ -474,8 +536,12 @@ $(document).ready(function(){
       company: "Ralabs",
       rept: [
         {
-          title: "(TBD) Building media resource",
-          description: "",
+          title: "The New Media. What it takes to create a news website in 2018",
+          description:
+            "What will you do if biggest media will ask you about new website? " +
+            "Seems like trivial, right? Ugh, why WordPress is not a right fit here?" +
+            " We'll tell you a story with problems and solutions that we raised " +
+            "during all phases from project first steps.",
         }
       ],
       aboutSpeaker: '',
@@ -701,7 +767,13 @@ $(document).ready(function(){
       rept: [
         {
           title: "W.T.F. is GraphQL?",
-          description: "Recently, there is a lot of hype around GraphQL and you are probably wondering if it is a good fit for your project. In my talk, I want to demystify GraphQL by explaining what problems does it solve and how it works internally. I will show how to write requests and send them to the server and how they are executed under the hood. I will also talk about problems of GraphQL and how ready it is for production"
+          description:
+          "Recently, there is a lot of hype around GraphQL " +
+          "and you are probably wondering if it is a good fit for your project. " +
+          "In my talk, I want to demystify GraphQL by explaining what problems " +
+          "does it solve and how it works internally. I will show how to write requests" +
+          " and send them to the server and how they are executed under the hood. " +
+          "I will also talk about problems of GraphQL and how ready it is for production"
         }
       ],
       aboutSpeaker: '',
@@ -736,8 +808,13 @@ $(document).ready(function(){
       company: "iTechArt",
       rept: [
         {
-          title: "Houdini — CSS, который JavaScript",
-          description: "CSS Houdini — набор спецификаций, которые изменят веб-разработку в ближайшие годы. С их приходом простому верстальщику придется выучить JavaScript, но зато вместо ожидания появления реализации условных \"супер-мега-гридов\" в браузерах можно будет подключить полифил для CSS. И начать это делать можно уже сейчас! Или нет?"
+          title: "Houdini — CSS, which is JavaScript",
+          description:
+            "CSS Houdini - is a set of specifications which will change web-development " +
+            "in the nearest future. With their advent  a regular pagemaker will have to " +
+            "learn JavaScript. But then instead of awaiting conditional \"super-mega-grids\" " +
+            "realization appearance you'll be able to plug in polifill for CSS. You can do " +
+            "it right now! Or not?"
         }
       ],
       aboutSpeaker: '',
@@ -821,7 +898,7 @@ $(document).ready(function(){
       rept: [
         {
           title: "What happens when you don't write the code. What advises would I like to take 10 years ago",
-          description: "Это доклад о том как меняется восприятие индустрии с возрастном и приходящим опытом"
+          description: "This report is about changes in industry perception with increase in ages and experience accumulation."
         }
       ],
       aboutSpeaker: '',

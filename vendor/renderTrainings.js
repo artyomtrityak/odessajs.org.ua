@@ -643,13 +643,13 @@ $(document).ready(function(){
       "Polished. In his spare time Nik enjoys cycling &amp; skiing.",
       title: "Build Serverless Node.js Applications on AWS",
       description:
-      "<p>The core of serverless architectures is auto-scaling systems and a pay-per- execution" +
-      "pricing. This allows developers to reduce significantly operational cost and complexity" +
-      "by outsourcing infrastructure management to cloud providers and third-party services." +
-      "Teams can focus on customers and improve their applications instead of managing" +
-      "servers. During this workshop you will learn how to build and deploy scaleable," +
-      "production ready and low maintenance applications using Node.js. We are going to" +
-      "explore and leverage AWS services like Lambda, API Gateway, DynamoDB, Kinesis, S3.</p>",
+        "<p>The core of serverless architectures is auto-scaling systems and a pay-per- execution" +
+        "pricing. This allows developers to reduce significantly operational cost and complexity" +
+        "by outsourcing infrastructure management to cloud providers and third-party services." +
+        "Teams can focus on customers and improve their applications instead of managing" +
+        "servers. During this workshop you will learn how to build and deploy scaleable," +
+        "production ready and low maintenance applications using Node.js. We are going to" +
+        "explore and leverage AWS services like Lambda, API Gateway, DynamoDB, Kinesis, S3.</p>",
       topics:[
         '<ul>' +
         '<li>what is AWS Lambda</li>' +

@@ -720,6 +720,37 @@ $(document).ready(function(){
         },
       ]
     },
+    {
+      id: 14,
+      image: "images/logo.png",
+      name: "Sara Vieira & Katarzyna Jastrzębska-Łachacz",
+      position: "" ,
+      company: "",
+      place: '',
+      date: 'July 8',
+      duration: '6-7 h',
+      price: '',
+      aboutSpeaker: 
+        "<p>Sara Vieira is a frontend developer at a consulting company, so she loves making things and teaching people all about the amazing Internet. Sara likes football and used to play as a goalkeeper for many years! Also, she knows how to play drums and jokes that 'that's a reason of her terrible earing'</p>"+
+        "<p>Katarzyna Jastrzębska-Łachacz is a frontend developer with over 6 years of experience in various frameworks and libraries (Polymer, Ember, Backbone). She really likes to work with Node.js, React, Redux, GraphQL and Apollo. Katarzyna loves horse riding, Fincher movies and King books and draws inspiration from two closest people: her daughter and mom.</p>",
+      title: "Ultimate styling workshop for react developers [En]",
+      description: 
+        "During the workshop attendees will learn how to solve styling for their React Application. We will start with applying vanilla CSS to the app with BEM architecture. Then we’ll proceed with applying preprocessors like Sass to the app and will go through setup with Webpack. Together we’ll use CSSModules library instead of BEM and try to compare them both. Finally, the last module of the workshop will be ‘CSS-in-JS’. It’ll be supplemented with the styled-components example.",
+      topics:[
+        "<ul>"+
+          "<li>Application of vanilla CSS to the app with BEM</li>"+
+          "<li>Design of architecture for a small application</li>"+
+          "<li>Application of preprocessors to the app</li>"+
+          "<li>Creation of a theme with color and size variables using Sass</li>"+
+          "<li>Creation of components which don’t share any styles using CSSModules</li>"+
+        "</ul>"
+      ],
+      purpose: "Sara and Katarzyna will show you that CSS and styling react application can be painless. There are various options to build CSS architecture around an application. You will see possibilities of all these options and compare them in practice.",
+      tools: "Computer with chosen IDE, node.js installed, internet. Basic React knowledge is required.",
+      target: '',
+      socialsRendered: '',
+      socials: []
+    },
   ];
 
   $(document).on('click', '[data-modal-trigger="#training-modal"]', function() {
@@ -729,7 +760,7 @@ $(document).ready(function(){
 
   function loadSpeakerModal($trainingInfoBlock) {
     var $modalBody = $('#training-modal'),
-      $modalSpeakerAvatar = $modalBody.find('.img-fluid'),
+      $modalSpeakerAvatar = $modalBody.find('.img-fluid').toggle(false),
 
       $modalNameElement = $modalBody.find('.speaker__name').toggle(false),
       $modalSpeakerPosition = $modalBody.find('.speaker__position').toggle(false),
@@ -814,7 +845,7 @@ $(document).ready(function(){
         links = '',
         topicsContent = '';
 
-      trainingAvatar && $modalSpeakerAvatar.attr('src', trainingAvatar);
+      trainingAvatar && $modalSpeakerAvatar.attr('src', trainingAvatar).toggle(true);
 
       trainingName && $modalNameElement.text(trainingName).toggle(true);
       trainingPosition && $modalSpeakerPosition.text(trainingPosition).toggle(true);
@@ -844,7 +875,7 @@ $(document).ready(function(){
       trainingPurpose && $modalPurposeContainer.find('.modal-body__text').html(trainingPurpose).end().toggle(true);
       trainingTools && $modalToolsContainer.find('.modal-body__text').html(trainingTools).end().toggle(true);
       trainingTarget && $modalTargetContainer.find('.modal-body__text').html(trainingTarget).end().toggle(true);
-      trainingAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(trainingAboutText).end().toggle(true);
+      trainingAboutText && $modalSpeakerAboutText.find('.modal-body__text').html(trainingAboutText).end().toggle(true);
 
       $modalBody.modal('show');
     }

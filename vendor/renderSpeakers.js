@@ -69,8 +69,10 @@ $(document).ready(function(){
       company: "LOVATA",
       rept: [
         {
-          title: "Get prepared with your performance. Speaker's guidelines to an organizer [Ru]",
-          description: "",
+          title: "Development standards: a step-by-step guide to implement it without pain [Ru]",
+          description: 
+            "<p>There is always a room for discussion about what to use: tabs or spaces, quotes or double quotes, and so on. There are so many personal preferences in writing code that most likely you'll end up discussing not the logic or implementation itself, but how to use braces, spaces, and semicolons. But do we really need to talk about such things every time we start the project, do code reviews or a new developer joins the team? How to make your code base consistent and clear no matter how big your team or the project are? The whole bunch of tools is here to rescue you!</p>" +
+            "<p>I'm going to talk about all those tools and how to implement them into your code base to help you to improve the development process and code quality.</p>",
         }
       ],
       aboutSpeaker: '',
@@ -358,6 +360,39 @@ $(document).ready(function(){
         },*/
       ]
     },
+
+    {
+      image: "images/reporters/katarzyna_jastrzebsk.jpg",
+      name: "Katarzyna Jastrzębska-Łachacz",
+      position: "Frontend Developer" ,
+      company: "Twill",
+      rept: [
+        {
+          title: "Reuse your code in React like it's 2018 [En]",
+          description: ""
+        }
+      ],
+      aboutSpeaker: '',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://github.com/kajas90',
+          fatype: 'github'
+        },
+        {
+          link: 'https://twitter.com/kejt_bw',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://stackoverflow.com/users/7364681/kejt',
+          fatype: 'stack-overflow'
+        },
+        {
+          link: 'https://medium.com/@katarzyna.jastrzebska90',
+          fatype: 'link'
+        },
+      ]
+    },
     {
       image: "images/reporters/oskackov.png",
       name: "Oleksandr Skachkov",
@@ -389,7 +424,7 @@ $(document).ready(function(){
       company: "Ciklum",
       rept: [
         {
-          title: "Observability of Cloud Native Applications [Ru]",
+          title: "Cloud Native Observability [Ru]",
           description: "Let's discuss how Observability enables you to write software that can be managed by software."
         }
       ],
@@ -1165,7 +1200,7 @@ $(document).ready(function(){
         speakerAboutText = speakerData.aboutSpeaker;
 
       reports.forEach(function (item, i, arr) {
-        reportsContent += '<h2 class="modal-body__title">'+ item.title +'</h2>' + '<p class="modal-body__text">'+ item.description +'</p>';
+        reportsContent += '<h2 class="modal-body__title">'+ item.title +'</h2>' + '<div class="modal-body__text">'+ item.description +'</div>';
       });
 
       speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);

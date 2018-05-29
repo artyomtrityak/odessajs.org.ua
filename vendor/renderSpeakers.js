@@ -70,7 +70,7 @@ $(document).ready(function(){
       rept: [
         {
           title: "Development standards: a step-by-step guide to implement it without pain [Ru]",
-          description: 
+          description:
             "<p>There is always a room for discussion about what to use: tabs or spaces, quotes or double quotes, and so on. There are so many personal preferences in writing code that most likely you'll end up discussing not the logic or implementation itself, but how to use braces, spaces, and semicolons. But do we really need to talk about such things every time we start the project, do code reviews or a new developer joins the team? How to make your code base consistent and clear no matter how big your team or the project are? The whole bunch of tools is here to rescue you!</p>" +
             "<p>I'm going to talk about all those tools and how to implement them into your code base to help you to improve the development process and code quality.</p>",
         }
@@ -164,10 +164,10 @@ $(document).ready(function(){
       image: "images/reporters/natalia_tepluhina.jpg",
       name: "Natalia Tepluhina",
       position: "Frontend Developer" ,
-      company: "Scalac (Gdansk, Poland)",
+      company: "Scalac",
       rept: [
         {
-          title: "Workshop: Simple pet fetching web app using VueJS [En]",
+          title: "Workshop: Simple pet fetching web app using VueJS [Ru]",
           description: "Mini-workshop to teach Vue.js in a cool and fun way to 'foxy people who identify as women'",
         }
       ],
@@ -352,7 +352,7 @@ $(document).ready(function(){
           fatype: 'link'
         },
       ]
-    },   
+    },
     {
       image: "images/reporters/nik_graf.jpg",
       name: "Nik Graf",
@@ -361,7 +361,7 @@ $(document).ready(function(){
       rept: [
         {
           title: "Workshop: Get Started with Reason & ReasonReact [En]",
-          description: 
+          description:
             "<p>Reason is a new functional, JavaScript-like language with a strong type-system and first level React bindings initiated by Jordan Walke, " +
             "the creator of React.</p>" +
             "<p>In this workshop you will first learn about the syntax and semantics of the programming language Reason. Further we learn about powerful " +
@@ -403,7 +403,7 @@ $(document).ready(function(){
       rept: [
         {
           title: "Workshop: Angular 101 [En]",
-          description: 
+          description:
             "<p>Angular is a client-side JavaScript framework used world-wide to create web" +
             "applications. The framework gives clear structures and supports u. a. Modularization" +
             "and lazy loading. It is developed by a team at Google and is aimed at developers of" +
@@ -449,7 +449,7 @@ $(document).ready(function(){
             "issues at some point. In this workshop we will see a few techniques that will be useful in these situations: finding bottlenecks," +
             " running load tests, profiling and writing benchmarks. We will work on practical examples using JavaScript and Node.js." +
             " Most of the techniques can be used in other environments too!</p>",
-          } 
+          }
       ],
       aboutSpeaker:
         'Alex Fernández is a developer with more than 20 years of experience in the software industry.' +
@@ -577,7 +577,7 @@ $(document).ready(function(){
             "  <li>Find and prioritize opportunities for your personal and professional development</li>" +
             "  <li>Build a professional network and career capital</li>" +
             "  <li>Efficiently grow your career without sacrificing other life aspects</li>" +
-            "</ul>",  
+            "</ul>",
         }
       ],
       aboutSpeaker:
@@ -588,7 +588,7 @@ $(document).ready(function(){
         "Kluwer, HP, and Microsoft. He worked in startups, outsource and product companies," +
         "cofounded 3 startups of his own and mentored personally more than 30 professional" +
         "developers. In his spare time, Alexey is building a mentoring network for professional" +
-        "software developers (mtdv.io) to help people build lifestyle and career of their dreams.",       
+        "software developers (mtdv.io) to help people build lifestyle and career of their dreams.",
       socialsRendered: '',
       socials: [
         {
@@ -905,8 +905,13 @@ $(document).ready(function(){
       company: "Product Hunt",
       rept: [
         {
-          title: "React Patterns at Product Hunt [Ru]",
-          description: "Couple React patterns I have noticed Product Hunt uses.",
+          title: "React Patterns at Product Hunt [En]",
+          description: "Most of the work developer does is refactoring and restructuring existing code. While working with React at Product Hunt, I noticed common patterns our team use to deal with changing project requirements.\n" +
+          "\n" +
+          "If you have problems dealing with external dependences, reusability and rapidly project iterations - this is the talk for you.\n" +
+          "\n" +
+          "Often we start with one top-level redux-connected component and then splitting into several smaller HOCs.\n" +
+          "One other pattern we use at Product Hunt is to wrap external component to reduce their surface area in the application. This also helps with dealing with dependencies updates\n",
         }
       ],
 
@@ -946,7 +951,7 @@ $(document).ready(function(){
       company: "Blueberry",
       rept: [
         {
-          title: "Unleash the power of the higher-order components [Ru]",
+          title: "Unleash the power of the higher-order components [En]",
           description: "Maintainable component structure is a crucial prerequisite for a stable React application. You can achieve this by writing your code in a functional way using the higher-order components (HoCs). I want to show you how to define smart HoCs and use them to enhance your presentational components. You'll also learn how to compose several HoCs to get more complex logic. Sticking to this pattern, you'll end up with reusable components that are readable and easy to test since each component is responsible only for a single task.",
         }
       ],
@@ -978,8 +983,11 @@ $(document).ready(function(){
       company: "Pentatonica",
       rept: [
         {
-          title: "<span>WebGL</span> powered Computer Vision [Ru]",
-          description: "How to Computer Vision inside a browser"
+          title: "Real-world application of computer vision and machine learning in modern web applications. [Ru]",
+          description: "An Introduction to Computer Vision and Augmented Reality in modern web browsers and how to accelerate it with WebGL. " +
+          "We will build on this foundation and discuss how to improve results utilizing machine learning models, measure their performance and" +
+          " use these metrics to improve the accuracy of the solution. Finally we will explore how to apply these techniques to a practical" +
+          " business problem."
         }
       ],
       aboutSpeaker: '',
@@ -1185,7 +1193,7 @@ $(document).ready(function(){
       company: "Bizico",
       rept: [
         {
-          title: "Automating GitHub workflow with probot [Ru]",
+          title: "Automating GitHub workflow with probot [Ua]",
           description: "Most of developers are passionated in Open Source, some of them have their own OS projects, some of them have commercial projects hosted on GitHub. Automating projects workflow can simplify daily work and make typical tasks automated.",
         }
       ],
@@ -1264,6 +1272,43 @@ $(document).ready(function(){
         {
           link: 'https://medium.com/@tuchk4',
           fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/reporters/turskyi.jpg",
+      name: "Viktor Turskyi",
+      position: "CEO and founder" ,
+      company: "WebbyLab",
+      rept: [
+        {
+          title: "How to create a VR application with React. [En]",
+          description:
+            "<p>I will talk about virtual reality (VR). " +
+            "At what state the technology now, why and how to use it.	" +
+            "JavaScript is very popular today it is possible todo almost any time of application with it. " +
+            "And it seems that even VR applications can be build easily with JavaScript and React today. " +
+            "The technology is very yang but it will be great to every JS dev to know about new possibilities.</p>\n" ,
+        }
+      ],
+      aboutSpeaker: 'More than 30 talks at different conferences and meetups. More than 14 years in software development of complex and large projects. ',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/koorchik',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/koorchik',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://github.com/koorchik',
+          fatype: 'github'
+        },
+        {
+          link: 'https://www.linkedin.com/in/turskyi',
+          fatype: 'linkedin-square'
         },
       ]
     },

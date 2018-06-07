@@ -1024,7 +1024,7 @@ $(document).ready(function(){
       company: "APIs.guru",
       rept: [
         {
-          title: "W.T.F. is <span>GraphQL?</span> [Ru]",
+          title: "W.T.F. is <span>GraphQL?</span> [Ua]",
           description:
           "Recently, there is a lot of hype around GraphQL " +
           "and you are probably wondering if it is a good fit for your project. " +

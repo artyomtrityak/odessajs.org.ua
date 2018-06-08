@@ -334,7 +334,6 @@ $(document).ready(function(){
         },
       ]
     },
-
     {
       image: "images/reporters/katarzyna_jastrzebsk.jpg",
       name: "Katarzyna Jastrzębska-Łachacz",
@@ -663,7 +662,7 @@ $(document).ready(function(){
         }
       ]
     },
-    { 
+    {
       id: 4,
       image: "images/reporters/timur_shemsedinov.jpg",
       name: "Timur Shemsedinov",

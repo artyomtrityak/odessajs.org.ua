@@ -35,7 +35,7 @@ $(document).ready(function(){
       ]
     },
     {
-      image: "images/reporters/ivan_jovanovich.png",
+      image: "images/reporters/ivan_jovanovich.jpg",
       name: "Ivan Jovanovic",
       position: "Senior Software Engineer" ,
       company: "nearForm",
@@ -223,7 +223,7 @@ $(document).ready(function(){
       ]
     },
     {
-      image: "https://double-r.nl/rowdyrabouw.jpg",
+      image: "images/reporters/rowdyrabouw.jpg",
       name: "Rowdy Rabouw",
       position: "web development" ,
       company: "double-R",

@@ -182,25 +182,18 @@ function loadAskQuestionModal($speakerBlock) {
 
   initLazyLoad();
 
-  $(window).on('scroll', (e)=>{
+  $(window).on('scroll', function () {
     initLazyLoad()
   });
 
   function initLazyLoad() {
-    let windowPosition = $(window)[0].pageYOffset + $(window)[0].innerHeight,
+    var windowPosition = $(window)[0].pageYOffset + $(window)[0].innerHeight,
       $items = $('img[data-src]');
-      // containerBottom = $('img[data-src]').offset().top;
-
 
     $items.each(function(i, item){
-
-
       if ( windowPosition >= $(item).offset().top - 200) {
-        console.log(item)
         setSource(item)
       }
-
-
     });
 
     function setSource (img) {
@@ -210,23 +203,9 @@ function loadAskQuestionModal($speakerBlock) {
         img.removeAttribute('data-src');
       };
     }
-
-
-
-    // if ( windowPosition >= containerBottom) {
-    //   [].forEach.call(document.querySelectorAll('img[data-src]'),
-    //
-    //     function(img) {
-    //       img.setAttribute('src', img.getAttribute('data-src'));
-    //
-    //       img.onload = function() {
-    //         img.removeAttribute('data-src');
-    //       };
-    //     });
-    // }
   }
-
 //  Image Lazy loading
+
 })(jQuery); // End of use strict
 
 

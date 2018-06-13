@@ -63,7 +63,7 @@ $(document).ready(function(){
       ]
     },
     {
-      image: "https://pbs.twimg.com/profile_images/875823348118417408/WSMpFKgm_400x400.jpg",
+      image: "images/reporters/shinkevich.jpg",
       name: "Aleksandra Shinkevich",
       position: "Full-stack NodeJS Developer" ,
       company: "LOVATA",
@@ -1472,8 +1472,8 @@ $(document).ready(function(){
 
   var reportTitles = '';
 
-  var speakerItem = "<div class='row h-100'> <div data-modal-trigger='#speaker-modal' data-item-index='__ReplaceWithIndex' class='speakers-slide__item'>" +
-    " <div class='speakers-slide__img-wrapper'>" + "<img src='${image}' alt=''>" +
+  var speakerItem = "<div class='row '> <div data-modal-trigger='#speaker-modal' data-item-index='__ReplaceWithIndex' class='speakers-slide__item'>" +
+    " <div class='speakers-slide__img-wrapper'>" + "<img data-src='${image}' alt=''>" +
     "</div> <div class='speakers-slide__info-wrapper'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span class='speakers-slide__info-title-name'>${name}</span></h3>"+
     "<p class='speakers-slider__info__place-of-work'><span class='speakers-slider__info-position'>${position} @</span>" +

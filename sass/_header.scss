@@ -4,13 +4,26 @@
     display: inline-block;
     margin: 0 auto;
     width: 100%;
-    max-width: 135px;
+    max-width: 170px;
+
+    @media (max-width: 1200px) {
+      max-width: 150px;
+    }
+    @media (max-width: 992px) {
+      max-width: 135px;
+    }
+    @media (max-width: 768px) {
+      max-width: 135px;
+    }
   }
 
   &-slide{
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 56px);
-    background-color: #a7a7a7; 
+    padding-top: 14px;
+    padding-bottom: 40px;
+    background-color: #a7a7a7;
+    height: auto;
+    min-height: 750px;
+    min-height: calc(98vh - 67px);
 
     hr {
       margin-top: 15px;
@@ -23,13 +36,14 @@
 
     p {
       font-weight: 300;
-    }    
+    }
 
     @media screen and (max-width: 767px) {
       padding-top: 4.5rem;
       padding-bottom: 3rem;
+      min-height: 770px;
     }
-    
+
     @media (min-width: 768px) {
       p {
         font-size: 1.15rem;
@@ -37,11 +51,8 @@
     }
 
     @media (min-width: 992px) {
-      height: auto;
-      min-height: 750px;
-      min-height: calc(98vh - 67px);
-      padding-top: 0;
-      padding-bottom: 0;
+      //padding-top: 0;
+      //padding-bottom: 0;
 
       .main_button {
         margin-bottom: 0rem;
@@ -70,6 +81,10 @@
     background-position: center center;
     background-color: #a7a7a7;
     @include background-cover;
+
+    @media screen and (max-width: 768px){
+      padding: 0 10px;
+    }
 
     .main_title {
       font-family: 'Jura', sans-serif;
@@ -135,19 +150,27 @@
     @include background-cover;
   }
 
-  .header-schedule__item {
 
-    @media (max-width: 768px) {
-      margin-bottom: 3rem;
-
-      &:last-child {
-        margin-bottom: 0;
+  @media screen and (max-width: 768px){
+    .schedule_1, .schedule_2, .schedule_3 {
+      .my-auto {
+        margin-top: 0!important;
       }
     }
+  }
+
+  .header-schedule__item {
 
     .img-wrapper {
-      height: 320px;
+      height: 230px;
       width: 100%;
+
+      @media (max-width: 1200px) {
+        height: 170px;
+      }
+      @media (max-width: 768px) {
+        height: 130px;
+      }
 
       img {
         display: block;
@@ -159,9 +182,19 @@
 
     h4 {
       font-family: 'Jura', sans-serif;
-      font-size: 115px;
+      font-size: 150px;
       color: #e32d42;
       font-weight: 600;
+
+      @media (max-width: 1200px) {
+        font-size: 100px;
+      }
+      @media (max-width: 992px) {
+        font-size: 80px;
+      }
+      @media (max-width: 768px) {
+        font-size: 65px;
+      }
     }
 
     ul {
@@ -175,9 +208,39 @@
 
       li {
         font-size: 30px;
+
+        @media (max-width: 1200px) {
+          font-size: 27px;
+        }
+        @media (max-width: 992px) {
+          font-size: 25px;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
       }
 
     }
+
+    @media (max-width: 1200px) {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+
+
+    @media (max-width: 768px) {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
   }
 
   .diversity{
@@ -193,13 +256,35 @@
       min-height: 300px;
       flex-direction: column;
       justify-content: space-between;
-      text-align: center;     
-      color: #fff;      
+      text-align: center;
+      color: #fff;
+
+      @media (max-width: 768px) {
+        min-height: auto;
+
+        &.student {
+          margin-bottom: 15px;
+        }
+        &.scholarship {
+          margin-top: 15px;
+        }
+      }
 
       .title {
         font-size: 30px;
         font-weight: 600;
         text-transform: uppercase;
+
+        @media (max-width: 1200px) {
+          font-size: 27px;
+        }
+        @media (max-width: 992px) {
+          font-size: 25px;
+        }
+        @media (max-width: 768px) {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
       }
 
       .price {
@@ -207,12 +292,21 @@
         font-size: 40px;
         font-weight: 600;
         line-height: 16px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 15px;
+          margin-top: 15px;
+        }
       }
 
       .notation {
         margin-bottom: 0;
         font-size: 18px;
         font-weight: 100;
+
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
       }
 
       .btn-title {
@@ -233,36 +327,84 @@
       font-size: 27px;
       font-weight: 100;
       line-height: 1.5;
-      text-transform: uppercase;  
+      text-transform: uppercase;
       text-align: center;
 
-      &::after,
+     &::after,
+     &::before {
+       content: '';
+       position: absolute;
+       width: 60px;
+       height: 250px;
+       right: 0;
+       top: 50%;
+       transform: translateY(-50%);
+       background-image: url('../images/curly_bracket_right.svg');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+     }
 
-      &::before {
-        content: '';
-        position: absolute;
-        width: 60px;
-        right: 0;
-        height: 250px;
-        top: 50%;
-        transform: translateY(-50%); 
-        background-image: url('../images/curly_bracket_right.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
+     &::after {
+       right: auto;
+       left: 0;
+       transform: rotate(180deg) translateY(50%);
+     }
 
-      &::after {
-        right: auto;
-        left: 0;
-        transform: rotate(180deg) translateY(50%); 
-      }
+     @media (max-width: 1200px) {
+       font-size: 25px;
+     }
+     @media (max-width: 992px) {
+       font-size: 23px;
+       &::after,
+       &::before {
+         width: 50px;
+         height: 198px;
+       }
+     }
+     @media (max-width: 768px) {
+       padding: 50px 0;
+       font-size: 18px;
+
+       &::after,
+       &::before {
+         left: 50%;
+         right: auto;
+         top: 0;
+         transform: translateX(-50%) translateY(-37%) rotate(-90deg);
+       }
+
+       &::after {
+         left: 50%;
+         top: auto;
+         bottom: 0;
+         transform: translateX(-50%) translateY(37%) rotate(90deg);
+       }
+     }
+
    }
   }
 
-  .carousel-control-next, 
+  .carousel-control-next,
   .carousel-control-prev {
     width: 70px;
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-control-next {
+      justify-content: flex-end;
+
+      .carousel-control-next-icon {
+        //margin-right: 5px;
+      }
+    }
+
+    .carousel-control-prev {
+      justify-content: flex-start;
+
+      .carousel-control-prev-icon {
+        //margin-left: 5px;
+      }
+    }
   }
 
 }

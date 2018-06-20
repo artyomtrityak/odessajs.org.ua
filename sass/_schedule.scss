@@ -22,7 +22,7 @@
     white-space: nowrap;
     margin-bottom: 10px;
     font-size: 16px;
-    color: #fff;
+    color: #212529;
     @media screen and (max-width: 720px) {
       margin-left: 100px;
       font-size: 13px;
@@ -201,10 +201,7 @@
         font-size: 13px;
       }
     }
-    &-hall-a,
-    &-hall-b,
-    &-hall-c,
-    &-hall-tc {
+    &-hall {
       //padding: 25px;
       display: flex;
       flex-direction: column;
@@ -216,13 +213,14 @@
       @media screen and (max-width: 720px) {
         font-size: 13px;
       }
-    }
-    &-hall-a {
-      margin-right: 13px;
-    }
 
-    &-hall-c {
-      margin-left: 13px;
+      &:nth-child(2) {
+        margin-right: 13px;
+      }
+
+      &:last-child {
+        margin-left: 13px;
+      }
     }
   }
 }

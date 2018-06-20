@@ -107,6 +107,10 @@ $(document).ready(function() {
     $('#ask-form').modal('show');
   });
 
+  $('[data-modal-trigger="#diversity-more"]').click(function(e) {
+    $( $(e.currentTarget).attr('data-modal-trigger') ).modal('show');
+  });
+
 });
 
 function loadAskQuestionModal($speakerBlock) {
@@ -176,6 +180,44 @@ function loadAskQuestionModal($speakerBlock) {
     scale: 0.3,
     distance: '0px'
   }, 300);
+
+
+//  Image Lazy loading
+
+  initLazyLoad();
+
+  $(window).on('scroll', function () {
+    initLazyLoad()
+  });
+
+  function initLazyLoad() {
+    var windowTopPosition = $(window)[0].pageYOffset,
+        windowBottomPosition = $(window)[0].pageYOffset + $(window)[0].innerHeight,
+        $items = $('img[data-src]'),
+        showOffsets = $(window)[0].innerHeight / 2;
+
+    if( window.matchMedia("(max-width: 768px)").matches ){
+      showOffsets =  $(window)[0].innerHeight * 1.5;
+    }
+
+    $items.each(function(i, item){
+      if (
+          ( windowTopPosition - ( $(item).offset().top + $(item).height ) <= showOffsets ) ||
+          (windowBottomPosition + showOffsets >= $(item).offset().top )
+      ) {
+        setSource(item)
+      }
+    });
+
+    function setSource (img) {
+      img.setAttribute('src', img.getAttribute('data-src'));
+
+      img.onload = function() {
+        img.removeAttribute('data-src');
+      };
+    }
+  }
+//  Image Lazy loading
 
 })(jQuery); // End of use strict
 
@@ -369,16 +411,3 @@ function initMap() {
   });
   marker.setMap(map);
 }
-
-$(document).ready(function(){
-
-
-  $('.speakers-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    infinite: false
-  });
-
-  //initMap();
-});

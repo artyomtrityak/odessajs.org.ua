@@ -1,4 +1,4 @@
-section#trainings {
+section#workshops {
   .main_title {
     font-family: 'Jura', sans-serif;
     font-size: 45px;
@@ -78,8 +78,6 @@ section#trainings {
             @include flex-wrap(wrap);
           }
 
-
-
           .bg-img {
             display: none;
             position: absolute;
@@ -111,6 +109,10 @@ section#trainings {
             }
 
             .speaker-info {
+              font-family: 'Roboto', sans-serif;
+              font-size: 15px;
+              line-height: 1;
+              margin-bottom: 10px;
 
               @media (min-width: 300px) and (max-width: 551px) {
                 text-align: center;
@@ -123,18 +125,12 @@ section#trainings {
                 text-transform: uppercase;
               }
 
-              .speaker__position {
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                line-height: 1;
-                margin-bottom: 10px;
+              .training-info span {
+                font-weight: bold;
               }
 
-              .speaker__company {
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                line-height: 1;
-                margin-bottom: 15px;
+              p, div {
+                margin-bottom: 10px;
               }
             }
 
@@ -203,6 +199,12 @@ section#trainings {
           }
         }
 
+        h4.modal-body__title {
+          color: $black;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
         .modal-footer {
           border: none;
           @include flexbox;
@@ -258,6 +260,10 @@ section#trainings {
       &:hover {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         border-radius: 9px;
+
+        .trainings-slide__img-wrapper img {
+          //filter: blur(4px);
+        }
       }
 
       @media (max-width: 1024px) {
@@ -267,6 +273,12 @@ section#trainings {
 
     &__img-wrapper {
       position: relative;
+      height: 100%;
+      background-color: #e8e8e9;
+      background-image: url(../images/ninja-bg-gray.png);
+      background-size: cover;
+      background-position: center;
+      min-height: 350px;
 
       &::before {
         position: absolute;
@@ -286,63 +298,90 @@ section#trainings {
         -webkit-animation: shine .75s;
         animation: shine .75s;
       }
+
       @-webkit-keyframes shine {
         100% {
           left: 125%;
         }
       }
+
       @keyframes shine {
         100% {
           left: 125%;
         }
       }
 
-
-      @media (max-width: 768px) {
-        padding-left: 0;
-        padding-right: 0;
+      @media (max-width: 1200px) {
+        min-height: 290px;
       }
 
       @media (max-width: 1024px) {
         padding-left: 0;
       }
 
+      @media (max-width: 992px) {
+        min-height: 330px;
+      }
+
+      @media (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 240px;
+      }
+
+      @media (max-width: 575px) {
+        min-height: 300px;
+      }
+
+      @media (max-width: 400px) {
+        min-height: 220px;
+      }
+
       img {
         width: 100%;
+        transition: .8s;
       }
     }
 
     &__info-wrapper {
       position: absolute;
       top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      padding: 20px 10px 10px 20px;
+      padding: 10px;
     }
     &__info-title {
-      font-size: 24px;
-      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      padding: 15px;
+      margin-bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, .7);
+      font-size: 16spx;
+      color: $black;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
-      line-height: 0.9;
+      line-height: 1.1;
 
       @media (min-width: 575px) {
-        font-size: 18px;
+        font-size: 16px;
       }
       @media (min-width: 768px) {
-        font-size: 24px;
-      }
-      @media (min-width: 990px) {
-        font-size: 28px;
+        font-size: 18px;
       }
       @media (min-width: 1200px) {
-        font-size: 34px;
+        font-size: 22px;
       }
     }
     &__info-trainer {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, .7);
       font-size: 14px;
-      color: #fff;
+      color: $black;
       font-family: 'Roboto', sans-serif;
       font-style: italic;
 

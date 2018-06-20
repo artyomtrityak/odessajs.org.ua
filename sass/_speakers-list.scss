@@ -91,8 +91,6 @@
             @include flex-wrap(wrap);
           }
 
-
-
           .bg-img {
             display: none;
             position: absolute;
@@ -201,14 +199,14 @@
             margin-bottom: 15px;
             text-transform: uppercase;
             color: #e32d42;
+
+            span {
+              text-transform: none;
+            }
           }
 
-          h4.modal-body__title {
-            color: $black;
-            font-weight: bold;
-          }
-
-          &__text {
+          &__text,
+          &__text p {
             font-family: 'Roboto', sans-serif;
             margin-bottom: 25px;
           }
@@ -297,7 +295,7 @@
       //@include align-items(stretch);
       display: flex;
       flex-direction: column;
-      justify-content: stretch;
+      //justify-content: stretch;
       margin-bottom: 90px;
       width: 100%;
       min-height: 280px;
@@ -325,6 +323,12 @@
     &__img-wrapper {
       //height: 100%;
       position: relative;
+      min-height: 350px;
+      height: auto;
+      background-color: #e8e8e9;
+      background-image: url(../images/ninja-bg-gray.png);
+      background-size: cover;
+      background-position: center;
 
       &::before {
         position: absolute;
@@ -355,14 +359,30 @@
         }
       }
 
-
-      @media (max-width: 768px) {
-        padding-left: 0;
-        padding-right: 0;
+      @media (max-width: 1200px) {
+        min-height: 290px;
       }
 
       @media (max-width: 1024px) {
         padding-left: 0;
+      }
+
+      @media (max-width: 992px) {
+        min-height: 330px;
+      }
+
+      @media (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 240px;
+      }
+
+      @media (max-width: 575px) {
+        min-height: 300px;
+      }
+
+      @media (max-width: 400px) {
+        min-height: 220px;
       }
 
       img {
@@ -384,7 +404,7 @@
     }
 
     &__info-wrapper {
-      height: 100%;
+      //height: 100%;
       @media (max-width: 768px) {
         padding: 0;
         margin-top: 15px;
@@ -431,6 +451,9 @@
         font-size: 16px;
         line-height: 1.2;
         margin-bottom: 10px;
+      }
+      u {
+        text-decoration: none;
       }
     }
 

@@ -31,7 +31,8 @@ $(document).ready(function () {
       time: '09:30- 10:10',
       talks: [
         {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
-        {author: 'Yuriy Sherstyuk', title: 'How to get a good job as a Front End Dev'}
+        {author: 'Yuriy Sherstyuk', title: 'How to get a good job as a Front End Dev'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -58,7 +59,8 @@ $(document).ready(function () {
       time: '11:30 - 12:15',
       talks: [
         {author: '[en] Gerard Sans', title: 'Advanced State Management using ngrx v5'},
-        {author: 'Roman Rodomansky', title: 'Our experience of building effective educational process'}
+        {author: 'Roman Rodomansky', title: 'Our experience of building effective educational process'},
+        {author: '', title: ''}
       ]
     },
     {
@@ -71,7 +73,8 @@ $(document).ready(function () {
       time: '12:30 - 13:10',
       talks: [
         {author: '[en] Rowdy Rabouw ', title: 'Unleash your web skills on native'},
-        {author: 'Oleg Chorny ', title: 'TBD'}
+        {author: 'Oleg Chorny ', title: 'TBD'},
+        {author: '', title: ''}
       ]
     },
     {
@@ -84,7 +87,8 @@ $(document).ready(function () {
       time: '14:30-15:10',
       talks: [
         {author: 'Trishul Goel', title: 'Cross browser extensions - lets make one'},
-        {author: 'Илья Иванов', title: 'Advanced React-Native'}
+        {author: 'Илья Иванов', title: 'Advanced React-Native'},
+        {author: '', title: ''}
       ]
     },
     {
@@ -96,7 +100,9 @@ $(document).ready(function () {
     {
       time: '15:40-16:20',
       talks: [
-        {author: 'Patrick Kettner ', title: ' JavaScript without javascript'}
+        {author: 'Patrick Kettner ', title: ' JavaScript without javascript'},
+        {author: '', title: ''},
+        {author: '', title: ''}
       ]
     },
     {
@@ -109,7 +115,8 @@ $(document).ready(function () {
       time: '16:50- 17:30',
       talks: [
         {author: '[en] David Kopal', title: 'Unleash the power of the higher-order components'},
-        {author: 'Mihail Zachepilo', title: 'WebAssembly powered Machine Learning'}
+        {author: 'Mihail Zachepilo', title: 'WebAssembly powered Machine Learning'},
+        {author: '', title: ''}
       ]
     },
     {
@@ -122,7 +129,8 @@ $(document).ready(function () {
       time: '18:00-18:40',
       talks: [
         {author: 'Henning Muszynski', title: 'The ABC of Coded Style Guides'},
-        {author: '[ua] Леонід Байда', title: 'Flow typing: шлях від експериментів до повного впровадження в enterprise проекті'}
+        {author: '[ua] Леонід Байда', title: 'Flow typing: шлях від експериментів до повного впровадження в enterprise проекті'},
+        {author: '', title: ''}
       ]
     },
     {
@@ -131,6 +139,31 @@ $(document).ready(function () {
         {author: '', title: 'Afterparty with drinks and snacks'}
       ]
     }
+  ];
+
+  var talks8july = [
+    {
+      time: '08:00-09:00',
+      talks: [
+        {author: '', title: 'Yoga'}
+      ]
+    },
+    {
+      time: '08:30 - 09:30',
+      talks: [
+        {author: '', title: 'Registration'}
+      ]
+    },
+    {
+      time: '09:30- 10:10',
+      talks: [
+        {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
+        {author: 'Yuriy Sherstyuk', title: 'How to get a good job as a Front End Dev'},
+        {author: '', title: ''},
+        {author: '', title: ''},
+      ]
+    },
+
   ];
 
   var infoBlock =
@@ -148,7 +181,7 @@ $(document).ready(function () {
   var reportBlock_1 =
     '<div class="schedule__report">' +
     '        <div class="schedule__report-time">${time}</div>' +
-    '        <div class="schedule__report-hall-b">' +
+    '        <div class="schedule__report-hall">' +
     '             ${title}' +
     '          <div class="schedule__reporter">${author}</div>' +
     '        </div>' +
@@ -168,11 +201,14 @@ $(document).ready(function () {
   $.template("InfoBlockTemplate_2", infoBlock_2);
 
   var hallBlock =
-    '        <div class="schedule__report-hall-c">' +
+    '        <div class="schedule__report-hall">' +
     '          ${title}' +
     '          <div class="schedule__reporter">${author}</div>' +
     '         </div>';
   $.template("hallBlockTemplate", hallBlock);
+
+
+  renderTalksTable();
 
   function renderTalksTable() {
 
@@ -191,7 +227,26 @@ $(document).ready(function () {
     // _____________________________________________
 
     var july7_schedule = '';
-    $.each(talks7july, function (i, sp) {
+    renderSchedulesWithHalls({
+      data: talks7july,
+      render: july7_schedule,
+      selector: '#july7_schedule'
+    });
+
+    // _____________________________________________
+
+    var july8_schedule = '';
+
+    renderSchedulesWithHalls({
+      data: talks8july,
+      render: july8_schedule,
+      selector: '#july8_schedule'
+    });
+
+  }
+
+  function renderSchedulesWithHalls(opt) {
+    $.each(opt.data, function (i, sp) {
 
       var scheduleRow = '<div class="schedule__report">';
       var scheduleCells = '';
@@ -199,26 +254,21 @@ $(document).ready(function () {
       scheduleRow += $.tmpl("reportTimeBlockTemplate", sp)[0].outerHTML;
 
       $.each(sp.talks, function (i, obj) {
-
-        if(obj.author) {
+        if( obj.author || (!obj.author && !obj.title) ) {
           scheduleCells += $.tmpl("hallBlockTemplate", obj)[0].outerHTML;
         } else {
           if(i < 1){
             scheduleCells += $.tmpl("InfoBlockTemplate_2", obj)[0].outerHTML;
-            console.log(scheduleCells)
           }
         }
-
       });
 
       scheduleRow += scheduleCells + '</div>';
-      july7_schedule += scheduleRow;
+      opt.render += scheduleRow;
     });
 
-
-    $('#july7_schedule').append(july7_schedule);
+    $(opt.selector).append(opt.render);
   }
 
-  renderTalksTable();
 
 });

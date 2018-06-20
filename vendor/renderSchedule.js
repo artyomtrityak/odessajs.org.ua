@@ -4,14 +4,14 @@ $(document).ready(function () {
     {time: '16:30', author: '', title: 'Registration and welcome drinks'},
     {time: '17:00', author: 'Sara Vieira', title: 'The Dream of Styleguide Driven Development'},
     {time: '17:30', author: '', title: 'Break'},
-    {time: '17:45', author: 'Assim Hussain', title: 'Everyday AI'},
+    {time: '17:45', author: 'Haroen Viaene', title: 'You’re probably making an api client'},
     {time: '18:15', author: '', title: 'Break'},
-    {time: '18:30', author: 'Name Name', title: ''},
+    {time: '18:30', author: 'Alex Troush', title: 'The existential crisis in a blockchain era'},
     {time: '19:00', author: '', title: 'Pizza break'},
-    {time: '19:30', author: 'Name Name', title: ''},
+    {time: '19:30', author: 'Aleksandra Shynkevich & Nikita Dubko', title: 'Get prepared for your performance. Speaker\'s guidelines from an organizer [Speech]'},
     {time: '20:00', author: '', title: 'Break'},
-    {time: '20:10', author: 'Name Name', title: ''},
-    {time: '20:30', author: 'Name Name', title: 'Q&A Session'},
+    {time: '20:10', author: 'Mike MacCana', title: 'Deploying your JS app in 2018 [en]'},
+    {time: '20:30', author: '', title: 'Q&A Session'},
   ];
 
   var talks7july = [
@@ -150,7 +150,7 @@ $(document).ready(function () {
     '        <div class="schedule__report-time">${time}</div>' +
     '        <div class="schedule__report-hall-b">' +
     '             ${title}' +
-    '          <div class="schedule__reporter">${author} *</div>' +
+    '          <div class="schedule__reporter">${author}</div>' +
     '        </div>' +
     '      </div>';
 
@@ -170,7 +170,7 @@ $(document).ready(function () {
   var hallBlock =
     '        <div class="schedule__report-hall-c">' +
     '          ${title}' +
-    '          <div class="schedule__reporter">${author} *</div>' +
+    '          <div class="schedule__reporter">${author}</div>' +
     '         </div>';
   $.template("hallBlockTemplate", hallBlock);
 

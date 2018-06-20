@@ -181,7 +181,7 @@ $(document).ready(function () {
   var reportBlock_1 =
     '<div class="schedule__report">' +
     '        <div class="schedule__report-time">${time}</div>' +
-    '        <div class="schedule__report-hall-b">' +
+    '        <div class="schedule__report-hall">' +
     '             ${title}' +
     '          <div class="schedule__reporter">${author}</div>' +
     '        </div>' +
@@ -201,7 +201,7 @@ $(document).ready(function () {
   $.template("InfoBlockTemplate_2", infoBlock_2);
 
   var hallBlock =
-    '        <div class="schedule__report-hall-c">' +
+    '        <div class="schedule__report-hall">' +
     '          ${title}' +
     '          <div class="schedule__reporter">${author}</div>' +
     '         </div>';

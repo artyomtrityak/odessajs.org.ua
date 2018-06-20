@@ -30,9 +30,9 @@ $(document).ready(function () {
     {
       time: '09:30- 10:10',
       talks: [
-        {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
-        {author: 'Yuriy Sherstyuk', title: 'How to get a good job as a Front End Dev'},
-        {author: '', title: ''},
+        {author: '[en] Gerard Sans', title: 'Advanced State Management using ngrx v5'},
+        {author: 'Yuriy Sherstyuk', title: 'Algorithms  in Front End: from V8 to VDOM'},
+        {author: 'Artem Zakharchenko ', title: 'What I have to do at OdessaJS Conference'},
       ]
     },
     {
@@ -46,7 +46,7 @@ $(document).ready(function () {
       talks: [
         {author: '[en] Ivan Jovanovic', title: 'Serverless - the way microservices should be.'},
         {author: 'Sergiy Babich', title: 'WebComponents why and how'},
-        {author: 'Ксения Редунова', title: 'Estimates: is there a silver bullet? [TechCorner]'}
+        {author: 'Ksenia Redunova ', title: 'Estimates: is there a silver bullet?'}
       ]
     },
     {
@@ -58,9 +58,9 @@ $(document).ready(function () {
     {
       time: '11:30 - 12:15',
       talks: [
-        {author: '[en] Gerard Sans', title: 'Advanced State Management using ngrx v5'},
-        {author: 'Roman Rodomansky', title: 'Our experience of building effective educational process'},
-        {author: '', title: ''}
+        {author: '[en] Nik Graf', title: 'ReasonML'},
+        {author: 'Roman Rodomansky and Andrew Yasinishyn', title: 'The New Media and What It Takes to Create a News Website in 2018'},
+        {author: 'Andrey Kucherenko ', title: 'Copy paste detector for 150+ languages on JavaScript'}
       ]
     },
     {
@@ -73,8 +73,8 @@ $(document).ready(function () {
       time: '12:30 - 13:10',
       talks: [
         {author: '[en] Rowdy Rabouw ', title: 'Unleash your web skills on native'},
-        {author: 'Oleg Chorny ', title: 'TBD'},
-        {author: '', title: ''}
+        {author: 'Oleg Chorny ', title: 'Cloud Native Observability'},
+        {author: 'Andrew Mykhaliuk', title: 'Excuse me, I have to assemble Frontend'}
       ]
     },
     {
@@ -88,7 +88,7 @@ $(document).ready(function () {
       talks: [
         {author: 'Trishul Goel', title: 'Cross browser extensions - lets make one'},
         {author: 'Илья Иванов', title: 'Advanced React-Native'},
-        {author: '', title: ''}
+        {author: 'Alex Migutsky ', title: 'Architecture evolution of Microsoft To-Do web app'}
       ]
     },
     {
@@ -101,8 +101,8 @@ $(document).ready(function () {
       time: '15:40-16:20',
       talks: [
         {author: 'Patrick Kettner ', title: ' JavaScript without javascript'},
-        {author: '', title: ''},
-        {author: '', title: ''}
+        {author: 'Roman Sachenko', title: 'NodeJS + CQRS + Event Sourcing: pros and cons'},
+        {author: 'Denis Radin ', title: 'TBD'}
       ]
     },
     {
@@ -116,7 +116,7 @@ $(document).ready(function () {
       talks: [
         {author: '[en] David Kopal', title: 'Unleash the power of the higher-order components'},
         {author: 'Mihail Zachepilo', title: 'WebAssembly powered Machine Learning'},
-        {author: '', title: ''}
+        {author: 'Roman Rodomansky and Andrew Yasinishyn', title: 'Processes automation within the company'}
       ]
     },
     {
@@ -129,7 +129,7 @@ $(document).ready(function () {
       time: '18:00-18:40',
       talks: [
         {author: 'Henning Muszynski', title: 'The ABC of Coded Style Guides'},
-        {author: '[ua] Леонід Байда', title: 'Flow typing: шлях від експериментів до повного впровадження в enterprise проекті'},
+        {author: '[ua] Леонід Байда', title: 'If you don\'t like how your static typing smells, maybe you do it wrong'},
         {author: '', title: ''}
       ]
     },
@@ -143,27 +143,129 @@ $(document).ready(function () {
 
   var talks8july = [
     {
-      time: '08:00-09:00',
+      time: '08:30-09:30',
       talks: [
         {author: '', title: 'Yoga'}
       ]
     },
     {
-      time: '08:30 - 09:30',
+      time: '09:30- 10:10',
       talks: [
-        {author: '', title: 'Registration'}
+        {author: 'Viktor Turskyi', title: 'Virtual reality with ReactVR'},
+        {author: '[ru] Valerii Sorokobatko', title: 'Passing strings using (in)finite-state-machine and prepack'},
+        {author: 'Eyal Eizenberg', title: 'The Psychology of building your first open source'},
       ]
     },
     {
-      time: '09:30- 10:10',
+      time: '10:10-10:30',
       talks: [
-        {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
-        {author: 'Yuriy Sherstyuk', title: 'How to get a good job as a Front End Dev'},
-        {author: '', title: ''},
-        {author: '', title: ''},
+        {author: '', title: 'Break'}
       ]
     },
-
+    {
+      time: '10:30 - 11:10',
+      talks: [
+        {author: '[en] Ivan Jovanovic', title: 'Introduction to Micro Frontends'},
+        {author: 'Ivan Goncharov', title: 'W.T.F. is GraphQL?'},
+          {author: 'Yuriy Sherstyuk', title: 'Full-time remote only'}
+      ]
+    },
+    {
+      time: '11:10 - 11:30',
+      talks: [
+        {author: '', title: 'Break'}
+      ]
+    },
+    {
+      time: '11:30 - 12:15',
+      talks: [
+        {author: '[en] Patrick Kettner', title: 'Creating magic with houdini'},
+        {author: 'Rustam Aliyev+Ivan Martynov', title: 'From monolith web app to micro-frontends – How we extended microservices architecture to frontend'},
+        {author: 'Aleksandr Shushunov', title: 'Let\'s kill lifecycle'}
+      ]
+    },
+    {
+      time: '12:15 - 12:30',
+      talks: [
+        {author: '', title: 'Break'}
+      ]
+    },
+    {
+      time: '12:30 - 13:10',
+      talks: [
+        {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
+        {author: 'Valentyn Barmashyn ', title: 'RxJS in React, RxJS in Angular and why we all should be friends'},
+        {author: 'Savitsky Roman ', title: 'Chrome Dev Tools. New & Tips'}
+      ]
+    },
+    {
+      time: '13:10 - 14:30',
+      talks: [
+        {author: '', title: 'Lunch'}
+      ]
+    },
+    {
+      time: '14:30-15:10',
+      talks: [
+        {author: 'Katarzyna Jastrzębska', title: 'Reuse your code in React like it\'s 2018'},
+        {author: 'Nikita Dubko', title: 'Houdini - css which is JavaScript'},
+        {author: '', title: ''}
+      ]
+    },
+    {
+      time: '15:10 - 15:40',
+      talks: [
+        {author: '', title: 'Long break'}
+      ]
+    },
+    {
+      time: '15:40-16:20',
+      talks: [
+        {author: 'Radoslav Stankov ', title: 'React Refactoring Patterns'},
+        {author: 'Oleksandr Skachkov', title: 'WebAssembly vs JavaScript: What is faster?'},
+        {author: 'Denys Dovhan ', title: 'Automating GitHub workflow with probot'}
+      ]
+    },
+    {
+      time: '16:30 - 16:50',
+      talks: [
+        {author: '', title: 'Break'}
+      ]
+    },
+    {
+      time: '16:50- 17:30',
+      talks: [
+        {author: '[en] Denis Radin ', title: 'Mining crypto in browser_ GPU, WebAssembly and all the good things to try'},
+        {author: '[ru] Arkadiy Pilguk ', title: 'Real-world application of computer vision and machine learning in modern web applications'},
+        {author: 'Phillip Shurpik', title: 'OK Google. What\'s next?'}
+      ]
+    },
+    {
+      time: '17:30-18:00',
+      talks: [
+        {author: '', title: 'Long break'}
+      ]
+    },
+    {
+      time: '18:00-18:40',
+      talks: [
+        {author: '[ru] Artem Zakharchenko', title: 'What happens when you don\'t write the code. What advises would I like to take 10 years ago'},
+        {author: 'Eyal Eizenberg', title: 'redux-cornell'},
+        {author: '', title: ''}
+      ]
+    },
+    {
+      time: '18:40 - 19:00',
+      talks: [
+        {author: '', title: 'Q&A Session'}
+      ]
+    },
+    {
+      time: '20:00',
+      talks: [
+        {author: '', title: 'Speakers Dinner'}
+      ]
+    }
   ];
 
   var infoBlock =
@@ -192,6 +294,10 @@ $(document).ready(function () {
   var reportTimeBlock =
     '         <div class="schedule__report-time">${time}</div>';
   $.template("reportTimeBlockTemplate", reportTimeBlock);
+
+  var infoTimeBlock =
+    '         <div class="schedule__info-time">${time}</div>';
+  $.template("infoTimeBlockTemplate", infoTimeBlock);
 
   var infoBlock_2 =
     '              <div class="schedule__info-text">' +
@@ -248,22 +354,24 @@ $(document).ready(function () {
   function renderSchedulesWithHalls(opt) {
     $.each(opt.data, function (i, sp) {
 
-      var scheduleRow = '<div class="schedule__report">';
-      var scheduleCells = '';
-
-      scheduleRow += $.tmpl("reportTimeBlockTemplate", sp)[0].outerHTML;
+      var scheduleRow = '<div class="schedule__report">',
+        scheduleCells = '',
+        timeBlock = $.tmpl("reportTimeBlockTemplate", sp)[0].outerHTML;
 
       $.each(sp.talks, function (i, obj) {
         if( obj.author || (!obj.author && !obj.title) ) {
           scheduleCells += $.tmpl("hallBlockTemplate", obj)[0].outerHTML;
         } else {
           if(i < 1){
+            scheduleRow = '<div class="schedule__info">';
             scheduleCells += $.tmpl("InfoBlockTemplate_2", obj)[0].outerHTML;
+            timeBlock = $.tmpl("infoTimeBlockTemplate", sp)[0].outerHTML;
           }
         }
       });
 
-      scheduleRow += scheduleCells + '</div>';
+      scheduleRow += timeBlock + scheduleCells + '</div>';
+
       opt.render += scheduleRow;
     });
 

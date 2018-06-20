@@ -6,12 +6,12 @@ $(document).ready(function () {
     {time: '17:30', author: '', title: 'Break'},
     {time: '17:45', author: 'Assim Hussain', title: 'Everyday AI'},
     {time: '18:15', author: '', title: 'Break'},
-    {time: '18:30', author: '', title: ''},
+    {time: '18:30', author: 'Name Name', title: ''},
     {time: '19:00', author: '', title: 'Pizza break'},
-    {time: '19:30', author: '', title: ''},
+    {time: '19:30', author: 'Name Name', title: ''},
     {time: '20:00', author: '', title: 'Break'},
-    {time: '20:10', author: '', title: ''},
-    {time: '20:30', author: '', title: 'Q&A Session'},
+    {time: '20:10', author: 'Name Name', title: ''},
+    {time: '20:30', author: 'Name Name', title: 'Q&A Session'},
   ];
 
   var talks7july = [
@@ -133,66 +133,90 @@ $(document).ready(function () {
     }
   ];
 
+  var infoBlock =
+    '           <div class="schedule__info">' +
+    '              <div class="schedule__info-time">${time}</div>' +
+    '              <div class="schedule__info-text">' +
+    '                <span class="schedule__info-text-icon form"></span>' +
+    '                ${title}' +
+    '              </div>' +
+    '            </div>';
 
-  var timeRow = '<td colspan="3" style=" font-size: 25px; font-weight: bold;">${time}</td>';
-  $.template("timeRowTemplate", timeRow);
+  $.template("InfoBlockTemplate", infoBlock);
 
-  var talksRowCell =
-    '<td colspan="${rowspan}">' +
-    '<div class="item"> ' +
-    '<div class="info-wrapper" style=" text-align: left; "> ' +
-    '<div class="info"> ' +
-    '<h7 class="info-title">' +
-    '<span class="info-title-name">${author}</span>' +
-    '</h7> ' +
-    '<p class="info-rept font-weight-bold" style=" margin-top: 10px; font-size: 17px; "> ' +
-    '${title}' +
-    '</p></div> </div>' +
-    '</div> ' +
-    '</td>';
-  $.template("talksRowCellTemplate", talksRowCell);
+
+  var reportBlock_1 =
+    '<div class="schedule__report">' +
+    '        <div class="schedule__report-time">${time}</div>' +
+    '        <div class="schedule__report-hall-b">' +
+    '             ${title}' +
+    '          <div class="schedule__reporter">${author} *</div>' +
+    '        </div>' +
+    '      </div>';
+
+  $.template("reportBlockTemplate_1", reportBlock_1);
+
+  var reportTimeBlock =
+    '         <div class="schedule__report-time">${time}</div>';
+  $.template("reportTimeBlockTemplate", reportTimeBlock);
+
+  var infoBlock_2 =
+    '              <div class="schedule__info-text">' +
+    '                <span class="schedule__info-text-icon form"></span>' +
+    '                ${title}' +
+    '              </div>';
+  $.template("InfoBlockTemplate_2", infoBlock_2);
+
+  var hallBlock =
+    '        <div class="schedule__report-hall-c">' +
+    '          ${title}' +
+    '          <div class="schedule__reporter">${author} *</div>' +
+    '         </div>';
+  $.template("hallBlockTemplate", hallBlock);
 
   function renderTalksTable() {
 
-    // start render all
     var july6_schedule = '';
+
     $.each(talks6july, function (i, sp) {
-      if (sp.title) {
-        july6_schedule += '<tr>';
-        sp.rowspan = '1';
-        july6_schedule += $.tmpl("timeRowTemplate", sp)[0].outerHTML;
-        july6_schedule += $.tmpl("talksRowCellTemplate", sp)[0].outerHTML;
-        july6_schedule += '/<tr>';
+      if (sp.author) {
+        july6_schedule += $.tmpl("reportBlockTemplate_1", sp)[0].outerHTML;
+      } else {
+        july6_schedule += $.tmpl("InfoBlockTemplate", sp)[0].outerHTML;
       }
     });
 
-    console.log(july6_schedule);
+    $('#july6_schedule').append(july6_schedule);
 
-    $('#july6_schedule tbody').append(july6_schedule);
+    // _____________________________________________
 
     var july7_schedule = '';
     $.each(talks7july, function (i, sp) {
-      july7_schedule += '<tr>';
-      july7_schedule += $.tmpl("timeRowTemplate", sp)[0].outerHTML;
-      july7_schedule += '</tr>';
-      july7_schedule += '<tr>';
-      for (var j=0; j< 3; j++) {
-        var tlk = sp.talks[j];
-        if (tlk && tlk.title) {
-          tlk.rowspan = sp.talks.length === 1 ? '3' : '1';
-          july7_schedule += $.tmpl("talksRowCellTemplate", tlk)[0].outerHTML;
-        }
-      }
-      if (sp.talks.length === 2) {
-        july7_schedule += '<td></td>';
-      }
 
-      july7_schedule += '/<tr>';
+      var scheduleRow = '<div class="schedule__report">';
+      var scheduleCells = '';
+
+      scheduleRow += $.tmpl("reportTimeBlockTemplate", sp)[0].outerHTML;
+
+      $.each(sp.talks, function (i, obj) {
+
+        if(obj.author) {
+          scheduleCells += $.tmpl("hallBlockTemplate", obj)[0].outerHTML;
+        } else {
+          if(i < 1){
+            scheduleCells += $.tmpl("InfoBlockTemplate_2", obj)[0].outerHTML;
+            console.log(scheduleCells)
+          }
+        }
+
+      });
+
+      scheduleRow += scheduleCells + '</div>';
+      july7_schedule += scheduleRow;
     });
 
-    console.log(july7_schedule);
 
-    $('#july7_schedule tbody').append(july7_schedule);
+    $('#july7_schedule').append(july7_schedule);
   }
 
   renderTalksTable();

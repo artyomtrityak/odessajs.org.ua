@@ -659,7 +659,6 @@ $(document).ready(function(){
       ]
     },
       {
-          id: 4,
           image: "images/reporters/timur2018.jpg",
           name: "Timur Shemsedinov",
           position: "Architect, Lecturer" ,

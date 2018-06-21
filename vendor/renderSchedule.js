@@ -154,6 +154,7 @@ $(document).ready(function () {
         {author: 'Viktor Turskyi', title: 'Virtual reality with ReactVR'},
         {author: '[ru] Valerii Sorokobatko', title: 'Passing strings using (in)finite-state-machine and prepack'},
         {author: 'Eyal Eizenberg', title: 'The Psychology of building your first open source'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -167,7 +168,8 @@ $(document).ready(function () {
       talks: [
         {author: '[en] Ivan Jovanovic', title: 'Introduction to Micro Frontends'},
         {author: 'Ivan Goncharov', title: 'W.T.F. is GraphQL?'},
-          {author: 'Yuriy Sherstyuk', title: 'Full-time remote only'}
+          {author: 'Yuriy Sherstyuk', title: 'Full-time remote only'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -181,7 +183,8 @@ $(document).ready(function () {
       talks: [
         {author: '[en] Patrick Kettner', title: 'Creating magic with houdini'},
         {author: 'Rustam Aliyev+Ivan Martynov', title: 'From monolith web app to micro-frontends – How we extended microservices architecture to frontend'},
-        {author: 'Aleksandr Shushunov', title: 'Let\'s kill lifecycle'}
+        {author: 'Aleksandr Shushunov', title: 'Let\'s kill lifecycle'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -195,7 +198,8 @@ $(document).ready(function () {
       talks: [
         {author: '[en] Asim Hussain ', title: 'How to scale an SPA to 1M views for $1?'},
         {author: 'Valentyn Barmashyn ', title: 'RxJS in React, RxJS in Angular and why we all should be friends'},
-        {author: 'Savitsky Roman ', title: 'Chrome Dev Tools. New & Tips'}
+        {author: 'Savitsky Roman ', title: 'Chrome Dev Tools. New & Tips'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -209,7 +213,8 @@ $(document).ready(function () {
       talks: [
         {author: 'Katarzyna Jastrzębska', title: 'Reuse your code in React like it\'s 2018'},
         {author: 'Nikita Dubko', title: 'Houdini - css which is JavaScript'},
-        {author: '', title: ''}
+        {author: '', title: ''},
+        {author: '', title: ''},
       ]
     },
     {
@@ -223,7 +228,8 @@ $(document).ready(function () {
       talks: [
         {author: 'Radoslav Stankov ', title: 'React Refactoring Patterns'},
         {author: 'Oleksandr Skachkov', title: 'WebAssembly vs JavaScript: What is faster?'},
-        {author: 'Denys Dovhan ', title: 'Automating GitHub workflow with probot'}
+        {author: 'Denys Dovhan ', title: 'Automating GitHub workflow with probot'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -237,7 +243,8 @@ $(document).ready(function () {
       talks: [
         {author: '[en] Denis Radin ', title: 'Mining crypto in browser_ GPU, WebAssembly and all the good things to try'},
         {author: '[ru] Arkadiy Pilguk ', title: 'Real-world application of computer vision and machine learning in modern web applications'},
-        {author: 'Phillip Shurpik', title: 'OK Google. What\'s next?'}
+        {author: 'Phillip Shurpik', title: 'OK Google. What\'s next?'},
+        {author: '', title: ''},
       ]
     },
     {
@@ -251,7 +258,8 @@ $(document).ready(function () {
       talks: [
         {author: '[ru] Artem Zakharchenko', title: 'What happens when you don\'t write the code. What advises would I like to take 10 years ago'},
         {author: 'Eyal Eizenberg', title: 'redux-cornell'},
-        {author: '', title: ''}
+        {author: '', title: ''},
+        {author: '', title: ''},
       ]
     },
     {

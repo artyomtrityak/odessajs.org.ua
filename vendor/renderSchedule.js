@@ -214,6 +214,7 @@ $(document).ready(function () {
         {author: 'Katarzyna Jastrzębska', title: 'Reuse your code in React like it\'s 2018'},
         {author: 'Nikita Dubko', title: 'Houdini - css which is JavaScript'},
         { author: 'Haroen Viaene', title: 'You’re probably making an api client'},
+        {author: '', title: ''},
       ]
     },
     {

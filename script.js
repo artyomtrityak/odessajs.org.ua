@@ -219,6 +219,12 @@ function loadAskQuestionModal($speakerBlock) {
   }
 //  Image Lazy loading
 
+  /* Cloud tag */
+  $('.tagBall').cloudTag({
+    ballSize:200 // the size of the tag cloud ball
+  });
+  /* Cloud tag */
+
 })(jQuery); // End of use strict
 
 

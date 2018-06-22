@@ -30,6 +30,7 @@ gulp.task('script-min', function () {
       'vendor/jquery-easing/jquery.easing.min.js',
       'vendor/scrollreveal/scrollreveal.min.js',
       'vendor/firebase/firebase.js',
+      'vendor/cloudTag.js',
 
       //scripts
       'vendor/renderSpeakers.js',

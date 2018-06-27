@@ -380,7 +380,7 @@
 .trainings-info-popup,
 .speakers-info-popup{
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding-right: 0!important;
   }
 
@@ -390,8 +390,8 @@
       max-width: 80%;
     }
 
-    @media screen and (max-width: 768px) {
-      margin: 5px;
+    @media screen and (max-width: 767px) {
+      margin: 60px 5px;
     }
 
     .modal-content {
@@ -609,7 +609,6 @@
         }
 
       }
-
 
       @media screen and (max-width: 768px) {
         .modal-header,

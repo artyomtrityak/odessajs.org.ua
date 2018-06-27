@@ -218,9 +218,8 @@
 
     &__info-wrapper {
       //height: 100%;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         padding: 0;
-        margin-top: 15px;
       }
       @media (max-width: 1024px) {
         padding-right: 0;

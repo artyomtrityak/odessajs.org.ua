@@ -486,7 +486,7 @@ $(document).ready(function(){
       aboutSpeaker:
       "<p>Gleb Dobzhanskiy: -I like programming for the fact that I can create things that work without my help. New technologies for me are like a quest, at first you sit and try to understand them, you dig deeper and deeper and then everything works - it's like magic. My last interesting task was working with NLU algorithms. And I am a real Apple ambasador))) I wish all the participants cool conferences, memories and networking.</p>"+
       "<p>Valentine Mezentsev: -I'm a part of bots development department. We are working with Facebook Messenger Bots a lot, but I also have experience with Amazon Alexa and Google Home. My hobbies is working with voice assistant platform(Amazon Alexa), learn something new, gym and watching football. \n</p>",
-      title: "Bot Battle [Ru]",
+      title: "Bot Battle: Google Home vs Alexa. [Ru]",
       description:
         "<p>The battle will be based on a tic-tac-toe game through the interaction of 2 bots " +
         "(Amazon Alexa Skill and Actions on Google), which will be connected to the smart Amazon Echo and Google Home speakers.</p>" +

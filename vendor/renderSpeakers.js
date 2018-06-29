@@ -251,49 +251,49 @@ $(document).ready(function(){
       ]
 
     },
-    {
-      image: "images/reporters/sara_vieira.jpg",
-      name: "Sara Vieira",
-      position: "Developer Relations" ,
-      company: "YLD",
-      rept: [
-        {
-          title: "The Dream of Styleguide Driven Development [En]",
-          description:
-          "You have heard of all types of driven development but react emerged a new type," +
-          " styleguide driven development became a reality with components. This type " +
-          "of development focuses on Developer/Designer collaboration and on assertive" +
-          " components. With the use of React, CSS-in-JS, Flow and Snapshot testing " +
-          "we were able to almost remove style regressions. In this talk you get a " +
-          "glimpse of you can start styleguide " +
-          "driven development and how you can sell this dream to your project managers.",
-        }
-      ],
-      aboutSpeaker: '',
-      socialsRendered: '',
-      socials: [
-        {
-          link: 'https://twitter.com/NikkitaFTW',
-          fatype: 'twitter'
-        },
-        {
-          link: 'https://www.linkedin.com/in/saravieira1/',
-          fatype: 'linkedin-square'
-        },
-        {
-          link: 'https://www.instagram.com/niikkitaftw/',
-          fatype: 'instagram'
-        },
-        {
-          link: 'https://github.com/SaraVieira/',
-          fatype: 'github'
-        },
-        {
-          link: 'https://iamsaravieira.com',
-          fatype: 'link'
-        }
-      ]
-    },
+    // {
+    //   image: "images/reporters/sara_vieira.jpg",
+    //   name: "Sara Vieira",
+    //   position: "Developer Relations" ,
+    //   company: "YLD",
+    //   rept: [
+    //     {
+    //       title: "The Dream of Styleguide Driven Development [En]",
+    //       description:
+    //       "You have heard of all types of driven development but react emerged a new type," +
+    //       " styleguide driven development became a reality with components. This type " +
+    //       "of development focuses on Developer/Designer collaboration and on assertive" +
+    //       " components. With the use of React, CSS-in-JS, Flow and Snapshot testing " +
+    //       "we were able to almost remove style regressions. In this talk you get a " +
+    //       "glimpse of you can start styleguide " +
+    //       "driven development and how you can sell this dream to your project managers.",
+    //     }
+    //   ],
+    //   aboutSpeaker: '',
+    //   socialsRendered: '',
+    //   socials: [
+    //     {
+    //       link: 'https://twitter.com/NikkitaFTW',
+    //       fatype: 'twitter'
+    //     },
+    //     {
+    //       link: 'https://www.linkedin.com/in/saravieira1/',
+    //       fatype: 'linkedin-square'
+    //     },
+    //     {
+    //       link: 'https://www.instagram.com/niikkitaftw/',
+    //       fatype: 'instagram'
+    //     },
+    //     {
+    //       link: 'https://github.com/SaraVieira/',
+    //       fatype: 'github'
+    //     },
+    //     {
+    //       link: 'https://iamsaravieira.com',
+    //       fatype: 'link'
+    //     }
+    //   ]
+    // },
     {
       image: "images/reporters/patrick_kettner.jpg",
       name: "Patrick Kettner",

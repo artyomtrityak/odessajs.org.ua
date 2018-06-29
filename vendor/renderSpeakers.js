@@ -385,7 +385,7 @@ $(document).ready(function(){
             " powerful concepts like pattern matching and Variants. We are going to refactoring a React component written in JavaScript to Reason.</p>",
         },
         {
-          title: "Build Serverless Node.js Applications on AWS [En]",
+          title: "Workshop: Build Serverless Node.js Applications on AWS [En]",
           description:
             "<p>The core of serverless architectures is auto-scaling systems and a pay-per- execution" +
             "pricing. This allows developers to reduce significantly operational cost and complexity" +

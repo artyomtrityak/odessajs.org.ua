@@ -94,85 +94,85 @@ $(document).ready(function () {
       ]
     },
     {
-      time: '12:55 - 13:25',
+      time: '12:55 - 13:35',
       talks: [
         {place: 'Hall A', author: 'Rowdy Rabouw **', title: 'Unleash your web skills on native. [en]'},
         {place: 'Hall B', author: 'Valentine Mezentsev, Gleb Dobzhanskyi, Vitalii Hurin *', title: 'Bot Building: channels, platforms, NLU. [TechCorner] [Ru]'}
       ]
     },
     {
-      time: '13:25 - 14:25',
+      time: '13:35 - 14:35',
       talks: [
         {author: '', title: 'Lunch'}
       ]
     },
     {
-      time: '14:25 - 14:55',
+      time: '14:35 - 15:05',
       talks: [
         {place: 'Hall A', author: 'Trishul Goel *', title: 'Cross browser extensions - lets make one. [en]'},
         {place: 'Hall B', author: 'Andrew Mykhaliuk **', title: 'Excuse me, I have to assemble Frontend.'}
       ]
     },
     {
-      time: '14:55-15:05',
+      time: '15:05-15:15',
       talks: [
         {author: '', title: 'Break'}
       ]
     },
     {
-      time: '15:05-15:35',
+      time: '15:15-15:50',
       talks: [
         {place: 'Hall A', author: 'Nikita Dubko ***', title: 'Houdini - css which is JavaScript. [ru]'},
         {place: 'Hall B', author: 'Philip Shurpik **', title: 'OK Google. What\'s next?. [Tech Corner] [ru]'}
       ]
     },
     {
-      time: '15:35-15:50',
+      time: '15:50-16:05',
       talks: [
         {author: '', title: 'Break'}
       ]
     },
     {
-      time: '15:50-16:20',
+      time: '16:05-16:35',
       talks: [
         {place: 'Hall A', author: 'Patrick Kettner **', title: 'JavaScript without javascript. [en]'},
         {place: 'Hall B', author: 'Roman Sachenko ***', title: 'NodeJS + CQRS + Event Sourcing: pros and cons. [ru]'}
       ]
     },
     {
-      time: '16:20-16:30',
+      time: '16:35-16:45',
       talks: [
         {author: '', title: 'Break'}
       ]
     },
     {
-      time: '16:30-17:00',
+      time: '16:45-17:25',
       talks: [
         {place: 'Hall A', author: 'David Kopal **', title: 'Unleash the power of the higher-order components. [en]'},
         {place: 'Hall B', author: 'Arkadiy Pilguk ***', title: 'Real-world application of computer vision and machine. [ru]'}
       ]
     },
     {
-      time: '17:00-17:10',
+      time: '17:25-17:35',
       talks: [
         {author: '', title: 'Break'}
       ]
     },
     {
-      time: '17:10-17:40',
+      time: '17:35-18:05',
       talks: [
         {place: 'Hall A', author: 'Ilya Ivanov **', title: 'Advanced React-Native. [ru]'},
         {place: 'Hall B', author: 'Oleg Chorny ***', title: 'Cloud Native Observability. [ru]'}
       ]
     },
     {
-      time: '17:40-17:50',
+      time: '18:05-18:15',
       talks: [
         {author: '', title: 'Break'}
       ]
     },
     {
-      time: '17:50-18:20',
+      time: '18:15-18:45',
       talks: [
         {place: 'Hall A', author: 'Henning Muszynski **', title: 'The ABC of Coded Style Guides. [en]'},
         {place: 'Hall B', author: 'Denys Dovhan **', title: 'Automating GitHub workflow with probot. [ua]'}
@@ -516,6 +516,5 @@ $(document).ready(function () {
 
     $(opt.selector).append(opt.render);
   }
-
 
 });

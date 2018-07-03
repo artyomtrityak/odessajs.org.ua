@@ -8,7 +8,7 @@ $(document).ready(function () {
     {time: '18:00 - 18:30', author: 'Haroen Viaene *', title: 'You’re probably making an API client. [en]'},
     {time: '18:30 - 19:00', author: 'Aleksandra Shinkevich and Nikita Dubko *', title: 'Get prepared for your performance. Speaker\'s guidelines from an organizer. [ru]'},
     {time: '19:00 - 19:30', author: 'Mike MacCana **', title: 'Deploying your JS app in 2018 ? [en]'},
-    {time: '19:30 - 17:30', author: '', title: 'TBD'},   
+    {time: '19:30 - 17:30', author: '', title: 'TBD'},
     {time: '20:00 - 20:30', author: 'Denis Radin ***', title: 'Let`s write your first pixel shader. [ru]'},
     {time: '20:30', author: '', title: 'Q&A Session'}
   ];
@@ -200,7 +200,7 @@ $(document).ready(function () {
         {place: 'Hall B', author: 'Mihail Zachepilo ***', title: 'WebAssembly powered Machine Learning. [ru]'},
         {place: 'Hall C - workshop', author: 'Nik Graf **', title: '<b>Workshop <br> 09:00 - 17:00</b> Build Serverless Node.js Application on AWS. [en]'},
         {place: 'Hall D - workshop', author: 'Timur Shemsedinov, Aleksey Orlenko, Alex Golikov *', title: '<b>Workshop <br> 09:00-16:00</b> Software Engendering Fundamentals for JavaScript Developers. [ru]'},
-        {place: 'Hall E - workshop', author: 'Max Klymyshyn ***', title: '<b>Workshop <br> 09:00 - 11:00 </b> Build blockchain using CRDT and Merkle Trees. [ru]'},       
+        {place: 'Hall E - workshop', author: 'Max Klymyshyn ***', title: '<b>Workshop <br> 09:00 - 11:00 </b> Build blockchain using CRDT and Merkle Trees. [ru]'},
         {place: 'Hall F - workshop', author: 'Valentine Mezentsev, Gleb Dobzhanskyi **', title: '<b>Workshop <br> 10:00 - 13:00</b> Bot Battle: Google Home vs Alexa. [ru]'}
       ]
     },
@@ -230,7 +230,7 @@ $(document).ready(function () {
       talks: [
         {place: 'Hall A', author: 'Ivan Jovanovic ***', title: 'Introduction to Micro Frontends. [en]'},
         {place: 'Hall B', author: 'Ivan Goncharov **', title: 'W.T.F. is GraphQL? [ua]'},
-        {place: 'Hall E - workshop', author: 'Natalia Tepluhina', title: '<b>Workshop <br> 14:00 - 16:00</b> Build A Simple Pet Fetching Web App using VueJS. [ru]'}
+        {place: '', author: '', title: ''}
       ]
     },
     {
@@ -352,9 +352,9 @@ $(document).ready(function () {
     {time: '09:00 - 17:00', talks: [ { author: 'Nik Graf **', title: 'Get Started with Reason & ReasonReact. [en]' },]},
     {time: '09:00 - 16:00', talks: [ { author: 'Timur Shemsedinov, Aleksey Orlenko, Alex Golikov ', title: 'Software Engendering Fundamentals for JavaScript Developer.' },]},
     {time: '09:00 - 12:00', talks: [ { author: 'Alex Migutsky *', title: 'Growing your career as software engineer. [ru]' },]},
-    {time: '15:00 - 15:00', talks: [ { author: 'Natalia Tepluhina *', title: 'Build A Simple Pet Fetching Web App using VueJS. [ru]' },]}
+    {time: '15:00 - 15:00', talks: [ { author: '', title: '' },]}
 
-    // {time: '09:00 - 17:00', talks: [ { author: 'David Mullerchen ', title: 'Angular 101. [en]' },]}, 
+    // {time: '09:00 - 17:00', talks: [ { author: 'David Mullerchen ', title: 'Angular 101. [en]' },]},
     // {time: '12:00 - 15:00', talks: [ { author: 'Valentine Mezentsev, Gleb Dobzhanskyi ', title: 'Bot Battle: Google Home vs Alexa. [Ru]' },]}
   ];
 

@@ -174,7 +174,7 @@ $(document).ready(function(){
         },
       ]
     },
-    {
+   /* {
       image: "images/reporters/natalia_tepluhina.jpg",
       name: "Natalia Tepluhina",
       position: "Frontend Developer" ,
@@ -193,7 +193,7 @@ $(document).ready(function(){
           fatype: 'twitter'
         }
       ]
-    },
+    },*/
     {
       image: "images/reporters/henning_muszynski.png",
       name: "Henning Muszynski",

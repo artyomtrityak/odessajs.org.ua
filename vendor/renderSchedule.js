@@ -97,8 +97,9 @@ $(document).ready(function () {
       time: '12:55 - 13:35',
       talks: [
         {place: 'Hall A', author: 'Rowdy Rabouw **', title: 'Unleash your web skills on native. [en]'},
-        {place: 'Hall B', author: 'Valentine Mezentsev, Gleb Dobzhanskyi, Vitalii Hurin *', title: 'Bot Building: channels, platforms, NLU. [TechCorner] [Ru]'}
-      ]
+        {place: 'Hall B', author: 'Valentine Mezentsev, Gleb Dobzhanskyi, Vitalii Hurin *', title: 'Bot Building: channels, platforms, NLU. [TechCorner] [Ru]'},
+        {author: 'Nik Graf', title: ''}
+        ]
     },
     {
       time: '13:35 - 14:35',
@@ -110,8 +111,9 @@ $(document).ready(function () {
       time: '14:35 - 15:05',
       talks: [
         {place: 'Hall A', author: 'Trishul Goel *', title: 'Cross browser extensions - lets make one. [en]'},
-        {place: 'Hall B', author: 'Andrew Mykhaliuk **', title: 'Excuse me, I have to assemble Frontend.'}
-      ]
+        {place: 'Hall B', author: 'Andrew Mykhaliuk **', title: 'Excuse me, I have to assemble Frontend.'},
+        {author: 'Nik Graf', title: ''}
+        ]
     },
     {
       time: '15:05-15:15',
@@ -123,8 +125,9 @@ $(document).ready(function () {
       time: '15:15-15:50',
       talks: [
         {place: 'Hall A', author: 'Nikita Dubko ***', title: 'Houdini - css which is JavaScript. [ru]'},
-        {place: 'Hall B', author: 'Philip Shurpik **', title: 'OK Google. What\'s next?. [Tech Corner] [ru]'}
-      ]
+        {place: 'Hall B', author: 'Philip Shurpik **', title: 'OK Google. What\'s next?. [Tech Corner] [ru]'},
+        {author: 'Trishul Goel', title: ''}
+        ]
     },
     {
       time: '15:50-16:05',
@@ -149,7 +152,8 @@ $(document).ready(function () {
       time: '16:45-17:25',
       talks: [
         {place: 'Hall A', author: 'David Kopal **', title: 'Unleash the power of the higher-order components. [en]'},
-        {place: 'Hall B', author: 'Arkadiy Pilguk ***', title: 'Real-world application of computer vision and machine. [ru]'}
+        {place: 'Hall B', author: 'Arkadiy Pilguk ***', title: 'Real-world application of computer vision and machine. [ru]'},
+        {author: 'Patrick Kettner', title: ''}
       ]
     },
     {
@@ -162,8 +166,9 @@ $(document).ready(function () {
       time: '17:35-18:05',
       talks: [
         {place: 'Hall A', author: 'Ilya Ivanov **', title: 'Advanced React-Native. [ru]'},
-        {place: 'Hall B', author: 'Oleg Chorny ***', title: 'Cloud Native Observability. [ru]'}
-      ]
+        {place: 'Hall B', author: 'Oleg Chorny ***', title: 'Cloud Native Observability. [ru]'},
+        {author: 'David Kopal', title: ''}
+        ]
     },
     {
       time: '18:05-18:15',
@@ -439,7 +444,7 @@ $(document).ready(function () {
     // _____________________________________________
 
     var july7_schedule = '';
-    renderSchedulesWithHalls({
+    renderSchedulesWithHallsOld({
       data: talks7july,
       render: july7_schedule,
       selector: '#july7_schedule'
@@ -517,4 +522,35 @@ $(document).ready(function () {
     $(opt.selector).append(opt.render);
   }
 
+
+  function renderSchedulesWithHallsOld(opt) {
+    $.each(opt.data, function (i, sp) {
+      var divider = '';
+      if (opt.splitLines) {
+        divider = ' splitted';
+      }
+
+      var scheduleRow = '<div class="schedule__report '+divider+'">',
+        scheduleCells = '',
+        timeBlock = $.tmpl("reportTimeBlockTemplate", sp)[0].outerHTML;
+
+      $.each(sp.talks, function (i, obj) {
+        if( obj.author || (!obj.author && !obj.title) ) {
+          scheduleCells += $.tmpl("hallBlockTemplate", obj)[0].outerHTML;
+        } else {
+          if(i < 1){
+            scheduleRow = '<div class="schedule__info">';
+            scheduleCells += $.tmpl("InfoBlockTemplate_2", obj)[0].outerHTML;
+            timeBlock = $.tmpl("infoTimeBlockTemplate", sp)[0].outerHTML;
+          }
+        }
+      });
+
+      scheduleRow += timeBlock + scheduleCells + '</div>';
+
+      opt.render += scheduleRow;
+    });
+
+    $(opt.selector).append(opt.render);
+  }
 });

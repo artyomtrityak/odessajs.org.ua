@@ -368,14 +368,13 @@ $(document).ready(function () {
     }
   ];
 
-
   var workshop6july = [
     {time: '09:00 - 16:00', talks: [ { author: 'Ivan Jovanovic ***', title: 'Testing javascript applications.' },]},
     {time: '09:00 - 17:00', talks: [ { author: 'Gerard Sans **', title: 'Fullstack graphQl using react with Gerard Sans. [en]' },]},
     {time: '09:00 - 17:00', talks: [ { author: 'Nik Graf **', title: 'Get Started with Reason & ReasonReact. [en]' },]},
     {time: '09:00 - 16:00', talks: [ { author: 'Timur Shemsedinov, Aleksey Orlenko, Alex Golikov ', title: 'Software Engendering Fundamentals for JavaScript Developer.' },]},
     {time: '09:00 - 12:00', talks: [ { author: 'Alex Migutsky *', title: 'Growing your career as software engineer. [ru]' },]},
-    {time: '15:00 - 15:00', talks: [ { author: '', title: '' },]}
+    // {time: '15:00 - 15:00', talks: [ { author: '', title: '' },]}
 
     // {time: '09:00 - 17:00', talks: [ { author: 'David Mullerchen ', title: 'Angular 101. [en]' },]},
     // {time: '12:00 - 15:00', talks: [ { author: 'Valentine Mezentsev, Gleb Dobzhanskyi ', title: 'Bot Battle: Google Home vs Alexa. [Ru]' },]}
@@ -409,13 +408,15 @@ $(document).ready(function () {
   var reportBlock_1 =
     '<div class="schedule__report">' +
     '        <div class="schedule__report-time">${time}</div>' +
-        '        <div>' +
-    '        <div class="schedule__report-hall">' +
-    '             ${title}' +
-    '          <div class="schedule__reporter">${author}</div>' +
+
+        '    <div class="schedule__report-hall-cont">' +
+
+      '        <div class="schedule__report-hall">' +
+      '             ${title}' +
+      '          <div class="schedule__reporter">${author}</div>' +
+      '        </div>' +
     '        </div>' +
-    '        </div>' +
-    '      </div>';
+    '</div>';
 
   $.template("reportBlockTemplate_1", reportBlock_1);
 

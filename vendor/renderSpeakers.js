@@ -1914,7 +1914,7 @@ $(document).ready(function(){
   var reportTitles = '';
 
   var speakerItem = "<div class='row '> <div data-modal-trigger='#speaker-modal' data-item-index='__ReplaceWithIndex' class='speakers-slide__item'>" +
-    " <div class='speakers-slide__img-wrapper'>" + "<img data-src='${image}' alt=''>" +
+    " <div class='speakers-slide__img-wrapper'>" + "<img src='${image}' alt=''>" +
     "</div> <div class='speakers-slide__info-wrapper'> <div class='speakers-slide__info'>"+
     "<h3 class='speakers-slide__info-title'><span class='speakers-slide__info-title-name' itemprop='name' >${name}</span></h3>"+
     "<p class='speakers-slider__info__place-of-work'><span class='speakers-slider__info-position' itemprop='jobTitle'>${position} @</span>" +

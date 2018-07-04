@@ -185,9 +185,8 @@ function loadAskQuestionModal($speakerBlock) {
 //  Image Lazy loading
 
   // var lazyLoadTimeout = null;
-
-
   initLazyLoad();
+
 
   // $(window).bind('scroll', lazyLoadHandler);
 
@@ -202,7 +201,7 @@ function loadAskQuestionModal($speakerBlock) {
   function initLazyLoad() {
     // var windowTopPosition = $(window)[0].pageYOffset,
     //     windowBottomPosition = $(window)[0].pageYOffset + $(window)[0].innerHeight,
-    //     $items = $('img[data-src]'),
+        var $items = $('img[data-src]');
     //     showOffsets = $(window)[0].innerHeight;
     // if(!$items.length) {
     //   $(window).unbind('scroll', lazyLoadHandler);
@@ -214,7 +213,7 @@ function loadAskQuestionModal($speakerBlock) {
 
     $items.each(function(i, item){
 
-      
+
       // if (
       //     ( windowTopPosition - ( $(item).offset().top + $(item).height ) <= showOffsets ) ||
       //     (windowBottomPosition + showOffsets >= $(item).offset().top )

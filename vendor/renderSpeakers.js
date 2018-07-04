@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-  var filters = [
-    'React', 'NativeScript', 'Angular', 'Node.js', 'ExpressJS', 'MongoDB', 'PgSQL', 'JavaScript',
-    'WebAssembly', 'Kubernetes', 'Azure', 'Go', 'Redux/Flow', 'Docker'
-  ];
+  // var filters = [
+  //   'React', 'NativeScript', 'Angular', 'Node.js', 'ExpressJS', 'MongoDB', 'PgSQL', 'JavaScript',
+  //   'WebAssembly', 'Kubernetes', 'Azure', 'Go', 'Redux/Flow', 'Docker'
+  // ];
 
   var speakers = [
     {
@@ -106,42 +106,42 @@ $(document).ready(function(){
         }
       ]
     },
-    {
-      image: "images/reporters/trishul_goel.png",
-      name: "Trishul Goel",
-      position: "Tech Speaker" ,
-      company: "Mozilla",
-      rept: [
-        {
-          title: "Cross browser extensions - lets make one [En]",
-          description: "Browsers are built on very simple principle - “one fit that suits all”. We use number of browser extensions to make most of our browser. How about being on other side of table; lets create one. From Javascript developer to a cross browser extension developer in 30 mins.",
-        }
-      ],
-      aboutSpeaker: '',
-      socialsRendered: '',
-      socials: [
-        {
-          link: 'https://www.facebook.com/tsl143',
-          fatype: 'facebook'
-        },
-        {
-          link: 'https://twitter.com/trishulgoel',
-          fatype: 'twitter'
-        },
-        {
-          link: 'https://www.linkedin.com/in/trishul/',
-          fatype: 'linkedin-square'
-        },
-        {
-          link: 'http://github.com/tsl143/',
-          fatype: 'github'
-        },
-        {
-          link: 'http://trishulgoel.com/',
-          fatype: 'link'
-        },
-      ]
-    },
+    // {
+    //   image: "images/reporters/trishul_goel.png",
+    //   name: "Trishul Goel",
+    //   position: "Tech Speaker" ,
+    //   company: "Mozilla",
+    //   rept: [
+    //     {
+    //       title: "Cross browser extensions - lets make one [En]",
+    //       description: "Browsers are built on very simple principle - “one fit that suits all”. We use number of browser extensions to make most of our browser. How about being on other side of table; lets create one. From Javascript developer to a cross browser extension developer in 30 mins.",
+    //     }
+    //   ],
+    //   aboutSpeaker: '',
+    //   socialsRendered: '',
+    //   socials: [
+    //     {
+    //       link: 'https://www.facebook.com/tsl143',
+    //       fatype: 'facebook'
+    //     },
+    //     {
+    //       link: 'https://twitter.com/trishulgoel',
+    //       fatype: 'twitter'
+    //     },
+    //     {
+    //       link: 'https://www.linkedin.com/in/trishul/',
+    //       fatype: 'linkedin-square'
+    //     },
+    //     {
+    //       link: 'http://github.com/tsl143/',
+    //       fatype: 'github'
+    //     },
+    //     {
+    //       link: 'http://trishulgoel.com/',
+    //       fatype: 'link'
+    //     },
+    //   ]
+    // },
     {
       image: "images/reporters/gerard.jpg",
       name: "Gerard Sans",
@@ -376,14 +376,6 @@ $(document).ready(function(){
       position: "" ,
       company: "Independent",
       rept: [
-        {
-          title: "Workshop: Get Started with Reason & ReasonReact [En]",
-          description:
-            "<p>Reason is a new functional, JavaScript-like language with a strong type-system and first level React bindings initiated by " +
-            "Jordan Walke, the creator of React.</p>" +
-            "<p>In this workshop you will first learn about the syntax and semantics of the programming language Reason. Further we learn about" +
-            " powerful concepts like pattern matching and Variants. We are going to refactoring a React component written in JavaScript to Reason.</p>",
-        },
         {
           title: "Workshop: Build Serverless Node.js Applications on AWS [En]",
           description:
@@ -1567,12 +1559,16 @@ $(document).ready(function(){
       rept: [
         {
           title: "The existential crisis in a blockchain era. [Ru]",
-          description: "" ,
+          description: "I will talk about existential crisis in a blockchain era" ,
         }
       ],
       aboutSpeaker: '',
       socialsRendered: '',
       socials: [
+        {
+          link: 'http://fb.me/troush69',
+          fatype: 'facebook'
+        },
         {
           link: 'https://twitter.com/troush69',
           fatype: 'twitter'
@@ -1883,31 +1879,64 @@ $(document).ready(function(){
         }
       ]
     },
+    {
+      image: "images/reporters/alexander_khokhlov.jpeg",
+      name: "Alexander Khokhlov",
+      position: "Founder" ,
+      company: "Nots.io",
+      rept: [
+        {
+          title: "Do not chase the hype train. Just steal the ideas. [Ru]",
+          description:
+            "<p>There's so much happening in javascript nowadays —  lot's of libraries, lot's of frameworks, lot's of ways of doing things pop up every week. So it's really easy to miss the point. But there’s no need to endlessly learn every new promising technology that comes out and painfully integrate it into your existing project. If the programming language you use is powerful enough, this lets you take just the ideas behind those and get them implemented blazingly fast in your code. This talk tells our story of how we use this concept while building complex realtime UI of nots.io in Clojure(Script).</p>" ,
+        }
+      ],
+      aboutSpeaker: '',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://www.facebook.com/notsio/',
+          fatype: 'facebook'
+        },
+        {
+          link: 'https://twitter.com/nots_io',
+          fatype: 'twitter'
+        },
+        {
+          link: 'http://blog.nots.io/',
+          fatype: 'link'
+        }
+      ]
+    },
+    {
+      image: "images/reporters/andrew_mykhaliuk.jpg",
+      name: "Andrew Mykhaliuk",
+      position: "Frontend Engineer" ,
+      company: "Snap inc.",
+      rept: [
+        {
+          title: "Sorry, I need to make a build for frontend. [Ru]",
+          description:
+            "<p>Every time when you start your project, developer thinks about how build his project. Why we need to pay attention about it? How it's going with a build tools around frontend frameworks. We'll talk about webpack growth, how we can use build with less dependencies to be more flexible to switch between technologies, and we will go to the next level how we can use build tools as a framework.</p>" ,
+        }
+      ],
+      aboutSpeaker: '',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://twitter.com/AndreyCtkn',
+          fatype: 'twitter'
+        },
+        {
+          link: 'https://github.com/AndreyUtka',
+          fatype: 'github'
+        }
+      ]
+    },
 
   ];
 
 
-  /* <a href="https://github.com/roman-sachenko">
-      <i class="fa fa-github" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/rsachenko/">
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.facebook.com/rsachenko">
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a href="https://twitter.com/RSachenko">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
-    <a href="https://stackoverflow.com/users/5132363/roman-sachenko">
-      <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.instagram.com/rsachenko/">
-      <i class="fa fa-instagram" aria-hidden="true"></i>
-    </a>
-    <a href="https://medium.com/@rsachenko">
-      <i class="fa fa-medium" aria-hidden="true"></i>
-    </a>*/
   var socialsItem = "<a class='speaker__link' href='${link}' target='_blank'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
   $.template( "socialsTemplate", socialsItem );
 

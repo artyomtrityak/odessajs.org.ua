@@ -5,7 +5,7 @@ $(document).ready(function () {
     {time: '16:30 - 17:00', author: 'Eyal Eizenberg **', title: 'The Psychology of building your first open source. [en]'},
     {time: '17:00 - 17:30', author: 'Aleksandr Khokhlov ***', title: 'Do not chase the hype train. Just steal ideas.'},
     {time: '17:30 - 18:00', author: 'Aleksandra Shinkevich and Nikita Dubko *', title: 'Get prepared for your performance. Speaker\'s guidelines from an organizer. [ru]'},
-    {time: '18:00 - 18:30', author: 'Mike MacCana **', title: 'Deploying your JS app in 2018 ? [en]'},
+    {time: '18:00 - 18:30', author: 'Mike MacCana **', title: 'Deploying your JS app in 2018 [en]'},
     {time: '18:30 - 19:00', author: 'Denis Radin ***', title: 'Let`s write your first pixel shader. [ru]'},
     {time: '19:00', author: '', title: 'Q&A Session'}
   ];
@@ -250,7 +250,7 @@ $(document).ready(function () {
     {
       time: '11:55 - 12:25',
       talks: [
-        {place: 'Hall A', author: 'Gabriel Mičko', title: 'WebRTC. [en]'},
+        {place: 'Hall A', author: 'Gabriel Mičko', title: 'WebRTC talk for OdessaJS. [en]'},
         {place: 'Hall B', author: 'Savitskyi Roman *', title: 'Chrome Dev Tools. New & Tips. [ua]'},
         {place: '', author: '', title: ''}
       ]

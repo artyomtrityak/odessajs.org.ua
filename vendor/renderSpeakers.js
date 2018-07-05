@@ -575,7 +575,10 @@ $(document).ready(function(){
         {
           title: "Deploying your JS app in 2018. [En]",
           description:
-          "<p>HTTP/2! Brotli compression! Elliptic curve crypto! EV! ACME! Bundles! AMP! It seems there’s suddenly a whole bunch of new ways to deploy your web apps. Here's how to make your site fast, secure, handle upgrades without downtime.</p>" ,
+            "<p>HTTP/2! Brotli compression! Elliptic curve crypto! EV! ACME! Bundles! " +
+            "AMP! It seems there’s suddenly a whole bunch of new ways to deploy your" +
+            " web apps. Here's how to make your site fast, secure, handle upgrades" +
+            " without downtime.</p>" ,
         }
       ],
       aboutSpeaker: '',
@@ -605,6 +608,37 @@ $(document).ready(function(){
           link: 'https://certsimple.com',
           fatype: 'link'
         },
+      ]
+    },
+    {
+      image: "images/reporters/gabriel_micko.jpg",
+      name: "Gabriel Mičko",
+      position: "Streaming engineer" ,
+      company: "Docler Holding, Mozilla Tech Speaker",
+      rept: [
+        {
+          title: " WebRTC talk for OdessaJS. [En]",
+          description:
+            "<p>WebRTC is a free, open project that provides browsers and mobile " +
+            "applications with Real-Time Communications capabilities via simple APIs. " +
+            "Mission behind is to enable rich, high-quality RTC applications to be developed" +
+            " for the browser. You are able to do this all without the need of installing any " +
+            "third party software or plugin. The talk is designed for those who want to get " +
+            "started with the technology or who are just curious about the bright features of " +
+            "the web. </p>" ,
+        }
+      ],
+      aboutSpeaker:
+        'I am enthusiastic front-end developer who loves the web and new technologies ' +
+        'around it. I am tech speaker, contributor, volunteer at Mozilla. I believe in ' +
+        'the mission to ensure the Internet is a ' +
+        'global public resource, open and accessible to all.',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'https://twitter.com/gabriel_micko',
+          fatype: 'twitter'
+        }
       ]
     },
     {
@@ -1559,7 +1593,16 @@ $(document).ready(function(){
       rept: [
         {
           title: "The existential crisis in a blockchain era. [Ru]",
-          description: "I will talk about existential crisis in a blockchain era" ,
+          description:
+            "My talk will address problems that have any individuals through their lifetime. " +
+            "Did you find your self in a place where everything changing so fast and you" +
+            " cannot catch up? Asking yourself what to do with your life next? Regret " +
+            "something in past that can totally change the life you live now?  I will " +
+            "share a knowledge on how to sustain your mind in a new era of hype trains on " +
+            "the example of new hype technology – blockchain. You will understand how the " +
+            "blockchain works and how it changes the industry around you, but mostly this " +
+            "talk is targeted to share the instruments and ideas around sustaining a healthy" +
+            " mind during the era of changes." ,
         }
       ],
       aboutSpeaker: '',

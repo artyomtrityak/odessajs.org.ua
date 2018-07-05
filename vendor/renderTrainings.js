@@ -427,12 +427,10 @@ $(document).ready(function(){
     // },
   ];
 
-
   var trainings = [
-    
     {
       image: "images/reporters/ivan_jovanovich.png",
-      label: "images/workshops/Networking_2.jpg", 
+      label: "images/workshops/Networking_2.jpg",
       name: "Ivan Jovanovic",
       position: "Senior Software Engineer" ,
       company: "nearForm",
@@ -497,7 +495,7 @@ $(document).ready(function(){
     },
     {
       image: "images/program-committee/gerard-sans.jpg",
-      label: "images/workshops/Networking_4.jpg", 
+      label: "images/workshops/Networking_4.jpg",
       name: "Gerard Sans",
       position: "Google Developer Expert" ,
       company: "",
@@ -557,10 +555,10 @@ $(document).ready(function(){
           fatype: 'link'
         },
       ]
-    },   
+    },
     {
       image: "images/reporters/timur_shemsedinov.jpg",
-      label: "images/workshops/Networking_3b.jpg", 
+      label: "images/workshops/Networking_3b.jpg",
       name: "Timur Shemsedinov, Aleksey Orlenko & Alex Golikov",
       position: "Architect/Lecturer, Senior software engineer & Senior software engineer" ,
       company: "Metarhia, MIA, KPI & vi",
@@ -713,7 +711,6 @@ $(document).ready(function(){
         },
       ]
     },
-   
 
     // July 8
 
@@ -908,6 +905,61 @@ $(document).ready(function(){
         },
         {
           link: 'https://mtdv.io',
+          fatype: 'link'
+        },
+      ]
+    },
+    {
+      image: "images/program-committee/gerard-sans.jpg",
+      label: "images/workshops/Networking_14.jpg",
+      name: "Gerard Sans",
+      position: "Google Developer Expert" ,
+      company: "",
+      place: '',
+      date: 8,
+      duration: '3 h',
+      price: 'Free',
+      free_class: 'free',
+      aboutSpeaker:
+      'Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science ' +
+      'Engineer and humble Google Developer Expert. He loves to share his learnings by giving talks, trainings and writing about cool technologies.' +
+      ' He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.',
+      title: "Global Diversity CFP Day Odessa[en]",
+      description:
+        "<p>On Sunday, July 8th, 2018, we will be running a workshop to encourage and advise speakers and speakers to-be " +
+        "to put together your next (or first) talk proposal and share your own perspectives on any subject " +
+        "of interest to people in tech.</p>",
+      topics:[
+        '<p>The workshop will have experienced speakers on hand to:</p>'+
+        '<ul>'+
+          '<li>give you a warm, inclusive welcome in a safe space (check out our Code of Conduct which all participants must adhere to)</li>'+
+          '<li>mentor you with your proposal</li>'+
+          '<li>provide speaking advice and share their enthusiasm to get you to the stage!</li>'+
+        '</ul>'
+      ],
+      purpose:
+        'These workshops have no specific language, framework or process as a ' +
+        'focus. Even if your talk isn’t even related to tech we want to hear from you too! In short, ' +
+        'if there is something that you want to shout to the world we\'re here to help you get there' +
+        ' regardless of the boundaries of technology or communities.',
+      tools: '',
+      target: '',
+      socialsRendered: '',
+      socials: [
+        {
+          link: 'http://github.com/gsans',
+          fatype: 'github'
+        },
+        {
+          link: 'https://stackoverflow.com/users/4508433/gerard-sans',
+          fatype: 'stack-overflow'
+        },
+        {
+          link: 'https://twitter.com/gerardsans',
+          fatype: 'twitter'
+        },
+        {
+          link: ' https://medium.com/@gerard.sans',
           fatype: 'link'
         },
       ]

@@ -505,7 +505,7 @@ function initMap() {
         '<li>july 6</li>' +
         '<li>Impact Hub</li>' +
         '</ul>',
-        img: 'images/map_logos/logo.png',
+        img: 'images/map_logos/hub.png',
         link: ''
       })
     },
@@ -517,7 +517,7 @@ function initMap() {
         '<li>july 7</li>' +
         '<li>Otrada beach</li>' +
         '</ul>',
-        img: 'images/partners/eat_dog.png',
+        img: 'images/map_logos/beer.png',
         link: 'javascript: void(0)'
       })
     },
@@ -529,7 +529,7 @@ function initMap() {
         '<li>july 6</li>' +
         '<li>True Man</li>' +
         '</ul>',
-        img: 'images/partners/eat_dog.png',
+        img: 'images/map_logos/trueman.jpg',
         link: 'https://www.facebook.com/truemanodessa/'
       })
     },
@@ -542,7 +542,7 @@ function initMap() {
         '<li>Langeron beach</li>' +
         '<li>Start of the Health track</li>' +
         '</ul>',
-        img: 'images/partners/eat_dog.png',
+        img: 'images/map_logos/bike.png',
         link: 'javascript: void(0)'
       })
     },
@@ -554,7 +554,7 @@ function initMap() {
         '<li>OK-Odessa</li>' +
         '<li>july 7-8</li>' +
         '</ul>',
-        img: 'images/partners/eat_dog.png',
+        img: 'images/map_logos/logo.png',
         link: 'http://odessajs.org/#schedule'
       })
     },

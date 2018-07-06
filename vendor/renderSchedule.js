@@ -225,6 +225,7 @@ $(document).ready(function () {
       talks: [
         {place: 'Hall A', author: 'Viktor Turskyi **', title: 'How to create a VR application with React. [en]'},
         {place: 'Hall B', author: 'Denis Artyuhovich **', title: 'Evolution of Web Performance. [ru]'},
+        {place: '', author: '', title: ''}
       ]
     },
     {

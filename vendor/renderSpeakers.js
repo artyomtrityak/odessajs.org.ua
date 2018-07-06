@@ -1861,7 +1861,7 @@ $(document).ready(function(){
       ]
     },
     {
-      image: "images/reporters/alexander_khokhlov.jpeg",
+      image: "images/reporters/alexander_khokhlov.jpg",
       name: "Alexander Khokhlov",
       position: "Founder" ,
       company: "Nots.io",

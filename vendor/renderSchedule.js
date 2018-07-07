@@ -252,7 +252,7 @@ $(document).ready(function () {
       time: '11:55 - 12:25',
       talks: [
         {place: 'Hall A', author: 'Gabriel Mičko', title: 'WebRTC talk for OdessaJS. [en]'},
-        {place: 'Hall B', author: 'Savitskyi Roman *', title: 'Chrome Dev Tools. New & Tips. [ua]'},
+        {place: '', author: '', title: ''},
         {place: '', author: '', title: ''}
       ]
     },
@@ -365,7 +365,7 @@ $(document).ready(function () {
       time: '18:10 - 18:40',
       talks: [
         {place: 'Hall A', author: 'Artem Zakharchenko *', title: 'What happens when you don\'t write the code. What advises would I like to take 10 years ago. [ru]'},
-        {place: '', author: '', title: ''},
+        {place: 'Hall B', author: 'Savitskyi Roman *', title: 'Chrome Dev Tools. New & Tips. [ua]'},
         {place: '', author: '', title: ''}
       ]
     },

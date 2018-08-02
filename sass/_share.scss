@@ -6,6 +6,7 @@
   margin: 15px 0;
   .img-cont {
     position: relative;
+    min-height: 200px;
 
     &::after {
       display: block;
